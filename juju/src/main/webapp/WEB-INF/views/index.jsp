@@ -1,45 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Apex - Home Repair Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
+<html lang="ko">
 
-    <!-- Favicon -->
-    <link href="./resources/img/favicon.ico" rel="icon" />
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <!-- Libraries Stylesheet -->
-    <link href="./resources/lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="./resources/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="./resources/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
-    <link href="./resources/css/style.css" rel="stylesheet" />
-  </head>
+<head>
+	<%@ include file="head.jsp"%>
+</head>
 
   <body>
     <!-- Spinner Start -->
@@ -52,7 +19,7 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
+    <!-- <div class="container-fluid bg-light p-0">
       <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
           <div
@@ -87,7 +54,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
@@ -96,7 +63,7 @@
     >
       <a href="index.html" class="navbar-brand d-flex align-items-center">
         <h1 class="m-0">
-          <i class="fa fa-building text-primary me-3"></i>APEX
+          <i class="fa fa-building text-primary me-3"></i>JUJU
         </h1>
       </a>
       <button
@@ -109,15 +76,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About Us</a>
-          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <a href="index.html" class="nav-item nav-link active">홈으로</a>
+          <a href="about.html" class="nav-item nav-link">병원소개</a>
           <div class="nav-item dropdown">
             <a
               href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >진료과목</a
             >
             <div class="dropdown-menu bg-light m-0">
               <a href="feature.html" class="dropdown-item">Features</a>
@@ -126,8 +92,12 @@
               <a href="testimonial.html" class="dropdown-item">Testimonial</a>
               <a href="404.html" class="dropdown-item">404 Page</a>
             </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+          </div> 
+          <a href="service.html" class="nav-item nav-link">진료예약</a>
+          <a href="service.html" class="nav-item nav-link">펫정보</a>
+          <a href="service.html" class="nav-item nav-link">공지사항</a>
+          <a href="service.html" class="nav-item nav-link">로그인</a>
+          <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
         </div>
       </div>
     </nav>
@@ -138,33 +108,29 @@
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="./resources/img/carousel-1.jpg" alt="Image" />
+            <img class="w-100" src="./resources/img/mainImg.jpg" alt="Image" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12 col-lg-10">
-                    <h5
-                      class="text-light text-uppercase mb-3 animated slideInDown"
-                    >
-                      Welcome to Apex
+                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">
+                      주주동물병원
                     </h5>
                     <h1 class="display-2 text-light mb-3 animated slideInDown">
-                      A Construction & Renovation Company
+                      ONE STOP TOTAL CLINIC
                     </h1>
                     <ol class="breadcrumb mb-4 pb-2">
                       <li class="breadcrumb-item fs-5 text-light">
-                        Commercial
+                        빠른 진단
                       </li>
                       <li class="breadcrumb-item fs-5 text-light">
-                        Residential
+                        정확한 치료
                       </li>
                       <li class="breadcrumb-item fs-5 text-light">
-                        Industrial
+                        반려동물 안전강화
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary py-3 px-5"
-                      >More Details</a
-                    >
+                    <a href="" class="btn btn-primary py-3 px-5">자세히보기</a>
                   </div>
                 </div>
               </div>
@@ -226,6 +192,10 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- 진료과목 소개 시작 -->
+    <%@ include file="treat.jsp"%>
+    <!-- -->
+
     <!-- 유튜브 -->
     <%@ include file="tube.jsp"%> 
     <!-- -->
@@ -237,10 +207,6 @@
     <!-- 진료예약 -->
     <%@ include file="appo.jsp"%>
     <!-- -->
-
-    <!-- 진료과목 소개 시작 -->
-    <%@ include file="treat.jsp"%>
-    <!-- 진료과목 소개 끝 -->
 
     <!-- Appointment Start -->
     <%@ include file="empty.jsp"%>
