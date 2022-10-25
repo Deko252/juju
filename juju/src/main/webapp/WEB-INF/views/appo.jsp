@@ -1,6 +1,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
-
+<head>
+<script type="text/javascript">
+	var myModal = document.getElementById('myModal')
+	var myInput = document.getElementById('myInput')
+	
+	myModal.addEventListener('shown.bs.modal', function () {
+	  myInput.focus()
+	})
+</script>
+</head>
 <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
@@ -11,6 +20,33 @@
                 Our Specialization And Company Features
               </h1>
             </div>
+            
+            <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
+            <a class="btn btn-primary py-3 px-5" href="">More Services</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  			Launch demo modal
+			</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        ...
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+         	</div>
+         	
+         	
+         	
             <p class="mb-5">
               Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
               diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet

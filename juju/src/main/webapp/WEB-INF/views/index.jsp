@@ -195,18 +195,24 @@
     <!-- 진료과목 소개 시작 -->
     <%@ include file="treat.jsp"%>
     <!-- -->
-
+    
+	<!-- 진료예약 -->
+    <%@ include file="appo.jsp"%>
+    <!-- -->
+    
     <!-- 유튜브 -->
     <%@ include file="tube.jsp"%> 
     <!-- -->
-
+	
+	<!-- 그럴싸한 문구 -->
+	<!--  -->
+	
     <!-- 공지/펫정보/contact -->
    	<%@ include file="info.jsp"%> 
     <!-- -->
 
-    <!-- 진료예약 -->
-    <%@ include file="appo.jsp"%>
-    <!-- -->
+    <!-- 푸터 -->
+    <!--  -->
 
     <!-- Appointment Start -->
     <%@ include file="empty.jsp"%>
