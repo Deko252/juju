@@ -159,10 +159,10 @@ tbody > tr:nth-of-type(2n+1):hover > * {
 	            	</tr>
           		</thead>
           		<tbody>
-          		<c:forEach items="${list  }" var="s">
+          		<c:forEach items="${boardList  }" var="s">
             		<tr>
               			<td>${s.board_no }</td>
-              			<td><a href="./detail2.do?bno=${s.board_no }">${s.board_title }</a></td>
+              			<td><a href="./notice_detail.do?bno=${s.board_no }">${s.board_title }</a></td>
               			<td>${s.a_name }</td>
               			<td>${s.board_date }</td>
             		</tr>
@@ -171,14 +171,13 @@ tbody > tr:nth-of-type(2n+1):hover > * {
           		</tbody>
         	</table>
 		    </div>
-		    <!-- 페이징 -->
+		   <%--  <!-- 페이징 -->
            	<div id="paging" style="text-decoration:none;">
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
-           	</div>
+           	</div> --%>
 		    
                     	<!-- 글쓰기 -->
               			<button id="writeBtn" class="btn btn-primary">글쓰기</button>
 	</div>
-</div>
 </body>
 </html>

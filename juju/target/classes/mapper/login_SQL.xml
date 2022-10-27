@@ -5,25 +5,8 @@
 <mapper namespace="login">
 
 	<select id="login" parameterType="HashMap" resultType="HashMap">
-		SELECT count(*) as count, b_name, b_grade FROM big_user 
-		WHERE b_id=#{id } AND b_pw=HEX(AES_ENCRYPT(#{pw }, 'java'))
+		SELECT count(*) as count, a_name FROM admin 
+		WHERE a_id=#{id } AND a_pw=#{pw }
 	</select>
-	
-	<select id="myInfo" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM big_user
-		WHERE b_id=#{id }
-	</select>
-	
-	<select id="idCheck" parameterType="HashMap" resultType="Integer">
-		SELECT COUNT(*) FROM big_user WHERE b_id=#{id }
-	</select>
-	
-	<insert id="join" parameterType="Hashmap">
-		INSERT INTO big_user (b_id, b_pw, b_name, b_email, b_num)
-		VALUES(#{id }, HEX(AES_ENCRYPT(#{pw }, 'java')), #{name }, #{email }, #{phoneNumber })
-	</insert>
-	
-	<update id="password" parameterType="HashMap">
-		UPDATE big_user SET b_pw=HEX(AES_ENCRYPT(#{npw }, 'java')) WHERE b_id=#{id }		
-	</update>
+
 </mapper>

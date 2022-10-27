@@ -5,42 +5,19 @@
 <mapper namespace="board">
 
 	<select id="boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM boardview
-		LIMIT #{startPage }, #{lastPage }
-	</select>
-	
-	<select id="board2List" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM board2view
-		LIMIT #{startPage }, #{lastPage }
+		SELECT * FROM notice_boardview
 	</select>
 	
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
 	
-	<select id="detail" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM boardview 
-		WHERE board_no=#{bno } 
-		<if test="id != null">	
-			AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-		</if>
+	<select id="notice_detail" parameterType="HashMap" resultType="HashMap">
+		SELECT * FROM notice_boardview 
+		WHERE board_no
 		
 	</select>
-	
-	<select id="detail2" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM board2view 
-		WHERE board_no=#{bno } 
-		<if test="id != null">	
-			AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-		</if>
-		
-	</select>
-	
+
 	<update id="postDel" parameterType="HashMap">
 		UPDATE big_board SET board_del=1 
-		WHERE board_no=#{bno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</update>
-	
-	<update id="postDel2" parameterType="HashMap">
-		UPDATE big_board2 SET board_del=1 
 		WHERE board_no=#{bno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
 	</update>
 	
@@ -51,74 +28,16 @@
 		<if test="file != null">, #{file }</if>)
 	</insert>
 	
-	<insert id="write2" parameterType="HashMap">
-		INSERT INTO big_board2 (board_title, board_content, b_no
-		<if test="file != null">, board_file</if>)
-		VALUES(#{title }, #{content }, (SELECT b_no FROM big_user WHERE b_id=#{id })
-		<if test="file != null">, #{file }</if>)
-	</insert>
-	
-	<select id="totalCount" parameterType="HashMap" resultType="integer">
-		SELECT COUNT(*) FROM boardview
-	</select>
-	
-	<select id="totalCount2" parameterType="HashMap" resultType="integer">
-		SELECT COUNT(*) FROM board2view
-	</select>
-	
-	
 	<update id="update" parameterType="HashMap">
 		UPDATE big_board SET board_title=#{title }, board_content=#{content } 
 		WHERE board_no=#{board_no } AND b_no= (SELECT b_no FROM big_user WHERE b_id=#{id })
 	</update>
 	
-	<update id="update2" parameterType="HashMap">
-		UPDATE big_board2 SET board_title=#{title }, board_content=#{content } 
-		WHERE board_no=#{board_no } AND b_no= (SELECT b_no FROM big_user WHERE b_id=#{id })
-	</update>
+
+
 	
-	<insert id="commentWrite" parameterType="HashMap">
-      INSERT INTO comment (c_comment, board_no, b_no, c_star)
-      VALUES(#{comment }, #{bno }, (SELECT b_no FROM big_user WHERE b_id=#{id }), #{star })
-   </insert>
+
 	
-	<insert id="commentWrite2" parameterType="HashMap">
-      INSERT INTO comment2 (c_comment, board_no, b_no)
-      VALUES(#{comment }, #{bno }, (SELECT b_no FROM big_user WHERE b_id=#{id }))
-   </insert>
-	
-	<select id="commentsList" parameterType="HashMap" resultType="HashMap">
-		SELECT c.*, u.b_id, u.b_name
-		FROM comment c JOIN big_user u ON c.b_no=u.b_no
-		WHERE c.board_no=#{bno }
-		ORDER BY c_no DESC
-	</select>
-	
-	<select id="commentsList2" parameterType="HashMap" resultType="HashMap">
-		SELECT c.*, u.b_id, u.b_name
-		FROM comment2 c JOIN big_user u ON c.b_no=u.b_no
-		WHERE c.board_no=#{bno }
-		ORDER BY c_no DESC
-	</select>
-	
-	<delete id="commentDel" parameterType="HashMap">
-		DELETE FROM comment 
-		WHERE c_no=#{cno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</delete>
-	
-	<delete id="commentDel2" parameterType="HashMap">
-		DELETE FROM comment2 
-		WHERE c_no=#{cno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</delete>
-	
-	<update id="commentUpdate" parameterType="HashMap">
-		UPDATE comment SET c_comment=#{comment } 
-		WHERE c_no=#{cno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</update>
-	
-	<update id="commentUpdate2" parameterType="HashMap">
-		UPDATE comment2 SET c_comment=#{comment } 
-		WHERE c_no=#{cno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</update>
+
 	
 </mapper>
