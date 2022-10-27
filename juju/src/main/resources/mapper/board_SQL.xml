@@ -9,10 +9,10 @@
 	</select>
 	
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
-	
+	<!-- #은 클라이언트 -->
 	<select id="notice_detail" parameterType="HashMap" resultType="HashMap">
 		SELECT * FROM notice_boardview 
-		WHERE board_no=#{b_no }
+		WHERE board_no=#{bno }
 	</select>
 
 	<update id="postDel" parameterType="HashMap">

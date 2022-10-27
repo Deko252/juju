@@ -159,7 +159,7 @@ tbody > tr:nth-of-type(2n+1):hover > * {
 	            	</tr>
           		</thead>
           		<tbody>
-          		<c:forEach items="${boardList  }" var="s">
+          		<c:forEach items="${list  }" var="s">
             		<tr>
               			<td>${s.board_no }</td>
               			<td><a href="./notice_detail.do?bno=${s.board_no }">${s.board_title }</a></td>
