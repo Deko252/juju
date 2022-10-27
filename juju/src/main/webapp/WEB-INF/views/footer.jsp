@@ -2,6 +2,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
+<head>
+<style type="text/css">
+
+.bg-dark {
+	background-color: #8FC1D4 !important;
+}
+
+</style>	
+</head>
+
 <div
       class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
       data-wow-delay="0.1s"
@@ -12,34 +22,17 @@
             <h1 class="text-white mb-4">
               <i class="fa fa-building text-primary me-3"></i>푸터
             </h1>
-            <p>
-              Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-              ipsum et lorem et sit, sed stet lorem sit clita
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
+            
           </div>
           <div class="col-lg-3 col-md-6">
             <h4 class="text-light mb-4">Address</h4>
             <p>
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+              <i class="fa fa-map-marker-alt me-3"></i>서울특별시 OO구 OO로 OOO
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+            <p><i class="fa fa-phone-alt me-3"></i>02 - 000 - 0000</p>
             <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <!-- <div class="col-lg-3 col-md-6">
             <h4 class="text-light mb-4">Quick Links</h4>
             <a class="btn btn-link" href="">About Us</a>
             <a class="btn btn-link" href="">Contact Us</a>
@@ -62,15 +55,35 @@
               >
                 SignUp
               </button>
+            </div> -->
+          </div> 
+          
+          <div class="col-lg-3 col-md-6">
+			<h4 class="text-light mb-4">02-000-0000</h4>
+			
+			<div class="d-flex pt-2">
+              <a class="btn btn-square btn-outline-primary me-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-square btn-outline-primary me-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-square btn-outline-primary me-1" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-square btn-outline-primary me-0" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
-          </div>
+          
+     
         </div>
       </div>
       <div class="container-fluid copyright">
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+              &copy; <a href="#">JUJU</a>, All Right Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end">
               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

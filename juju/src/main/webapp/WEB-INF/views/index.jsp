@@ -6,7 +6,24 @@
 
 
 <head>
-	<%@ include file="head.jsp"%>
+<%@ include file="head.jsp"%>
+
+<style type="text/css">
+
+.navbar .navbar-nav .nav-link:hover, 
+.navbar .navbar-nav .nav-link.active {
+	color: #8FC1D4;
+}
+.carousel-caption {
+	background: rgba(0,0,0,.20);
+}
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+}
+
+</style>
+
 </head>
 
   <body>
@@ -87,11 +104,9 @@
               >진료과목</a
             >
             <div class="dropdown-menu bg-light m-0">
-              <a href="feature.html" class="dropdown-item">Features</a>
-              <a href="appointment.html" class="dropdown-item">Appointment</a>
-              <a href="team.html" class="dropdown-item">Our Team</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="feature.html" class="dropdown-item">내과</a>
+              <a href="appointment.html" class="dropdown-item">외과</a>
+              <a href="team.html" class="dropdown-item">피부과</a>
             </div>
           </div> 
           <a href="service.html" class="nav-item nav-link">진료예약</a>
@@ -195,14 +210,14 @@
     <%@ include file="appo.jsp"%>
     <!-- -->
     
-    <!-- 유튜브 -->
-    <%@ include file="tube.jsp"%> 
-    <!-- -->
-	
-	<!-- 그럴싸한 문구 -->
+    <!-- 그럴싸한 문구 -->
     <%@ include file="empty.jsp"%>
 	<!--  -->
 	
+    <!-- 유튜브 -->
+    <%@ include file="tube.jsp"%> 
+    <!-- -->
+
     <!-- 공지/펫정보/contact -->
    	<%@ include file="info.jsp"%> 
     <!-- -->
