@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page session="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html lang="ko">
 <head>
@@ -33,7 +32,15 @@
 							<img alt="img" src="./resources/upload/${detail2.board_file }">
 						</c:if> --%>
 		</div>
-	</div>
+					
+					
+				
+					<c:if test="${sessionScope.id ne null}">
+						<button class="btn btn-primary" id="updateBtn">수정</button>
+						<button class="btn btn-danger" id="delBtn">삭제</button>
+					</c:if>
+						<button class="btn btn-success" onclick="location.href='./notice.do'">돌아가기</button>
 
+	</div>
 </body>
 </html>

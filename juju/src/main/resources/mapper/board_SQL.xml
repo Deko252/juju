@@ -11,8 +11,10 @@
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
 	<!-- #은 클라이언트 -->
 	<select id="notice_detail" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM notice_boardview 
-		WHERE board_no=#{bno }
+		SELECT n.*, a.a_id, a.a_name   
+		FROM notice_boardview n JOIN admin a
+		ON a.a_no=n.b_no 
+		WHERE n.board_no=#{bno }
 	</select>
 
 	<update id="postDel" parameterType="HashMap">
@@ -31,12 +33,5 @@
 		UPDATE big_board SET board_title=#{title }, board_content=#{content } 
 		WHERE board_no=#{board_no } AND b_no= (SELECT b_no FROM big_user WHERE b_id=#{id })
 	</update>
-	
-
-
-	
-
-	
-
 	
 </mapper>

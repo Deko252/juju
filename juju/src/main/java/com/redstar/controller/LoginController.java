@@ -41,7 +41,7 @@ public class LoginController {
 				//세션도 만들어주세요.
 				session.setAttribute("name", login.get("b_name"));
 				session.setAttribute("id", map.get("id"));
-				System.out.println("얏파");
+				System.out.println("로그인" + map.getMap());
 				return "redirect:/index.do";
 		}
 	}
@@ -56,6 +56,8 @@ public class LoginController {
 		if(session.getAttribute("name") != null) {
 			session.removeAttribute("name");
 		}
+		
+		System.out.println("로그아웃");
 		
 		return "redirect:/index.do";
 	}

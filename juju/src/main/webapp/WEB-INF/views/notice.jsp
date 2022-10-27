@@ -26,7 +26,7 @@ $(function(){
          alert("글을 쓰려면 로그인 하셔야 합니다.");
          location.href="./login.do";
       } else {
-         location.href="./write2.do";//카테고리도 보내기
+         location.href="./write.do";//카테고리도 보내기
       }
    });
 });
@@ -177,7 +177,10 @@ tbody > tr:nth-of-type(2n+1):hover > * {
            	</div> --%>
 		    
                     	<!-- 글쓰기 -->
-              			<button id="writeBtn" class="btn btn-primary">글쓰기</button>
+                    
+                    	<c:if test="${sessionScope.id ne null}">
+              				<button id="writeBtn" class="btn btn-primary">글쓰기</button>
+              			</c:if>
 	</div>
 </body>
 </html>
