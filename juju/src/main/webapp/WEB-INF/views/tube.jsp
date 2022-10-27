@@ -5,10 +5,8 @@
 
 <style type="text/css">
 
-.h-100 {
-
+.tube-location {
 	margin-left: 70px;
-
 }
 
 </style>
@@ -21,7 +19,7 @@
                 <div id="mv_wrap"><iframe title="YouTube video player" src="https://www.youtube.com/embed/a9yWOm2uOio" width="600" height="360" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="h-100">
+            <div class="h-100 tube-location">
               <div class="border-start border-5 border-primary ps-4 mb-5">
                 <h6 class="text-body text-uppercase mb-2">About Us</h6>
                 <h1 class="display-6 mb-0">

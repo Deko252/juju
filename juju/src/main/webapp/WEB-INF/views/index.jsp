@@ -10,9 +10,29 @@
 
 <style type="text/css">
 
+.logo-img {
+	width: 65px;
+	margin-right: 10px;
+}
+.m-0 {
+	font-size: 50px;
+}
+.collapse {
+	font-size: 17px;
+}
+
+
 .navbar .navbar-nav .nav-link:hover, 
 .navbar .navbar-nav .nav-link.active {
-	color: #8FC1D4;
+	color: #8FC1D4 !important;
+}
+.navbar-nav > .nav-item:last-child {
+	color: #dee2e6;
+}
+.dropdown-item:hover, 
+.dropdown-item:focus {
+	color: #1e2125;
+	background-color: #8FC1D4 !important;
 }
 .carousel-caption {
 	background: rgba(0,0,0,.20);
@@ -80,8 +100,9 @@
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
     >
       <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img class="logo-img" src="./resources/img/logo.png" alt="">
         <h1 class="m-0">
-          <i class="fa fa-building text-primary me-3"></i>JUJU
+        	JUJU
         </h1>
       </a>
       <button
