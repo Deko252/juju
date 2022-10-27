@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+
 <head>
 	<%@ include file="head.jsp"%>
 </head>
@@ -108,7 +109,7 @@
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="w-100" src="./resources/img/mainImg.jpg" alt="Image" />
+            <img class="w-100" src="./resources/img/mainImg01.jpg" alt="Image" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-center">
@@ -137,7 +138,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="w-100" src="./resources/img/carousel-2.jpg" alt="Image" />
+            <img class="w-100" src="./resources/img/mainImg02.jpg" alt="Image" />
             <div class="carousel-caption">
               <div class="container">
                 <div class="row justify-content-center">
@@ -145,20 +146,14 @@
                     <h5
                       class="text-light text-uppercase mb-3 animated slideInDown"
                     >
-                      Welcome to Apex
+                      주주동물병원은-
                     </h5>
                     <h1 class="display-2 text-light mb-3 animated slideInDown">
-                      Professional Tiling & Painting Services
+                      반려동물 가족의 <span>행복</span>을 위해
                     </h1>
                     <ol class="breadcrumb mb-4 pb-2">
                       <li class="breadcrumb-item fs-5 text-light">
-                        Commercial
-                      </li>
-                      <li class="breadcrumb-item fs-5 text-light">
-                        Residential
-                      </li>
-                      <li class="breadcrumb-item fs-5 text-light">
-                        Industrial
+                        조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해 최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
                     <a href="" class="btn btn-primary py-3 px-5"
@@ -205,6 +200,7 @@
     <!-- -->
 	
 	<!-- 그럴싸한 문구 -->
+    <%@ include file="empty.jsp"%>
 	<!--  -->
 	
     <!-- 공지/펫정보/contact -->
@@ -215,11 +211,10 @@
     <!--  -->
 
     <!-- Appointment Start -->
-    <%@ include file="empty.jsp"%>
     <!-- Appointment End -->
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5 align-items-end mb-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -266,11 +261,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -342,7 +337,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
     <!-- Footer Start -->

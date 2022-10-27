@@ -443,6 +443,7 @@ progress {
 }
 
 .display-2 {
+	width: 400px;
 	font-size: calc(1.575rem + 3.9vw);
 	font-weight: 700;
 	line-height: 1.2

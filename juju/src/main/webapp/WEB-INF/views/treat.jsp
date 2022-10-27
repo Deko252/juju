@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>  
 
@@ -8,7 +9,7 @@
             <div class="border-start border-5 border-primary ps-4">
               <h6 class="text-body text-uppercase mb-2">Our Services</h6>
               <h1 class="display-6 mb-0">
-                Construction And Renovation Solutions
+                진료과목 안내
               </h1>
             </div>
           </div>
@@ -62,51 +63,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="service-item bg-light overflow-hidden h-100">
-              <img class="img-fluid" src="./resources/img/service-4.jpg" alt="" />
-              <div class="service-text position-relative text-center h-100 p-4">
-                <h5 class="mb-3">Wiring and installation</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <a class="small" href=""
-                  >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="service-item bg-light overflow-hidden h-100">
-              <img class="img-fluid" src="./resources/img/service-5.jpg" alt="" />
-              <div class="service-text position-relative text-center h-100 p-4">
-                <h5 class="mb-3">Tiling and Painting</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <a class="small" href=""
-                  >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="service-item bg-light overflow-hidden h-100">
-              <img class="img-fluid" src="./resources/img/service-6.jpg" alt="" />
-              <div class="service-text position-relative text-center h-100 p-4">
-                <h5 class="mb-3">Interior Design</h5>
-                <p>
-                  Tempor erat elitr rebum at clita dolor diam ipsum sit diam
-                  amet diam et eos
-                </p>
-                <a class="small" href=""
-                  >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+          
+          
+          
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
@@ -8,7 +9,7 @@
             <img class="img-fluid w-100" src="./resources/img/fact-1.jpg" alt="" />
             <div class="facts-overlay">
               <h1 class="display-1">01</h1>
-              <h4 class="text-white mb-3">Construction</h4>
+              <h4 class="text-white mb-3">공지사항</h4>
               <p class="text-white">
                 Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                 clita duo justo erat amet
@@ -24,7 +25,7 @@
             <img class="img-fluid w-100" src="./resources/img/fact-2.jpg" alt="" />
             <div class="facts-overlay">
               <h1 class="display-1">02</h1>
-              <h4 class="text-white mb-3">Mechanical</h4>
+              <h4 class="text-white mb-3">펫정보</h4>
               <p class="text-white">
                 Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                 clita duo justo erat amet
@@ -40,7 +41,7 @@
             <img class="img-fluid w-100" src="./resources/img/fact-3.jpg" alt="" />
             <div class="facts-overlay">
               <h1 class="display-1">03</h1>
-              <h4 class="text-white mb-3">Architecture</h4>
+              <h4 class="text-white mb-3">CONTACT US</h4>
               <p class="text-white">
                 Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                 clita duo justo erat amet

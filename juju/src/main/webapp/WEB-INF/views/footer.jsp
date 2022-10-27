@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
@@ -9,7 +10,7 @@
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
             <h1 class="text-white mb-4">
-              <i class="fa fa-building text-primary me-3"></i>APEX
+              <i class="fa fa-building text-primary me-3"></i>푸터
             </h1>
             <p>
               Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat

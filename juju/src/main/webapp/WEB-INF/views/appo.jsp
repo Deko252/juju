@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <head>
@@ -17,7 +18,7 @@
             <div class="border-start border-5 border-primary ps-4 mb-5">
               <h6 class="text-body text-uppercase mb-2">Why Choose Us!</h6>
               <h1 class="display-6 mb-0">
-                Our Specialization And Company Features
+                진료 예약
               </h1>
             </div>
             
@@ -117,9 +118,9 @@
                 <div
                   class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
                 >
-                  <h1 class="text-white">25</h1>
-                  <h2 class="text-white">Years</h2>
-                  <h5 class="text-white mb-0">Experience</h5>
+                  <h1 class="text-white">의료진 소개</h1>
+                  <h2 class="text-white"></h2>
+                  <h5 class="text-white mb-0"></h5>
                 </div>
               </div>
             </div>

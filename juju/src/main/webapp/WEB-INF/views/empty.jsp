@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
@@ -11,7 +12,7 @@
             <div class="border-start border-5 border-primary ps-4 mb-5">
               <h6 class="text-white text-uppercase mb-2">Appointment</h6>
               <h1 class="display-6 text-white mb-0">
-                A Company Involved In Service And Maintenance
+                그럴싸한 문구
               </h1>
             </div>
             <p class="text-white mb-0">
