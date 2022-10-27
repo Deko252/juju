@@ -2,33 +2,23 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 
+
+<style type="text/css">
+
+.h-100 {
+
+	margin-left: 70px;
+
+}
+
+</style>
+
+
 <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div
-              class="position-relative overflow-hidden ps-5 pt-5 h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100"
-                src="./resources/img/about.jpg"
-                alt=""
-                style="object-fit: cover"
-              />
-              <div
-                class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
-                style="width: 200px; height: 200px"
-              >
-                <div
-                  class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
-                >
-                  <h1 class="text-white">유튜브화면</h1>
-                  <h2 class="text-white"></h2>
-                  <h5 class="text-white mb-0"></h5>
-                </div>
-              </div>
-            </div>
+                <div id="mv_wrap"><iframe title="YouTube video player" src="https://www.youtube.com/embed/a9yWOm2uOio" width="600" height="360" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100">
