@@ -30,14 +30,15 @@ $(function(){//축약형
 <body>
 
 <h2>공지사항</h2>
-          		<thead>
+          	<thead>
 	            	<tr id="top">
 	              		<th scope="col">번호</th>
 	              		<th scope="col">제목</th>
 	              		<th scope="col">글쓴이</th>
 	              		<th scope="col">날짜</th>
 	            	</tr>
-          		</thead>
+     		</thead>
+     		
 	<div id="detailContent">
 		<div style="margin-left: 20px;">
 			<h3>${notice_detail.board_title }</h3>
