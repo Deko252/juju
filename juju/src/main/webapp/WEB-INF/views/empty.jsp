@@ -7,6 +7,50 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style type="text/css">
+.wow > .py-5 {
+	margin-top: 3.5rem;
+}
+.empty-title {
+	text-align: center;
+}
+.empty-title > .border-start {
+	margin-bottom: 1rem !important;
+}
+.border-start > .text-uppercase {
+	letter-spacing: 1em;
+}
+.wow > .text-white:first-child + .text-white {
+	font-size: 13px;
+}
+.empty-border:after {
+	content: "";
+    display: block;
+    width: 290px;
+    border-bottom: 1px solid #8FC1D4;
+    margin: 20px auto;
+}
+@media ( min-width : 768px) {
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+}
+@media (min-width: 992px) {
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.appointment {
+	height: 500px;
+}
+.empty-title {
+	text-align: center;
+}
+}
+</style>
+
 </head>
 <body>
 
@@ -16,12 +60,12 @@
     >
       <div class="container py-5">
         <div class="row g-5">
-          <div class="col-lg-5 col-md-6 wow fadeIn" data-wow-delay="0.3s">
-            <div class="border-start border-5 border-primary ps-4 mb-5">
+          <div class="col-lg-5 col-md-6 wow fadeIn empty-title" data-wow-delay="0.3s">
+            <div class="border-start border-5 border-primary ps-4 mb-5 empty-border">
               <h6 class="text-white text-uppercase mb-2">JUJU Animal Hospital</h6>
-              <h1 class="display-6 text-white mb-0">
+              <h3 class="display-6 text-white mb-0">
                 특별함이 가득한 곳 여기는 주주동물병원 입니다
-              </h1>
+              </h3>
             </div>
             <p class="text-white mb-0">
               고품격 진료와 고객감동 서비스로 모든 반려동물과 보호자의 행복을 함께하는 주주동물병원<br>

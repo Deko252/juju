@@ -11,6 +11,9 @@
 
 <style type="text/css">
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Noto Sans KR', sans-serif !important;
+}
 .logo-img {
 	width: 65px;
 	margin-right: 10px;
@@ -32,7 +35,7 @@
 }
 .dropdown-item:hover, 
 .dropdown-item:focus {
-	color: #1e2125;
+	color: #ffffff !important;
 	background-color: #8FC1D4 !important;
 }
 .carousel-caption {
