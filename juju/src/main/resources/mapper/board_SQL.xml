@@ -8,6 +8,7 @@
 		SELECT n.*, a.a_name   
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 
+		LIMIT #{startPage }, #{lastPage }
 	</select>
 	
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
@@ -44,6 +45,10 @@
 		UPDATE notice_board SET board_del=1 
 		WHERE board_no=#{bno } AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
 	</update>
+	
+	<select id="totalCount" parameterType="HashMap" resultType="integer">
+		SELECT COUNT(*) FROM notice_boardview
+	</select>
 	
 		
 </mapper>

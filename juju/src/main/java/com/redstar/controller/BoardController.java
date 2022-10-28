@@ -19,6 +19,8 @@ import com.redstar.common.CommandMap;
 import com.redstar.service.BoardService;
 import com.redstar.util.Util;
 
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+
 @Controller
 public class BoardController {
 	
@@ -33,8 +35,30 @@ public class BoardController {
 	public ModelAndView notice(CommandMap map) {
 		ModelAndView mv = new ModelAndView("notice");
 		
+		int pageNo = 1;
+		if (map.containsKey("pageNo")) {
+			pageNo = Util.strToInt((String) map.get("pageNo"));
+		}
+
+		// totalCount
+		int totalCount = boardService.totalCount(map.getMap());
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(pageNo);
+		paginationInfo.setRecordCountPerPage(10);
+		paginationInfo.setPageSize(10);
+		paginationInfo.setTotalRecordCount(totalCount);
+
+		int startPage = paginationInfo.getFirstRecordIndex();// 0
+		int lastPage = paginationInfo.getRecordCountPerPage();// 10
+
+		map.put("startPage", startPage);
+		map.put("lastPage", lastPage);
+		
 		List<Map<String, Object>> list = boardService.boardList(map.getMap());
 		mv.addObject("list", list);
+		mv.addObject("pageNo", pageNo);
+		mv.addObject("paginationInfo", paginationInfo);
 		
 		return mv;
 	}

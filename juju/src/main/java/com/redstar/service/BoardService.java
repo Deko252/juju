@@ -16,6 +16,8 @@ public interface BoardService {
 	int update(Map<String, Object> map);
 
 	void postDel(Map<String, Object> map);
+
+	int totalCount(Map<String, Object> map);
 	
 	
 }

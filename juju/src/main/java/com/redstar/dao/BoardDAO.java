@@ -35,6 +35,10 @@ public class BoardDAO extends AbstractDAO {
 		update("board.postDel", map);
 		
 	}
+
+	public int totalCount(Map<String, Object> map) {
+		return (int) selectOne("board.totalCount", map);
+	}
 	
 	
 }

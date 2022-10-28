@@ -44,6 +44,11 @@ public class BoardServiceImpl implements BoardService{
 		boardDAO.postDel(map);
 		
 	}
+
+	@Override
+	public int totalCount(Map<String, Object> map) {
+		return boardDAO.totalCount(map);
+	}
 	
 	
 }
