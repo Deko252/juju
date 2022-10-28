@@ -96,50 +96,9 @@
     </div> -->
     <!-- Topbar End -->
 
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
-    >
-      <a href="index.html" class="navbar-brand d-flex align-items-center">
-          <img class="logo-img" src="./resources/img/logo.png" alt="">
-        <h1 class="m-0">
-        	JUJU
-        </h1>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="index.html" class="nav-item nav-link active">홈으로</a>
-          <a href="about.html" class="nav-item nav-link">병원소개</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >진료과목</a
-            >
-            <div class="dropdown-menu bg-light m-0">
-              <a href="feature.html" class="dropdown-item">내과</a>
-              <a href="appointment.html" class="dropdown-item">외과</a>
-              <a href="team.html" class="dropdown-item">피부과</a>
-            </div>
-          </div> 
-          <a href="service.html" class="nav-item nav-link">진료예약</a>
-          <a href="service.html" class="nav-item nav-link">펫정보</a>
-          <a href="service.html" class="nav-item nav-link">공지사항</a>
-          <a href="service.html" class="nav-item nav-link">로그인</a>
-          <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
+    <!-- 헤더 -->
+    <%@ include file="header.jsp"%>
+    <!-- -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
