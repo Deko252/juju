@@ -35,5 +35,4 @@ public class BoardDAO extends AbstractDAO {
 		update("board.postDel", map);
 		
 	}
-
 }

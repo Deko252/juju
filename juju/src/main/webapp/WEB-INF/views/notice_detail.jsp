@@ -38,7 +38,6 @@ $(function(){//축약형
 	              		<th scope="col">날짜</th>
 	            	</tr>
           		</thead>
-
 	<div id="detailContent">
 		<div style="margin-left: 20px;">
 			<h3>${notice_detail.board_title }</h3>

@@ -161,7 +161,6 @@ tbody > tr:nth-of-type(2n+1):hover > * {
            	<div id="paging" style="text-decoration:none;">
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
            	</div> --%>
-		    
                     	<!-- 글쓰기 -->
                     	<c:if test="${sessionScope.id ne null}">
               				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./write.do'">글쓰기</button>

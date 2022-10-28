@@ -109,7 +109,6 @@ public class BoardController {
 	
 	@GetMapping("/postDel.do")
 	public String postDel(CommandMap map, HttpSession session) {
-		// System.out.println(map.getMap());//{bno=48}
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			boardService.postDel(map.getMap());
