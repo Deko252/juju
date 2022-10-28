@@ -18,7 +18,7 @@
 .empty-title > .border-start {
 	margin-bottom: 1rem !important;
 }
-.border-start > .text-uppercase {
+.border-start > .empty-hospital {
 	letter-spacing: 1em;
 }
 .wow > .text-white:first-child + .text-white {
@@ -62,7 +62,7 @@
         <div class="row g-5">
           <div class="col-lg-5 col-md-6 wow fadeIn empty-title" data-wow-delay="0.3s">
             <div class="border-start border-5 border-primary ps-4 mb-5 empty-border">
-              <h6 class="text-white text-uppercase mb-2">JUJU Animal Hospital</h6>
+              <h6 class="text-white text-uppercase mb-2 empty-hospital">JUJU Animal Hospital</h6>
               <h3 class="display-6 text-white mb-0">
                 특별함이 가득한 곳 여기는 주주동물병원 입니다
               </h3>

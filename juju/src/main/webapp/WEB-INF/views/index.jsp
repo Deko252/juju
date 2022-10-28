@@ -11,39 +11,24 @@
 
 <style type="text/css">
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-	font-family: 'Noto Sans KR', sans-serif !important;
-}
-.logo-img {
-	width: 65px;
-	margin-right: 10px;
-}
-.m-0 {
-	font-size: 50px;
-}
-.collapse {
+.main-button-1 {
 	font-size: 17px;
+    background-color: #8FC1D4 !important;
+    border-color: #8FC1D4 !important;
+    border-radius: 5px !important;
 }
-
-
-.navbar .navbar-nav .nav-link:hover, 
-.navbar .navbar-nav .nav-link.active {
-	color: #8FC1D4 !important;
+.main-button-1:hover {
+	background-color: rgba(0, 0, 0, 0.3) !important;
 }
-.navbar-nav > .nav-item:last-child {
-	color: #dee2e6;
+.main-button-2 {
+	font-size: 17px;
+    background-color: #C68B59 !important;
+    border-color: #C68B59 !important;
+    border-radius: 5px !important;
 }
-.dropdown-item:hover, 
-.dropdown-item:focus {
-	color: #ffffff !important;
-	background-color: #8FC1D4 !important;
-}
-.carousel-caption {
-	background: rgba(0,0,0,.20);
-}
-.btn-primary {
-	background-color: #C68B59;
-	border-color: #C68B59;
+.main-button-2:hover {
+	background-color: #865439 !important;
+	border-color: #865439 !important;
 }
 
 </style>
@@ -130,7 +115,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
                         반려동물 안전강화
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary py-3 px-5">자세히보기</a>
+                    <a href="" class="btn btn-primary py-3 px-5 main-button-1">자세히보기</a>
                   </div>
                 </div>
               </div>
@@ -155,8 +140,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
                         조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해 최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary py-3 px-5"
-                      >More Details</a
+                    <a href="" class="btn btn-primary py-3 px-5 main-button-2"
+                      >자세히보기</a
                     >
                   </div>
                 </div>

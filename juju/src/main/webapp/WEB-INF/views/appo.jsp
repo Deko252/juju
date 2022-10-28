@@ -51,7 +51,7 @@
 }
 .appo-check {
 	justify-content: center;
-	padding-right: 30px;
+	padding-right: 10px;
 }
 .wow > span {
 	text-align: center;
