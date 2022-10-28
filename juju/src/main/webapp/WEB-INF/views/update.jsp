@@ -114,8 +114,7 @@ a.btn-secondary{
 								<a href="notice_detail.do?bno=${detail.board_no }" role="button" class="btn btn-secondary">취소</a>
 							</div>
 						</form>
-                    </div>
-                    
+                    </div>               
                 </div>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afab85b277584170c156a224f1486e30&libraries=services"></script>
         <!-- Footer -->

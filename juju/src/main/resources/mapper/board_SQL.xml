@@ -44,5 +44,7 @@
 	<update id="postDel" parameterType="HashMap">
 		UPDATE notice_board SET board_del=1 
 		WHERE board_no=#{bno } AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
-	</update>	
+	</update>
+	
+		
 </mapper>

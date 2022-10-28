@@ -9,6 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	올라가 제발
+
 </body>
 </html>

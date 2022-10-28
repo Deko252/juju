@@ -44,4 +44,6 @@ public class BoardServiceImpl implements BoardService{
 		boardDAO.postDel(map);
 		
 	}
+	
+	
 }

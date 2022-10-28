@@ -112,7 +112,6 @@ public class BoardController {
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			boardService.postDel(map.getMap());
-		
 
 			return "redirect:/notice.do";
 		} else {
