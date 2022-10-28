@@ -24,6 +24,31 @@ p{
 	font-size: 20px;
 }
 
+.container2{
+	
+	height: 200px;
+    width: 700px;
+    padding-left: 0px;
+    padding-right: 0px;
+	
+}
+
+.w-101{
+	height: 450px;
+}
+
+.h-101{
+	height: 150px !important;
+}
+
+.title1{
+	margin-top: 0;
+}
+
+.mm-1{
+	    margin-top: 30px;
+}
+
 </style>
 
 
@@ -87,15 +112,15 @@ p{
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100" src="./resources/img/mainImg01.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/mainImg01.jpg" alt="Image" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-12 col-lg-10">
 									<div class="container-xxl py-5">
-										<div class="container">
+										<div class="container container2">
 											<div class="row g-5 align-items-end mb-5">
-												<div class="col-lg-6 wow fadeInUp treat_title"
+												<div class="col-lg-6 wow fadeInUp treat_title title1"
 													data-wow-delay="0.1s">
 													<div class="border-start border-5 border-primary ps-4">
 														<h6 class="text-body text-uppercase mb-2">Treatment
@@ -110,44 +135,49 @@ p{
 											<div class="row g-4 justify-content-center">
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.1s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back01.jpg"
-															alt="">
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back01.jpg" 
+															alt="">-->
+														<a href="./treat_detail_1.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">내과 클리닉</h5>
-															<p>호흡기계, 순환기계등</p>
-															<a class="btn btn-primary small"
-																href="./treat_detail_1.do">자세히 보기</a>
+															<h5 class="mb-3 mm-1">내과 클리닉</h5>
+															<!-- <a class="btn btn-primary small"
+																href="./treat_detail_1.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.3s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back02.jpg"
-															alt="" />
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back02.jpg"
+															alt="" /> -->
+														<a href="./treat_detail_2.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">외과</h5>
-															<p>골관절질환, 신경계등</p>
+															 <h5 class="mb-3 mm-1">외과</h5>
+															<!-- <p>골관절질환, 신경계등</p>
 															<a class="btn btn-primary small"
-																href="./treat_detail_2.do">자세히 보기</a>
+																href="./treat_detail_2.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.5s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back03.jpg"
-															alt="" />
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back03.jpg"
+															alt="" /> -->
+														<a href="./treat_detail_3.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">피부과</h5>
-															<p>귀질환, 피부질환 등</p>
+															 <h5 class="mb-3 mm-1">피부과</h5>
+															<!-- <p>귀질환, 피부질환 등</p>
 															<a class="btn btn-primary small"
-																href="./treat_detail_3.do">자세히 보기</a>
+																href="./treat_detail_3.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 											</div>

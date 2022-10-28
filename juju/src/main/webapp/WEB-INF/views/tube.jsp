@@ -8,6 +8,19 @@
 .tube-location {
 	margin-left: 70px;
 }
+.tubesize {
+    padding-left: 0px !important;
+}
+
+.tubesize:after {
+    content: "";
+    display: block;
+    width: 275px;
+    border-bottom: 1px solid #865439;
+    border-width: 5px;
+    margin: 10px 0;
+}
+
 
 </style>
 
@@ -20,7 +33,7 @@
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100 tube-location">
-              <div class="border-start border-5 border-primary ps-4 mb-5">
+              <div class="border-start border-5 border-primary ps-4 mb-5 tubesize">
                 <h6 class="text-body text-uppercase mb-2">About Us</h6>
                 <h1 class="display-6 mb-0">
                   수의사들의 하루

@@ -10,93 +10,7 @@
 <%@ include file="head.jsp"%>
 
 <style type="text/css">
-.logo-img {
-	width: 65px;
-	margin-right: 10px;
-}
 
-.m-0 {
-	font-size: 50px;
-}
-
-.dropdown-menu {
-	font-size: 17px;
-}
-
-.collapse {
-	font-size: 17px;
-}
-
-.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active
-	{
-	color: #8FC1D4 !important;
-}
-
-.navbar-nav>.nav-item:last-child {
-	color: #dee2e6;
-}
-
-.dropdown-item:hover, .dropdown-item:focus {
-	color: #1e2125;
-	background-color: #8FC1D4 !important;
-}
-
-.carousel-caption {
-	background: rgba(0, 0, 0, .20);
-}
-
-.btn-primary {
-	background-color: #C68B59;
-	border-color: #C68B59;
-}
-
-.treat_title {
-	text-align: center;
-}
-
-.service-item:hover a.btn {
-	background-color: #fff;
-	color: #C68B59 !important;
-}
-
-.service-text::before {
-	background: #C68B59;
-}
-
-.service-text h5 {
-	font-size: 28px;
-}
-
-.service-text p {
-	font-size: 16px;
-}
-
-.small {
-	font-size: 17px;
-	background-color: #C68B59;
-	border-color: #C68B59;
-	border-radius: 5px;
-}
-
-.border-start {
-	border-left: none !important;
-}
-
-.border-start:after {
-	content: "";
-	display: block;
-	width: 250px;
-	border-bottom: 1px solid #865439;
-	border-width: 5px;
-	margin: 20px auto;
-}
-
-@media ( min-width : 992px) {
-	.treat_title {
-		flex: 0 0 auto;
-		width: 100%;
-	}
-}
 
 p{
 	color: #8D9297;
@@ -108,6 +22,31 @@ p{
 
 #text{
 	font-size: 20px;
+}
+
+.container2{
+	
+	height: 200px;
+    width: 700px;
+    padding-left: 0px;
+    padding-right: 0px;
+	
+}
+
+.w-101{
+	height: 450px;
+}
+
+.h-101{
+	height: 150px !important;
+}
+
+.title1{
+	margin-top: 0;
+}
+
+.mm-1{
+	    margin-top: 30px;
 }
 
 </style>
@@ -173,15 +112,15 @@ p{
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100" src="./resources/img/mainImg01.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/mainImg01.jpg" alt="Image" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-12 col-lg-10">
 									<div class="container-xxl py-5">
-										<div class="container">
+										<div class="container container2">
 											<div class="row g-5 align-items-end mb-5">
-												<div class="col-lg-6 wow fadeInUp treat_title"
+												<div class="col-lg-6 wow fadeInUp treat_title title1"
 													data-wow-delay="0.1s">
 													<div class="border-start border-5 border-primary ps-4">
 														<h6 class="text-body text-uppercase mb-2">Treatment
@@ -196,44 +135,49 @@ p{
 											<div class="row g-4 justify-content-center">
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.1s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back01.jpg"
-															alt="">
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back01.jpg" 
+															alt="">-->
+														<a href="./treat_detail_1.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">내과 클리닉</h5>
-															<p>호흡기계, 순환기계등</p>
-															<a class="btn btn-primary small"
-																href="./treat_detail_1.do">자세히 보기</a>
+															<h5 class="mb-3 mm-1">내과 클리닉</h5>
+															<!-- <a class="btn btn-primary small"
+																href="./treat_detail_1.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.3s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back02.jpg"
-															alt="" />
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back02.jpg"
+															alt="" /> -->
+														<a href="./treat_detail_2.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">외과</h5>
-															<p>골관절질환, 신경계등</p>
+															 <h5 class="mb-3 mm-1">외과</h5>
+															<!-- <p>골관절질환, 신경계등</p>
 															<a class="btn btn-primary small"
-																href="./treat_detail_2.do">자세히 보기</a>
+																href="./treat_detail_2.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp"
 													data-wow-delay="0.5s">
-													<div class="service-item bg-light overflow-hidden h-100">
-														<img class="img-fluid" src="./resources/img/back03.jpg"
-															alt="" />
+													<div class="service-item bg-light overflow-hidden h-100 h-101">
+														<!-- <img class="img-fluid" src="./resources/img/back03.jpg"
+															alt="" /> -->
+														<a href="./treat_detail_3.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3">피부과</h5>
-															<p>귀질환, 피부질환 등</p>
+															 <h5 class="mb-3 mm-1">피부과</h5>
+															<!-- <p>귀질환, 피부질환 등</p>
 															<a class="btn btn-primary small"
-																href="./treat_detail_3.do">자세히 보기</a>
+																href="./treat_detail_3.do">자세히 보기</a> -->
 														</div>
+														</a>
 													</div>
 												</div>
 											</div>
@@ -257,9 +201,9 @@ p{
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5">
-              <h6 class="text-body text-uppercase mb-2">얏파얏파</h6>
+              <h6 class="text-body text-uppercase mb-2">얏파얏파얏파파</h6>
               <h1 class="display-6 mb-0">
-                집에가는 클리닉
+                외과 클리닉
               </h1>
             </div>
             
@@ -316,7 +260,7 @@ p{
       </div>
       <br>
       <br>
-      <div><h2>얏파하지 않은 하루</h2> <br>
+      <div><h2>얏파 하루</h2> <br>
       <div id="text">같이 황금시대를 이는 인간의 위하여, 군영과 듣기만 말이다. 끓는 발휘하기 이상의 찾아다녀도, 봄바람이다. 무엇을 청춘이 뛰노는 더운지라 힘차게 노년에게서 봄바람이다. 넣는 발휘하기 그와 미묘한 가치를 찾아 속에 것이다. 반짝이는 사람은 미묘한 용기가 눈이 뜨고, 커다란 위하여, 끓는 뿐이다. 구하지 동산에는 소금이라 미인을 없으면, 사랑의 인도하겠다는 봄날의 목숨을 피다. 얼마나 새가 피어나는 만물은 그들을 착목한는 넣는 날카로우나 관현악이며, 쓸쓸하랴? 대고, 피가 바로 가지에 아름답고 이상의 것이다.보라, 사막이다. 그들은 무엇을 소담스러운 작고 없는 것이다. 유소년에게서 평화스러운 청춘의 아니한 노래하며 뜨고, 가슴이 것이다. 가치를 같은 때에, 청춘의 공자는 눈에 피부가 쓸쓸하랴?
 
 하는 길을 끓는 위하여서, 천지는 이성은 따뜻한 교향악이다. 위하여서, 청춘의 사는가 우리의 거선의 목숨을 힘있다. 작고 길지 군영과 쓸쓸하랴? 싸인 꽃 든 새 이상이 인도하겠다는 남는 충분히 아름다우냐? 미인을 가지에 싹이 있는가? 바이며, 천자만홍이 그들은 그것을 위하여서. 두기 트고, 모래뿐일 싸인 행복스럽고 평화스러운 봄바람이다. 되려니와, 거친 위하여, 뜨거운지라, 대고, 쓸쓸하랴? 않는 것은 이상, 약동하다. 불러 유소년에게서 내는 듣는다.

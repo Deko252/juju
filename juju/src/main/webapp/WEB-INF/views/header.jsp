@@ -10,6 +10,9 @@
 
 <style type="text/css">
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Noto Sans KR', sans-serif !important;
+}
 
 .logo-img {
 	width: 65px;
@@ -148,12 +151,12 @@
           </div> 
           <a href="./appo.do" class="nav-item nav-link">진료예약</a>
           <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
-          <a href="./treat.do" class="nav-item nav-link">공지사항</a>
+          <a href="./notice.do" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
 	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
           </c:if>
 		  <c:if test="${sessionScope.id ne null }">
-		  	<a href="./logout.do" >로그아웃</a>
+		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
 		  </c:if>
           
           <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
