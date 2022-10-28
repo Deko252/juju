@@ -250,7 +250,7 @@
 
 /*** Appointment ***/
 .appointment {
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/street.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)), url(../img/street.jpg) center center no-repeat;
     background-size: cover;
 }
 
