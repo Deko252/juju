@@ -32,9 +32,26 @@
 .text-primary {
 	color: #8FC1D4 !important;
 }
-.text-lg-end {
-	margin-top: 40px;
-	align-items: center;
+.appo-box {
+	padding-top: 1.5rem;
+}
+.appo-button {
+	margin-top: 30px;
+	text-align: center !important;
+	flex: 0 0 auto;
+	width: 100%;
+}
+.appo-button .small:hover {
+	background-color: #ffffff;
+	color: #865439;
+	border-color: #C68B59;
+}
+.appo-detail {
+	text-align: center;
+}
+.appo-check {
+	justify-content: center;
+	padding-right: 30px;
 }
 .wow > span {
 	text-align: center;
@@ -65,6 +82,13 @@
     flex: 0 0 auto;
     width: 100%;
 }
+.appo-box {
+    background-color: #F8F9FA;	
+}
+.appo-button{
+	flex: 0 0 auto;
+	width: 100%;
+}
 }
 </style>
 
@@ -72,7 +96,7 @@
 <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6 wow fadeInUp appo-box" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5 appo-title">
               <h6 class="text-body text-uppercase mb-2">Treat Appointment</h6>
               <h1 class="display-6 mb-0">
@@ -82,16 +106,16 @@
             
             <p class="mb-5">
             </p>
-            <div class="row gy-5 gx-4">
+            <div class="row gy-5 gx-4 appo-detail">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center mb-3 appo-check">
                   <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
                   <h5 class="mb-0">24시간 온라인 예약</h5>
                 </div>
                 <span>온라인 예약을 이용하시면<br>전문 상담원이 빠른 예약을<br>도와드립니다</span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center mb-3">
+                <div class="d-flex align-items-center mb-3 appo-check">
                   <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
                   <h5 class="mb-0">주주 진료 시간</h5>
                 </div>
@@ -100,10 +124,10 @@
               
             </div>
             
-            <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-6 text-lg-end wow fadeInUp appo-button" data-wow-delay="0.3s">
             <!-- <a class="btn btn-primary py-3 px-5" href="">More Services</a> -->
             <button type="button" class="btn btn-primary small" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  			예약하기
+  				예약하기
 			</button>
 			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">

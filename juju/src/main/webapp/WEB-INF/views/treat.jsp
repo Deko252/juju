@@ -18,7 +18,7 @@
 	background-color: #fff;
 	color: #C68B59 !important;
 }
-.service-text::before {
+.service-text::before { 
 	background: #C68B59;
 }
 .service-text h5 {
