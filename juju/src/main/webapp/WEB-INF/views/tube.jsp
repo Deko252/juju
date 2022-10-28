@@ -23,16 +23,14 @@
               <div class="border-start border-5 border-primary ps-4 mb-5">
                 <h6 class="text-body text-uppercase mb-2">About Us</h6>
                 <h1 class="display-6 mb-0">
-                  유튜브 제목
+                  수의사들의 하루
                 </h1>
               </div>
               <p>
                 소개문구
               </p>
               <p class="mb-4">
-                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                sed stet lorem sit clita duo justo magna dolore erat amet
+              반려동물들을 책임지는 수의사들의 하루에 대해 알아보는 시간~! 
               </p>
               <div class="border-top mt-4 pt-4">
                 <div class="row g-4">
@@ -40,19 +38,19 @@
                     <i
                       class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                     ></i>
-                    <h6 class="mb-0">Ontime at services</h6>
+                     <a class="btn btn-primary1" href="https://youtu.be/Kv5smyLY3Y0">youtube1</a>            
                   </div>
                   <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
                     <i
                       class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                     ></i>
-                    <h6 class="mb-0">24/7 hours services</h6>
+                    <a class="btn btn-primary2" href="https://youtu.be/OY1jmWMruzs">youtube2</a>                
                   </div>
                   <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
                     <i
                       class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                     ></i>
-                    <h6 class="mb-0">Verified professionals</h6>
+                    <a class="btn btn-primary3" href="https://youtu.be/J7m0YJSVG-w">youtube3</a>                   
                   </div>
                 </div>
               </div>
