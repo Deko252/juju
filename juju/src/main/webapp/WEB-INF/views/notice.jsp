@@ -15,19 +15,8 @@ $(function(){
    <c:if test="${param.result eq '0'}">
       alert("저장할 수 없습니다\n다시 작성해주세요.");
    </c:if>
-    
-   $("#writeBtn").click(function(){
-      var check = 0;
-      <c:if test="${sessionScope.id ne null}">check = 1;</c:if>
-      if(check == 0){   
-         alert("글을 쓰려면 로그인 하셔야 합니다.");
-         location.href="./login.do";
-      } else {
-         location.href="./write.do";//카테고리도 보내기
-      }
-   });
 });
-function linkPage(pageNo){location.href="./board2.do?pageNo="+pageNo;}
+/* function linkPage(pageNo){location.href="./board2.do?pageNo="+pageNo;} */
 </script>
 
 
@@ -144,7 +133,7 @@ tbody > tr:nth-of-type(2n+1):hover > * {
 	<br>
 	<div class="input-form col-md-12 mx-auto">
 	
-	<h2>자유 게시판</h2>
+	<h2>공지사항</h2>
 		<div class="table-responsive">
         	<table class="table table-striped table-sm">
           		<thead>
@@ -174,9 +163,8 @@ tbody > tr:nth-of-type(2n+1):hover > * {
            	</div> --%>
 		    
                     	<!-- 글쓰기 -->
-                    
                     	<c:if test="${sessionScope.id ne null}">
-              				<button id="writeBtn" class="btn btn-primary">글쓰기</button>
+              				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./write.do'">글쓰기</button>
               			</c:if>
 	</div>
 </body>

@@ -24,4 +24,25 @@ public class BoardServiceImpl implements BoardService{
 		return boardDAO.boardList(map);
 	}
 
+	@Override
+	public int write(Map<String, Object> map) {
+		return boardDAO.write(map);
+	}
+
+	@Override
+	public Map<String, Object> detail(Map<String, Object> map) {
+		return boardDAO.detail(map);
+	}
+
+	@Override
+	public int update(Map<String, Object> map) {
+		return boardDAO.update(map);
+	}
+
+	@Override
+	public void postDel(Map<String, Object> map) {
+		boardDAO.postDel(map);
+		
+	}
+
 }

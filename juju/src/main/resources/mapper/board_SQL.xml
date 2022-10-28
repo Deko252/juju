@@ -5,7 +5,9 @@
 <mapper namespace="board">
 
 	<select id="boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM notice_boardview
+		SELECT n.*, a.a_name   
+		FROM notice_boardview n JOIN admin a
+		ON a.a_no=n.b_no 
 	</select>
 	
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
@@ -17,21 +19,32 @@
 		WHERE n.board_no=#{bno }
 	</select>
 
-	<update id="postDel" parameterType="HashMap">
-		UPDATE big_board SET board_del=1 
-		WHERE board_no=#{bno } AND b_no=(SELECT b_no FROM big_user WHERE b_id=#{id })
-	</update>
 	
 	<insert id="write" parameterType="HashMap">
-		INSERT INTO big_board (board_title, board_content, b_no
+		INSERT INTO notice_board (board_title, board_content, b_no
 		<if test="file != null">, board_file</if>)
-		VALUES(#{title }, #{content }, (SELECT b_no FROM big_user WHERE b_id=#{id })
+		VALUES(#{title }, #{content }, (SELECT a_no FROM admin WHERE a_id=#{id })
 		<if test="file != null">, #{file }</if>)
 	</insert>
 	
+	<select id="detail" parameterType="HashMap" resultType="HashMap">
+		SELECT * FROM notice_boardview 
+		WHERE board_no=#{bno } 
+		<if test="id != null">	
+			AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
+		</if>
+		
+	</select>
+	
 	<update id="update" parameterType="HashMap">
-		UPDATE big_board SET board_title=#{title }, board_content=#{content } 
-		WHERE board_no=#{board_no } AND b_no= (SELECT b_no FROM big_user WHERE b_id=#{id })
+		UPDATE notice_board SET board_title=#{title }, board_content=#{content } 
+		WHERE board_no=#{board_no } AND b_no= (SELECT a_no FROM admin WHERE a_id=#{id })
 	</update>
+	
+	<update id="postDel" parameterType="HashMap">
+		UPDATE notice_board SET board_del=1 
+		WHERE board_no=#{bno } AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
+	</update>
+	
 	
 </mapper>

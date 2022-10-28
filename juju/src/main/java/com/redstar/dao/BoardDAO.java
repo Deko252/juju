@@ -18,4 +18,22 @@ public class BoardDAO extends AbstractDAO {
 		return selectList("board.boardList", map);
 	}
 
+	public int write(Map<String, Object> map) {
+		return (int) insert("board.write", map);
+	}
+
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> detail(Map<String, Object> map) {
+		return (Map<String, Object>) selectOne("board.detail", map);
+	}
+
+	public int update(Map<String, Object> map) {
+		return (int) update("board.update", map);
+	}
+
+	public void postDel(Map<String, Object> map) {
+		update("board.postDel", map);
+		
+	}
+
 }

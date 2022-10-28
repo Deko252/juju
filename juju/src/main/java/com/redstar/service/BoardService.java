@@ -9,4 +9,12 @@ public interface BoardService {
 
 	List<Map<String, Object>> boardList(Map<String, Object> map);
 
+	int write(Map<String, Object> map);
+
+	Map<String, Object> detail(Map<String, Object> map);
+
+	int update(Map<String, Object> map);
+
+	void postDel(Map<String, Object> map);
+
 }

@@ -22,7 +22,7 @@ public class IndexController {
 		
 		return mv;
 	}
-	
+	 
 	@GetMapping("intro.do")
 	public String intro() {
 		return "intro";
