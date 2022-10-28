@@ -99,7 +99,7 @@ h2{
 	padding-top: 5px;
     text-decoration: none;
 }
-.table-responsive {
+td {
 	border-bottom: 1px solid gray;
 }
 tbody > tr:hover > * {
@@ -114,27 +114,28 @@ tbody > tr:nth-of-type(2n+1):hover > * {
 #top > th:first-child + th { width: 50%;}
 #top > th:first-child + th + th{ width: 20%;}
 #top > th:first-child + th + th + th{ width: 20%;}
-</style>
 
-
-<style type="text/css">
 @media (max-width: 349px) {
- .footer{
+.footer{
  	display: none;
- }
+ 	}
 }
+
 </style>
+
+
+
 
 </head>
 
-<body id="page-top">
+<body>
 
 	<!-- content -->
 	<br>
 	<div class="input-form col-md-12 mx-auto">
 	
 	<h2>공지사항</h2>
-		<div class="table-responsive">
+		<div class="table">
         	<table class="table table-striped table-sm">
           		<thead>
 	            	<tr id="top">

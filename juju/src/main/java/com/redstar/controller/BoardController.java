@@ -50,11 +50,14 @@ public class BoardController {
 			if (map.get("title") != null && map.get("content") != null) {
 				map.put("id", session.getAttribute("id"));
 
+				if(!file.isEmpty()) {
 					String realPath = servletContext.getRealPath("resources/upload");
 					String fileName = Util.save(realPath, file);
 					map.put("file", fileName);
+				}
 				
 				int result = boardService.write(map.getMap());
+				System.out.println(map.getMap());
 				System.out.println(result);
 
 				return "redirect:/notice.do?result=" + result;

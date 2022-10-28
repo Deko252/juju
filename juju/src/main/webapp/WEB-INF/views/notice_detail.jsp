@@ -42,9 +42,9 @@ $(function(){//축약형
 		<div style="margin-left: 20px;">
 			<h3>${notice_detail.board_title }</h3>
 		</div>
-		<div id="detailContentWriter">${notice_detail.b_name }/${notice_detail.board_date }</div>
+		<div id="detailContentWriter">${notice_detail.a_name }/${notice_detail.board_date }</div>
 		<div id="detailContentMain">${notice_detail.board_content }
-			<c:if test="${detail2.board_file ne null}">
+			<c:if test="${notice_detail.board_file ne null}">
 				<img alt="img" src="./resources/upload/${notice_detail.board_file }">
 			</c:if>
 		</div>

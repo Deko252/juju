@@ -19,7 +19,6 @@
 		WHERE n.board_no=#{bno }
 	</select>
 
-	
 	<insert id="write" parameterType="HashMap">
 		INSERT INTO notice_board (board_title, board_content, b_no
 		<if test="file != null">, board_file</if>)
