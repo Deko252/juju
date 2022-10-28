@@ -33,11 +33,11 @@
           <div class="nav-item dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true"
               data-bs-toggle="dropdown"
               >진료과목</a
             >
-            <div class="dropdown-menu bg-light m-0">
+            <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
               <a href="./treat_detail_1.do" class="dropdown-item">내과</a>
               <a href="./treat_detail_2.do" class="dropdown-item">외과</a>
               <a href="./treat_detail_3.do" class="dropdown-item">피부과</a>
@@ -45,8 +45,9 @@
           </div> 
           <a href="./appo.do" class="nav-item nav-link">진료예약</a>
           <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
-          <a href="./notice.do" class="nav-item nav-link">공지사항</a>
+          <a href="./treat.do" class="nav-item nav-link">공지사항</a>
           <a href="./admin_login.do" class="nav-item nav-link">로그인</a>
+          <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
         </div>
       </div>
     </nav>

@@ -19,6 +19,10 @@
 	font-size: 50px;
 }
 
+.dropdown-menu {
+	font-size: 17px;
+}
+
 .collapse {
 	font-size: 17px;
 }

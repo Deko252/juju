@@ -58,13 +58,12 @@
             <img class="img-fluid w-100" src="./resources/img/fact-4.jpg" alt="" />
             <div class="facts-overlay">
               <h1 class="display-1">04</h1>
-              <h4 class="text-white mb-3">Interior Design</h4>
+              <h4 class="text-white mb-3">펫 호텔</h4>
               <p class="text-white">
-                Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                clita duo justo erat amet
+                DogSpa
               </p>
-              <a class="text-white small" href=""
-                >READ MORE<i class="fa fa-arrow-right ms-3"></i
+              <a class="text-white small" href="https://dogspa.com"
+                >이곳입니다 <i class="fa fa-arrow-right ms-3"></i
               ></a>
             </div>
           </div>
