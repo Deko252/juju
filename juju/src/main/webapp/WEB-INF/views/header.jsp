@@ -30,6 +30,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	color: #8D9297 !important;
 }
 
+.dorpdown-font:hover{
+	color: #fff !important;
+}
+
 .dropdown-menu {
 	font-size: 17px;
 }
@@ -144,9 +148,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
               >진료과목</a
             >
             <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
-              <a href="./treat_detail_1.do" class="dropdown-item">내과</a>
-              <a href="./treat_detail_2.do" class="dropdown-item">외과</a>
-              <a href="./treat_detail_3.do" class="dropdown-item">피부과</a>
+              <a href="./treat_detail_1.do" class="dropdown-item dorpdown-font">내과</a>
+              <a href="./treat_detail_2.do" class="dropdown-item dorpdown-font">외과</a>
+              <a href="./treat_detail_3.do" class="dropdown-item dorpdown-font">피부과</a>
             </div>
           </div> 
           <a href="./appo.do" class="nav-item nav-link">진료예약</a>
