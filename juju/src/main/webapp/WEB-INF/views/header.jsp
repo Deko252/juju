@@ -7,10 +7,114 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style type="text/css">
+
+
+.logo-img {
+	width: 65px;
+	margin-right: 10px;
+}
+
+.m-0 {
+	font-size: 50px;
+}
+.navbar .navbar-nav .nav-link {
+	color: #8D9297 !important;
+}
+
+.dropdown-item {
+	color: #8D9297 !important;
+}
+
+.dropdown-menu {
+	font-size: 17px;
+}
+.collapse {
+	font-size: 17px;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active
+	{
+	color: #8FC1D4 !important;
+}
+
+.navbar-nav>.nav-item:last-child {
+	color: #dee2e6;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+	color: #1e2125;
+	background-color: #8FC1D4 !important;
+}
+
+.carousel-caption {
+	background: rgba(0, 0, 0, .20);
+}
+
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+}
+
+.treat_title {
+	text-align: center;
+}
+
+.service-item:hover a.btn {
+	background-color: #fff;
+	color: #C68B59 !important;
+}
+
+.service-text::before {
+	background: #C68B59;
+}
+
+.service-text h5 {
+	font-size: 28px;
+}
+
+.service-text p {
+	font-size: 16px;
+}
+
+.small {
+	font-size: 17px;
+	background-color: #C68B59;
+	border-color: #C68B59;
+	border-radius: 5px;
+}
+
+.border-start {
+	border-left: none !important;
+}
+
+.border-start:after {
+	content: "";
+	display: block;
+	width: 250px;
+	border-bottom: 1px solid #865439;
+	border-width: 5px;
+	margin: 20px auto;
+}
+
+@media ( min-width : 992px) {
+	.treat_title {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.navbar .nav-item .dropdown-menu {
+		right: none !important;
+	}
+}
+
+
+</style>
+
 </head>
 <body>
 	<nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color"
     >
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
           <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
@@ -33,8 +137,7 @@
           <div class="nav-item dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true"
-              data-bs-toggle="dropdown"
+              class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true"    
               >진료과목</a
             >
             <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
@@ -46,7 +149,13 @@
           <a href="./appo.do" class="nav-item nav-link">진료예약</a>
           <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
           <a href="./treat.do" class="nav-item nav-link">공지사항</a>
-          <a href="./admin_login.do" class="nav-item nav-link">로그인</a>
+          <c:if test="${sessionScope.id eq null }">
+	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
+          </c:if>
+		  <c:if test="${sessionScope.id ne null }">
+		  	<a href="./logout.do" >로그아웃</a>
+		  </c:if>
+          
           <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
         </div>
       </div>
