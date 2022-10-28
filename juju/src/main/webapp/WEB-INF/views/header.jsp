@@ -33,11 +33,11 @@
           <div class="nav-item dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true"
               data-bs-toggle="dropdown"
               >진료과목</a
             >
-            <div class="dropdown-menu bg-light m-0">
+            <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
               <a href="./treat_detail_1.do" class="dropdown-item">내과</a>
               <a href="./treat_detail_2.do" class="dropdown-item">외과</a>
               <a href="./treat_detail_3.do" class="dropdown-item">피부과</a>
