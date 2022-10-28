@@ -1,13 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>    
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+   
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<style>
+<%@ include file="head.jsp"%>
+
+
+<style type="text/css">
 .intro{
 height:200px;
 text-align: center;
@@ -69,7 +71,9 @@ img.famliy2{
 
 
 
+
 <body>
+<%@ include file="header.jsp"%>
 	<div class="intro">병원 소개</div>
 	<div class="title"> <span> 제목 </span></div>
 	<p>
@@ -82,8 +86,24 @@ img.famliy2{
 	</p>
 	<img class="famliy2" alt="picc" src="./resources/img/int2.jpg">
 	
+	  	<%@ include file="footer.jsp"%>
+
+		<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+		class="bi bi-arrow-up"></i></a>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./resources/lib/wow/wow.min.js"></script>
+	<script src="./resources/lib/easing/easing.min.js"></script>
+	<script src="./resources/lib/waypoints/waypoints.min.js"></script>
+	<script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="./resources/js/main.js"></script>
 	
-	<%@ include file="footer.jsp"%>
 	
+
 </body>
 </html>
