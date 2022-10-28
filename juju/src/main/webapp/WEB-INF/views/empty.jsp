@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<style type="text/css">
+<style type="text/css"> 
 .wow > .py-5 {
 	margin-top: 3.5rem;
 }

@@ -20,6 +20,29 @@
 .main-button-1:hover {
 	background-color: rgba(0, 0, 0, 0.3) !important;
 }
+.text-uppercase {
+	font-size: 1.3rem !important;
+}
+.col-12 .main-juju {
+	margin-bottom: 0.1rem !important;
+	margin-left: 0.5rem;
+	color: #8FC1D4 !important;
+	letter-spacing: 0.3rem;
+	font-size: 1.5rem !important;
+}
+.col-12 .main-juju-02 {
+	letter-spacing: 0.3rem;
+}
+.main-text .fs-5 {
+	font-size: 1.2rem !important;
+}
+
+.main-sec {
+	text-align: center;
+}
+.main-sec-title {
+	width: 100% !important;
+}
 .main-button-2 {
 	font-size: 17px;
     background-color: #C68B59 !important;
@@ -27,10 +50,20 @@
     border-radius: 5px !important;
 }
 .main-button-2:hover {
-	background-color: #865439 !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-color: #865439 !important;
 }
-
+@media (min-width: 1200px) {
+.display-2 {
+    font-size: 5rem !important;
+}
+}
+@media (min-width: 992px) {
+.col-lg-10 .main-text-2{
+  flex: 0 0 auto;
+  width: 100%;
+}
+}
 </style>
 
 </head>
@@ -98,13 +131,13 @@
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12 col-lg-10">
-                    <h5 class="text-light text-uppercase mb-3 animated slideInDown">
+                    <h3 class="text-light text-uppercase mb-3 animated slideInDown main-juju">
                       주주동물병원
-                    </h5>
+                    </h3>
                     <h1 class="display-2 text-light mb-3 animated slideInDown">
                       ONE STOP TOTAL CLINIC
                     </h1>
-                    <ol class="breadcrumb mb-4 pb-2">
+                    <ol class="breadcrumb mb-4 pb-2 main-text">
                       <li class="breadcrumb-item fs-5 text-light">
                         빠른 진단
                       </li>
@@ -122,22 +155,20 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="w-100" src="./resources/img/mainImg02.jpg" alt="Image" />
+            <img class="w-100" src="./resources/img/mainImg03.jpg" alt="Image" />
             <div class="carousel-caption">
-              <div class="container">
+              <div class="container main-sec">
                 <div class="row justify-content-center">
                   <div class="col-12 col-lg-10">
-                    <h5
-                      class="text-light text-uppercase mb-3 animated slideInDown"
-                    >
+                    <div class="text-light text-uppercase mb-3 animated slideInDown main-juju-02">
                       주주동물병원은-
-                    </h5>
-                    <h1 class="display-2 text-light mb-3 animated slideInDown">
+                    </div>
+                    <h1 class="display-2 text-light mb-3 animated slideInDown main-sec-title">
                       반려동물 가족의 <span>행복</span>을 위해
                     </h1>
                     <ol class="breadcrumb mb-4 pb-2">
-                      <li class="breadcrumb-item fs-5 text-light">
-                        조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해 최고를 지향하며 노력하겠습니다.
+                      <li class="breadcrumb-item fs-5 text-light main-text-2">
+                        조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해<br>최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
                     <a href="" class="btn btn-primary py-3 px-5 main-button-2"

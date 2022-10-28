@@ -220,7 +220,7 @@
 
 
 /*** Service ***/
-.service-text::before {
+.service-text::before { 
     position: absolute;
     content: "";
     width: 100%;
