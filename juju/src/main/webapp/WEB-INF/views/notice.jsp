@@ -9,6 +9,8 @@
 <html lang="ko">
 <head> 
 
+
+
 <script type="text/javascript">
 $(function(){
    <c:if test="${param.result eq '1'}">
@@ -40,44 +42,40 @@ h2{
 }
 
 #notice_box{
-	border: 1px red solid;
 	margin: 0 auto;
 	width: 1000px;
 	height: 2500px;
+	border: 1px solid red;
 }
 #top_content{
-	border: 1px red solid;
 	width: 100%;
 	height:10%;
 	display: flex;
 	text-align: left;
+	border: 1px green solid;
+	margin-bottom: 5px;
 }
 #top_text{
 	width: 80%;
 	position:relative;
-	
-}
-#top_text{
-	border: 1px solid aqua;
+	border: 1px solid red;
 	
 }
 #content_tit{
 	font-size: 20px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 #text_wrap{
 	position:absolute;
-	top:30;
+	top:10;
 	left:25;
 	bottom:10;
-	border: 1px solid black;
 	max-width: 500px;
 	height: 80%;
 }
 
 #thumnail{
 	width: 20%;
-	border: 1px red solid;
 }
 #thumnail img{
 	max-width: 100%;
@@ -133,7 +131,10 @@ footer{
 		          			<div id="top_text">
 		          				<div id="text_wrap">
               						<div id="content_tit">${s.board_title }</div>
-              						<div><a href="./notice_detail.do?bno=${s.board_no }">${s.board_content }</a></div>
+              						<div>
+  
+              							<a href="./notice_detail.do?bno=${s.board_no }">${s.board_content }</a>
+              						</div>
               							<div>${s.a_name } / ${s.board_date }</div>
               							</div>
               				</div>
@@ -152,6 +153,6 @@ footer{
               			</c:if>
               			
              
-		</body>
+		</body> 
 </html>
 	
