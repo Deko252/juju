@@ -3,8 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
 <%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%> 
-
 <%@ include file="head.jsp" %>   
+
 <!DOCTYPE html>
 <html lang="ko">
 <head> 
@@ -50,19 +50,31 @@ h2{
 	width: 100%;
 	height:10%;
 	display: flex;
-	text-align: center;
+	text-align: left;
 }
 #top_text{
 	width: 80%;
 	position:relative;
-}
-#text_foot{
-	border: 1px blue solid;
-	width:200px;
-	position:absolute;
-	bottom:0;
 	
 }
+#top_text{
+	border: 1px solid aqua;
+	
+}
+#content_tit{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#text_wrap{
+	position:absolute;
+	top:30;
+	left:25;
+	bottom:10;
+	border: 1px solid black;
+	max-width: 500px;
+	height: 80%;
+}
+
 #thumnail{
 	width: 20%;
 	border: 1px red solid;
@@ -70,9 +82,6 @@ h2{
 #thumnail img{
 	max-width: 100%;
 	max-height: 100%;
-}
-#top_text{
-	border: 1px solid black;
 }
 #writeBtn {
 	position: relative;
@@ -122,11 +131,11 @@ footer{
             		<div id="top_content">
 		          		<div id="thumnail"><img alt="img" src="./resources/upload/${s.board_file }"></div>
 		          			<div id="top_text">
-              					<div>${s.board_title }</div>
-              					<div><a href="./notice_detail.do?bno=${s.board_no }">${s.board_content }</a></div>
-              						<div id="text_foot">
+		          				<div id="text_wrap">
+              						<div id="content_tit">${s.board_title }</div>
+              						<div><a href="./notice_detail.do?bno=${s.board_no }">${s.board_content }</a></div>
               							<div>${s.a_name } / ${s.board_date }</div>
-              						</div>
+              							</div>
               				</div>
             		</div>
           		</c:forEach>	
