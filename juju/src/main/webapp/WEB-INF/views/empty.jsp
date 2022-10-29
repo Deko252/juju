@@ -8,7 +8,11 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<style type="text/css"> 
+<style type="text/css">
+
+.empty-body {
+	margin-top: 200px !important;
+}
 .wow > .py-5 {
 	margin-top: 3.5rem;
 }
@@ -54,10 +58,7 @@
 </head>
 <body>
 
-<div
-      class="container-fluid appointment my-5 py-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
+<div class="container-fluid appointment my-5 py-5 wow fadeIn empty-body" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-5 col-md-6 wow fadeIn empty-title" data-wow-delay="0.3s">

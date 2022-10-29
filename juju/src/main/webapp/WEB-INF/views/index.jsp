@@ -10,6 +10,100 @@
 <%@ include file="head.jsp"%>
 
 <style type="text/css">
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+	font-family: 'Noto Sans KR', sans-serif !important;
+}
+
+.logo-img {
+	width: 65px;
+	margin-right: 10px;
+}
+
+.m-0 {
+	font-size: 50px;
+}
+.navbar .navbar-nav .nav-link {
+	color: #8D9297 !important;
+}
+
+.dropdown-item {
+	color: #8D9297 !important;
+}
+
+.dorpdown-font:hover{
+	color: #fff !important;
+}
+
+.dropdown-menu {
+	font-size: 17px;
+}
+.collapse {
+	font-size: 17px;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active
+	{
+	color: #8FC1D4 !important;
+}
+
+.navbar-nav>.nav-item:last-child {
+	color: #dee2e6;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+	color: #1e2125;
+	background-color: #8FC1D4 !important;
+}
+
+.carousel-caption {
+	background: rgba(0, 0, 0, .20);
+}
+
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+}
+
+.treat_title {
+	text-align: center;
+}
+
+.service-item:hover a.btn {
+	background-color: #fff;
+	color: #C68B59 !important;
+}
+
+.service-text::before {
+	background: #C68B59;
+}
+
+.service-text h5 {
+	font-size: 28px;
+}
+
+.service-text p {
+	font-size: 16px;
+}
+
+.small {
+	font-size: 17px;
+	background-color: #C68B59;
+	border-color: #C68B59;
+	border-radius: 5px;
+}
+
+.border-start {
+	border-left: none !important;
+}
+
+.border-start:after {
+	content: "";
+	display: block;
+	width: 250px;
+	border-bottom: 1px solid #865439;
+	border-width: 5px;
+	margin: 20px auto;
+}
 
 .main-button-1 {
 	font-size: 17px;
@@ -53,16 +147,35 @@
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-color: #865439 !important;
 }
+.back-to-top {
+	border-radius: 5px !important;
+}
+
+/* 미디어 */
 @media (min-width: 1200px) {
-.display-2 {
-    font-size: 5rem !important;
-}
-}
+
+.main-first {
+	    width: 800px !important;	
+	}
+	.display-2 {
+	    font-size: 5rem !important;
+	}
+	}
 @media (min-width: 992px) {
-.col-lg-10 .main-text-2{
-  flex: 0 0 auto;
-  width: 100%;
-}
+	.col-lg-10 {
+		width: 100% !important;
+	}
+	.col-lg-10 .main-text-2{
+	  flex: 0 0 auto;
+	  width: 100%;
+	}
+	.treat_title {
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	.navbar .nav-item .dropdown-menu {
+		right: none !important;
+	}
 }
 </style>
 
@@ -118,11 +231,55 @@
     <!-- Topbar End -->
 
     <!-- 헤더 -->
-    <%@ include file="header.jsp"%>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color"
+    >
+      <a href="./index.do" class="navbar-brand d-flex align-items-center">
+          <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
+        <h1 class="m-0">
+        	JUJU
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-3 py-lg-0">
+          <a href="#main01" class="nav-item nav-link active">홈으로</a>
+          <a href="#intro02" class="nav-item nav-link">병원소개</a>
+          <div class="nav-item dropdown">
+            <a href="#treat03" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+            진료과목</a>
+            <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
+              <a href="./treat_detail_1.do" class="dropdown-item dorpdown-font">내과</a>
+              <a href="./treat_detail_2.do" class="dropdown-item dorpdown-font">외과</a>
+              <a href="./treat_detail_3.do" class="dropdown-item dorpdown-font">피부과</a>
+            </div>
+          </div> 
+          <a href="#treat03" class="nav-item nav-link">진료예약</a>
+          <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
+          <a href="./notice.do" class="nav-item nav-link">공지사항</a>
+          <c:if test="${sessionScope.id eq null }">
+	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
+          </c:if>
+		  <c:if test="${sessionScope.id ne null }">
+		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
+		  </c:if>
+          
+          <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->
+        </div>
+      </div>
+    </nav>
     <!-- -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    	<a name="main01"></a> 
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -134,7 +291,7 @@
                     <h3 class="text-light text-uppercase mb-3 animated slideInDown main-juju">
                       주주동물병원
                     </h3>
-                    <h1 class="display-2 text-light mb-3 animated slideInDown">
+                    <h1 class="display-2 text-light mb-3 animated slideInDown main-first">
                       ONE STOP TOTAL CLINIC
                     </h1>
                     <ol class="breadcrumb mb-4 pb-2 main-text">
@@ -155,6 +312,7 @@
             </div>
           </div>
           <div class="carousel-item">
+          	<a name="intro02"></a> 
             <img class="w-100" src="./resources/img/mainImg03.jpg" alt="Image" />
             <div class="carousel-caption">
               <div class="container main-sec">
@@ -202,10 +360,12 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- 진료과목 소개 시작 -->
+    <!-- 진료과목 -->
     <%@ include file="treat.jsp"%>
-    <!-- -->
-    
+    <a name="treat03"></a>
+    <!--  -->
+
+
 	<!-- 진료예약 -->
     <%@ include file="appo.jsp"%>
     <!-- -->
