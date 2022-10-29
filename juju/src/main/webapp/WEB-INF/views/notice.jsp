@@ -73,7 +73,6 @@ h2{
 	max-width: 500px;
 	height: 80%;
 }
-
 #thumnail{
 	width: 20%;
 }

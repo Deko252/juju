@@ -51,7 +51,6 @@ h2 {
 	border: 1px red solid;
 	margin: 50 200 0 200;
 }
-
 #dc_main{
 	text-align: center;
 }
