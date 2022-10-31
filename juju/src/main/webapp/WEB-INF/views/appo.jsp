@@ -18,6 +18,9 @@
 
 <style>
 
+.appo-body{
+	margin-top: 150px;
+}
 .appo-title{
 	text-align: center;
 }
@@ -93,7 +96,8 @@
 </style>
 
 </head>
-<div class="container-xxl py-5">
+
+<div class="container-xxl py-5 appo-body">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp appo-box" data-wow-delay="0.1s">

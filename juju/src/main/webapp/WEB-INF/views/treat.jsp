@@ -11,6 +11,9 @@
 
 <style type="text/css">
 
+.treat-body {
+	margin-top: 100px;
+}
 .treat_title {
 	text-align: center;
 }
@@ -53,7 +56,7 @@
 </style>
 </head>
 
-<div class="container-xxl py-5">
+<div class="container-xxl py-5 treat-body">
       <div class="container">
         <div class="row g-5 align-items-end mb-5">
           <div class="col-lg-6 wow fadeInUp treat_title" data-wow-delay="0.1s">

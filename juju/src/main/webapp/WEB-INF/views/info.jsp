@@ -12,26 +12,82 @@
 	top: 1rem;
 	-webkit-text-stroke: 2px #8FC1D4 !important;
 }
-.info-title {
+.info-title-wrap {
 	position: absolute;
-	top: 5rem;
+	top: 3.5rem;
+	left: 2.5rem;
 }
-.facts-overlay h1 {
+.info-title-wrap h1 {
     font-size: 40px;
     color: transparent;
     -webkit-text-stroke: 2px var(--primary);
 }
-.facts-overlay h4 {
-	font-size: 30px;
+.info-title-wrap h4 {
+	font-size: 35px;
 }
 .info-icon {
+	width: 50px;
+}
+.info-content {
+	padding-top: 70px;
+}
+.info-content > .info-detail {
+	height: 40px;
+	padding-left: 20px;
+	padding-top:7px;
+	background-color: rgba(0, 0, 0, 0.4);
+	margin-bottom: 50px;
+	color: #C68B59 !important; 
+	transition: all 0.15s ease-in-out;
+	
+}
+.facts-overlay > .info-content .info-detail:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.facts-overlay > .info-content .info-detail:hover .info-font {
+	color: #000000 !important;
+}
+.facts-overlay > .info-content .info-font{
+	color: #ffffff !important;
+}
+.facts-overlay > .info-content .info-font:hover {
+	color: #000000 !important;
+}
+.info-button {
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
 	background-color: #8FC1D4;
+	font-size: 30px;
+	padding-top: 0;
+	padding-left: 14px;
+	transition: all 0.15s ease-in-out;
 }
+.facts-overlay {
+	padding: 40px;
+}
+.facts-overlay > .info-button:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #000000 !important;	
+}
+.info-plus {
+	width: 30px;
+}
+.contact-us {
+}
+.contact-phone {
+	text-align: center;
+	color: #8FC1D4;
+	font-size: 60px;
+	font-weight: bold;	
+}
+.contact-add {
+	color: #ffffff;
+	text-align: center;
+}
+
 
 </style>
 
@@ -43,20 +99,23 @@
           <div class="position-relative">
             <img class="img-fluid w-100" src="./resources/img/fact-1.jpg" alt="" />
             <div class="facts-overlay">
-              <h1 class="display-1">I</h1>
-              <h4 class="text-white mb-3 info-title">공지사항</h4>
-              <div class="text-white">
-                공지 첫번째
+              <!-- <h1 class="display-1">I</h1> -->
+              <div class="info-title-wrap">
+	              <img class="info-icon" src="./resources/img/info-notice.png" alt="" />
+	              <h4 class="text-white mb-3 info-title">공지사항</h4>
               </div>
-              <div class="text-white">
-                공지 두번째
+              <div class="info-content">
+              	  <div class="info-detail">
+		              <a class="info-font" href="">공지 첫번째</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">공지 두번째</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">공지 세번째</a><br>
+              	  </div>
               </div>
-              <div class="text-white">
-                공지 세번째
-              </div>
-              <a class="text-white small info-icon" href="">
-            	+ 아이콘 넣기
-              </a>
+              <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
           </div>
         </div>
@@ -64,12 +123,22 @@
           <div class="position-relative">
             <img class="img-fluid w-100" src="./resources/img/fact-2.jpg" alt="" />
             <div class="facts-overlay">
-              <h1 class="display-1">II</h1>
-              <h4 class="text-white mb-3">펫정보</h4>
-              <p class="text-white">
-                Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                clita duo justo erat amet
-              </p>
+              <!-- <h1 class="display-1">II</h1> -->
+              <div class="info-title-wrap">
+	              <img class="info-icon" src="./resources/img/info-info.png" alt=""/>
+	              <h4 class="text-white mb-3">펫정보</h4>
+	          </div>                  
+              <div class="info-content">
+              	  <div class="info-detail">
+		              <a class="info-font" href="">고양이</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">강아지</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">특수 동물</a><br>
+              	  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -77,12 +146,22 @@
           <div class="position-relative">
             <img class="img-fluid w-100" src="./resources/img/fact-3.jpg" alt="" />
             <div class="facts-overlay">
-              <h1 class="display-1">III</h1>
-              <h4 class="text-white mb-3">펫호텔</h4>
-              <p class="text-white">
-                Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                clita duo justo erat amet
-              </p>
+              <!-- <h1 class="display-1">III</h1> -->
+			  <div class="info-title-wrap">              
+	              <img class="info-icon" src="./resources/img/info-hotel.png" alt="" />
+	              <h4 class="text-white mb-3">펫호텔</h4>
+	          </div>    
+              <div class="info-content">
+              	  <div class="info-detail">
+		              <a class="info-font" href="">첫번째 글</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">두번째 글</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">세번째 글</a><br>
+              	  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -90,10 +169,14 @@
           <div class="position-relative">
             <img class="img-fluid w-100" src="./resources/img/fact-4.jpg" alt="" />
             <div class="facts-overlay">
-              <h1 class="display-1">IV</h1>
-              <h4 class="text-white mb-3">CONTACT US</h4>
-              <p class="text-white">
-                DogSpa
+              <!-- <h1 class="display-1">IV</h1> -->
+              <div class="info-title-wrap">
+	              <img class="info-icon" src="./resources/img/info-contact.png" alt="" />
+	              <h4 class="text-white mb-3">CONTACT US</h4>
+	          </div>    
+              <p class="text-white contact-us">
+                <div class="contact-phone">02.123.4567</div>
+	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>OO시 OO구 OO로</div>
               </p>
             </div>
           </div>
