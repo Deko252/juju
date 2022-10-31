@@ -166,6 +166,56 @@ p{
 }
 }
 
+#imgs{
+	border: 1px solid #fff;
+	background-color: #f0f0f0;
+	height: 400px;
+	width: 100%;
+	display: inline-block;	
+}
+
+#imgs2{
+	/* border: 1px solid blue; */
+	position: relative;
+    margin-top: 55px;
+}
+
+#imgs3{
+	/* border: 1px solid green; */
+	height: 314px;
+	position: relative;
+    width: 100%;
+	padding: 0 24.5px 0 24.5px;
+	list-style-type: disc;
+	list-style: none;
+	background-color: #f0f0f0;
+}
+
+#imgs4{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;    
+    width: 100%;
+    
+}
+#section1{
+	display: block;
+	font-size: 0px;
+	width: 100%;
+}
+
+
+#imgs5{
+	float: left;
+	padding-left: 20.4px;
+}
+
+.bar1:after {
+	margin-left: 0px !important;
+}
+.service-text::before {
+    background: #8FC1D4 !important;
+}
 </style>
 
 
@@ -317,8 +367,8 @@ p{
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="border-start border-5 border-primary ps-4 mb-5">
-              <h6 class="text-body text-uppercase mb-2">얏파얏파</h6>
+            <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
+              <h6 class="text-body text-uppercase mb-2">얏파한</h6>
               <h1 class="display-6 mb-0">
                 내과 클리닉
               </h1>
@@ -381,11 +431,38 @@ p{
       <div id="text">
       밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
       	</div>
-      	<div>
-      <img class="w-100 w-101" src="./resources/img/mainImg01.jpg" alt="Image" />
+      	<div id="imgs">
+     		<div id="imgs2">
+     			<div id="imgs3">
+     				<section id="section1">
+	     				<ul id="imgs4">
+	     					<li id="imgs5">
+	     						<span>
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng01.jpg" width="100%">
+	     						</span>
+	     					</li>
+	     					<li id="imgs5">
+	     						<span>
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng02.jpg" width="100%">
+	     						</span>
+	     					</li>
+	     					<li id="imgs5">
+	     						<span>
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng03.jpg" width="100%">
+	     						</span>
+	     					</li>
+	     					<li id="imgs5">
+	     						<span>
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng04.jpg" width="100%">
+	     						</span>
+	     					</li>
+	     				</ul>
+     				</section>
+     			</div>
+     		</div>
       </div>
-      	
-      </div>
+     </div> 	
+      
       <br>
       <div><h3>내과 진료과목 안내</h3>
       <div id="text">
