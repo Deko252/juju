@@ -8,6 +8,7 @@
 		SELECT n.*, a.a_name   
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 
+		ORDER BY board_no DESC
 		LIMIT #{startPage }, #{lastPage }
 	</select>
 	

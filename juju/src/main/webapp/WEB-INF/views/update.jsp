@@ -4,7 +4,6 @@
     <head>
         <%@ include file="head.jsp" %>
         <!-- Core theme CSS (includes Bootstrap)-->
-
 <link href="./resources/css/map_styles.css" rel="stylesheet" />
 <link href="./resources/assets/css/board.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,14 +14,6 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-<!-- include summernote css/js -->
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-	
-<script type="text/javascript">
-$(function(){$('#summernote').summernote({height: 500});});
-</script>
 
 <style type="text/css">
 #sidebar-wrapper{
@@ -106,7 +97,7 @@ a.btn-secondary{
                     	<form action="./update.do" method="post">
 							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required value="${detail.board_title }">
 							<div class="form-group">
-								<textarea class="form-control" rows="20" id="summernote" name="content" required>${detail.board_content }</textarea>
+								<textarea class="form-control" rows="20" name="content" required>${detail.board_content }</textarea>
 							</div>
 							<input type="hidden" name="board_no" value="${detail.board_no }">
 							<div id="right-btnn">

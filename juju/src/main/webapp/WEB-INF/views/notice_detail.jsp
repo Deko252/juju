@@ -32,7 +32,7 @@
 <style>
 body {
 	border: 1px red solid;
-	height: 1000px;
+	height: 800px;
 }
 
 h2 {
@@ -48,19 +48,37 @@ h2 {
 	margin-left: 300px;
 }
 #dc_container {
-	border: 1px red solid;
+	border: 1px solid black;
 	margin: 50 200 0 200;
+	height: 500px;
 }
 #dc_main{
+	width:1000px;
+	height: 400px;
+	border: 1px solid green;
+	margin: 20 auto;
+	display: block;
+}
+#dc_img{
+	width:900px;
+	height:300px;
+	margin: 0 auto;
 	text-align: center;
+	overflow:hidden;
+	border: 1px blue solid;	
+}
+#dc_text{
+	border: 1px red solid;
+	width:500px;
+	margin: 15 auto;
 }
 #dc_btn{
 	width: 300px;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	border: 1px red solid;
-	margin-left: 440;
 	
 }
 </style>
@@ -69,27 +87,31 @@ h2 {
 	
 	<h2>${notice_detail.board_title }</h2>
 	
-	<div id="tit_detail">
-		<div>${notice_detail.a_name }</div>
-		<div>${notice_detail.board_date }</div>
-	</div>
+		<div id="tit_detail">
+			<div>${notice_detail.a_name }</div>
+			<div>${notice_detail.board_date }</div>
+		</div>
 	<div id="dc_container">
-		<div style="margin-left: 20px;">
-		</div>
 		<div id="dc_main">
-			<c:if test="${notice_detail.board_file ne null}">
-				<img alt="img" src="./resources/upload/${notice_detail.board_file }">
-			</c:if>
-			${notice_detail.board_content }
+		
+			<div id="dc_img">
+				<c:if test="${notice_detail.board_file ne null}">
+					<img alt="img" src="./resources/upload/${notice_detail.board_file }">
+				</c:if>
+			</div>
+		
+				<div id="dc_text">
+					${notice_detail.board_content }
+				</div>
 		</div>
+	</div>	
 		<div id="dc_btn">
 			<c:if test="${sessionScope.id ne null}">
 				<button class="btn btn-primary" id="updateBtn">수정</button>
 				<button class="btn btn-danger" id="delBtn">삭제</button>
 			</c:if>
-				<button class="btn btn-success" onclick="location.href='./notice.do'">돌아가기</button>
+				<button class="btn btn-success" onclick="location.href='./notice.do'">이전</button>
 		</div>
 
-	</div>
 </body>
 </html>

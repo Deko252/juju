@@ -29,11 +29,12 @@ function linkPage(pageNo){location.href="./notice.do?pageNo="+pageNo;}
 
 body{
 	border: 1px red solid;
-	height: 3300px;
+	height: 3000px;
 }
 #img_wrap{
 	width: 100%;
 	height: 450px;
+	object-fit:cover;
 	border: 1px blue solid;
 }
 h2{
@@ -44,7 +45,7 @@ h2{
 #notice_box{
 	margin: 0 auto;
 	width: 1000px;
-	height: 2500px;
+	height: 2000px;
 	border: 1px solid red;
 }
 #top_content{
@@ -77,8 +78,9 @@ h2{
 	width: 20%;
 }
 #thumnail img{
-	max-width: 100%;
-	max-height: 100%;
+	width: 200px;
+	height: 200px;
+	object-fit:cover;
 }
 #writeBtn {
 	position: relative;
@@ -96,15 +98,19 @@ h2{
 }
 
 #paging {
-	margin: 0 auto;
+	margin: 70 auto;
 	font-size: 18px;
 	letter-spacing: 2px;
 	text-decoration: none;
 	width: 600px;
 	height: 30px; 
 	text-align: center;
-	padding-top: 5px;
     text-decoration: none;
+    border: 1px red solid;
+}
+
+a{
+	color: black;
 }
 
 @media (max-width: 349px) {

@@ -14,14 +14,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!-- include summernote css/js -->
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-	
-<script type="text/javascript">
-$(function(){$('#summernote').summernote({height: 500});});
-</script> 
-
 <style type="text/css">
 #sidebar-wrapper{
 	position: fixed;
@@ -100,7 +92,7 @@ a.btn-secondary{
                     	<form action="./write.do" method="post" enctype="multipart/form-data">
 							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required>
 							<div class="form-group">
-								<textarea class="form-control" placeholder="내용을 입력해주세요." rows="20" id="summernote" name="content" required></textarea>
+								<textarea class="form-control" placeholder="내용을 입력해주세요." rows="20" name="content" required></textarea>
 							</div>
 							<input id="findFile" type="file" name="file" accept=".png, .jpg, .gif, .jpeg, .bmp">
 							<div id="writeBtn">
