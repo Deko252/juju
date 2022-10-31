@@ -9,19 +9,47 @@
 <title>Insert title here</title>
 <style type="text/css">
 
+.footer {
+	color: #865439 !important;
+}
+.footer-wrap {
+	height: 250px;
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+}
+.col-lg-3 .footer-title01 {
+	font-size: 35px !important;
+	padding-left: 10px;
+}
+.col-lg-3 .footer-title02 {
+	font-size: 50px;
+}
 .bg-dark {
 	background-color: #8FC1D4 !important;
 }
-
+.footer-end {
+	padding: 15px 0 !important;
+}
+.footer-social {
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	color: #865439;
+	border-color: #865439;
+}
+.btn.btn-outline-primary:hover {
+	color: #ffffff !important;
+	background-color: #865439;
+	border-color: #ffffff;
+}
 </style>	
 </head>
 
-<div
-      class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
+<div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+      <div class="container py-5 footer-wrap">
+        <div class="row g-5 footer-content">
           <div class="col-lg-3 col-md-6">
             <h1 class="text-white mb-4">
               <i class="fa fa-building text-primary me-3"></i>푸터
@@ -29,7 +57,7 @@
             
           </div>
           <div class="col-lg-3 col-md-6">
-            <h4 class="text-light mb-4">Address</h4>
+            <h3 class="text-light mb-4 footer-title01">Address</h3>
             <p>
               <i class="fa fa-map-marker-alt me-3"></i>서울특별시 OO구 OO로 OOO
             </p>
@@ -60,30 +88,30 @@
                 SignUp
               </button>
             </div> -->
-          </div> 
-          
           <div class="col-lg-3 col-md-6">
-			<h4 class="text-light mb-4">02-000-0000</h4>
+			<h2 class="text-light mb-4 footer-title02">02-123-4567</h2>
 			
 			<div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-1" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-square btn-outline-primary me-0" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              	<i class="fab fa-twitter"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              	<i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              	<i class="fab fa-youtube"></i>
+              </a>
+              <a class="btn btn-square btn-outline-primary me-0 footer-social" href="">
+              	<i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           
      
         </div>
+          </div> 
+          
       </div>
-      <div class="container-fluid copyright">
+      <div class="container-fluid copyright footer-end">
         <div class="container">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
