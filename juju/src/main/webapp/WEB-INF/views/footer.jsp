@@ -13,24 +13,45 @@
 	color: #865439 !important;
 }
 .footer-wrap {
+	padding-top: 40px !important;
 	height: 250px;
 }
 .footer-content {
 	display: flex;
 	justify-content: space-between;
 }
+.footer-logo{
+	width: 120px;
+}
+.footer-logo-img {
+	width: 100%;
+}
+.text-white h1 {
+	text-align: center;
+	color: #ffffff;
+}
 .col-lg-3 .footer-title01 {
 	font-size: 35px !important;
 	padding-left: 10px;
 }
 .col-lg-3 .footer-title02 {
+	text-align: right;
 	font-size: 50px;
+}
+.d-flex {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem 0;
 }
 .bg-dark {
 	background-color: #8FC1D4 !important;
 }
+.footer-add {
+	margin-left: 200px;
+}
 .footer-end {
 	padding: 15px 0 !important;
+	border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 .footer-social {
 	width: 50px;
@@ -44,19 +65,30 @@
 	background-color: #865439;
 	border-color: #ffffff;
 }
+@media (min-width: 992px) {
+	.footer-logo {
+		flex: 0 0 auto;
+	    width: 15% !important;
+	}
+	.footer-add {
+	    flex: 0 0 auto;
+	    width: 35% !important;
+	}
+}
 </style>	
 </head>
 
 <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
       <div class="container py-5 footer-wrap">
         <div class="row g-5 footer-content">
-          <div class="col-lg-3 col-md-6">
-            <h1 class="text-white mb-4">
-              <i class="fa fa-building text-primary me-3"></i>푸터
-            </h1>
+          <div class="col-lg-3 col-md-6 footer-logo">
+            <div class="text-white mb-4">
+              <img class="footer-logo-img" alt="" src="./resources/img/logo.png">
+              <h1>JUJU</h1>
+            </div>
             
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 footer-add">
             <h3 class="text-light mb-4 footer-title01">Address</h3>
             <p>
               <i class="fa fa-map-marker-alt me-3"></i>서울특별시 OO구 OO로 OOO
