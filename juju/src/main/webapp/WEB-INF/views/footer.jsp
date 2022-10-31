@@ -41,7 +41,8 @@
 .d-flex {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 2rem 0;
+	padding-left: 5rem;
+	padding-right: 2rem;
 }
 .bg-dark {
 	background-color: #8FC1D4 !important;
@@ -73,6 +74,10 @@
 	.footer-add {
 	    flex: 0 0 auto;
 	    width: 35% !important;
+	}
+	.footer-phone {
+		flex: 0 0 auto;
+	    width: 30% !important;
 	}
 }
 </style>	
@@ -120,7 +125,7 @@
                 SignUp
               </button>
             </div> -->
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 footer-phone">
 			<h2 class="text-light mb-4 footer-title02">02-123-4567</h2>
 			
 			<div class="d-flex pt-2">
