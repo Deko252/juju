@@ -156,7 +156,7 @@ footer{
                     	<c:if test="${sessionScope.id ne null}">
               				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./write.do'">글쓰기</button>
               			</c:if>
-              			
+             <%@ include file="footer.jsp" %> 			
              
 		</body> 
 </html>
