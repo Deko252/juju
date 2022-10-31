@@ -70,31 +70,31 @@ p{
 	font-weight:800;
 }
 
-#top_text_1{
+#top_text1_1{
 	width: 80%;
 	position:relative;
 	padding: 7% 5px;
 	/* border: 1px solid black; */
 }
-#top_text_2{
+#top_text1_2{
 	width: 80%;
 	position:relative;
 	padding: 5% 5px;
 	/* border: 1px solid black; */
 }
-#top_text_3{
+#top_text1_3{
 	width: 80%;
 	position:relative;
 	padding: 6% 5px;
 	/* border: 1px solid black; */
 }
-#top_text_4{
+#top_text1_4{
 	width: 80%;
 	position:relative;
 	padding: 1% 5px;
 	/* border: 1px solid black; */
 }
-#top_text_5{
+#top_text1_5{
 	width: 80%;
 	position:relative;
 	padding: 6% 5px;
@@ -109,7 +109,7 @@ p{
 	/* border: 1px red solid; */
 }
 
-#top_content_1{
+#top_content1_1{
 	width: 100%;
 	height:20%;
 	display: flex;
@@ -470,42 +470,42 @@ p{
       	</div><br>
       <div id="notice_box_1">
         	<table>
-            		<div id="top_content_1">
+            		<div id="top_content1_1">
 		          		<div id="thumnail_1"><h2>호흡기계 내과</h2></div>
-		          			<div id="top_text_1" class="top_text_all">
+		          			<div id="top_text1_1" class="top_text_all">
 		          			코와 비강질환 및 심장과 폐의 청진, 방사선 검사, 혈액검사 등을 통해 <font class="top_text_color">급성호흡기 감염증, 만성적 기관지와 폐질환 등에 대한 치료요법</font>을 실시합니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
+            		<div id="top_content1_1">
 		          		<div id="thumnail_1"><h2>순환기 내과</h2></div>
-		          			<div id="top_text_2" class="top_text_all">
+		          			<div id="top_text1_2" class="top_text_all">
 		          			심장사상충증 등의 진단과 치료, 만성적 심장질환을 가진 노령견에 대한 최신 약물요법을 실시하고 있으며, <font class="top_text_color">특히 심장질환의 경우 점진적인 활력감소, 운동감소 외에 만성적인 기침과 호흡곤란증, 식욕저하, 전신발작 및 마비와 실신증상, 복부팽대증, 호기시와 흡기기의 잡음, 혀의 청색증 등</font>을 보이는 경우 의심할 수 있습니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
+            		<div id="top_content1_1">
 		          		<div id="thumnail_1"><h2>소화기계 내과</h2></div>
-		          			<div id="top_text_3" class="top_text_all">
+		          			<div id="top_text1_3" class="top_text_all">
 		          			<font class="top_text_color">강, 식도, 위, 소장 대장질환을 포함</font>하여, 소화효소분비와 복부장기에 속하는 간과 췌장, 담도관련 질환의 검진을 위해 초음파검사, 임상병리 혈액검사, 방사선 검사가 이루어지며, 질병의 정도와 급만성의 경과에 따라 치료를 실시하고 있습니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
+            		<div id="top_content1_1">
 		          		<div id="thumnail_1"><h2>비뇨기계 내과</h2></div>
-		          			<div id="top_text_4" class="top_text_all">
+		          			<div id="top_text1_4" class="top_text_all">
 		          			암수의 여부에 따라 비뇨생식기계 질환이 다양하게 나타나고 있습니다. 각종 특발성환경이나 약물, 스트레스, 감염 등에 의한 <font class="top_text_color">급만성 신장질환</font>(신부전, 사구체신염, 신결석 등)을 비롯해 <font class="top_text_color">전립선비대와 전립선염, 방광염, 방광종양, 요로결석의 질환들이 다발</font>하고 있습니다.
 방사선검사, 초음파검사, 요로조영술, 신장기능조영술, 정기적인 뇨검사와 기타 검사를 통해 정확한 진단과 치료를 실시하고 있습니다. 만성신부전의 경우 정기적인 신장의 기능검사와 장기간의 관리를 위해 최신의 약물과 신장의 기능을 높여주는 한방요법을 병행치료하고 있습니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
+            		<div id="top_content1_1">
 		          		<div id="thumnail_1"><h2>기타 내과 질환</h2></div>
-		          			<div id="top_text_5" class="top_text_all">
+		          			<div id="top_text1_5" class="top_text_all">
 		          			최근 증가추세인 <font class="top_text_color">유선종양</font>을 비롯해 <font class="top_text_color">피부종양 등의 특수질환</font>에 대한 적절한 치료단계와 예후판단, 보호자의 치료선택에 세포학적 진단과 임상병리검사를 진행하며, 치료에 필수적인 면역계 관련 한방치료를 병행합니다.
               				</div>
             		</div>	

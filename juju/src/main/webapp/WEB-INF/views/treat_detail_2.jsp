@@ -370,7 +370,7 @@ p{
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
               <h6 class="text-body text-uppercase mb-2">얏파한</h6>
               <h1 class="display-6 mb-0">
-                내과 클리닉
+                외과
               </h1>
             </div>
             
@@ -416,7 +416,7 @@ p{
                 <div
                   class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
                 >
-                  <h1 class="text-white">내과</h1>
+                  <h1 class="text-white">외과</h1>
                   <h2 class="text-white"></h2>
                   <h5 class="text-white mb-0"></h5>
                 </div>
@@ -427,7 +427,7 @@ p{
       </div>
       <br>
       <br>
-      <div><h3>내과는</h3>
+      <div><h3>외과는</h3>
       <div id="text">
       밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
       	</div>
@@ -464,7 +464,7 @@ p{
      </div> 	
       
       <br>
-      <div><h3>내과 진료과목 안내</h3>
+      <div><h3>외과 진료과목 안내</h3>
       <div id="text">
       청담우리동물병원은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다. 청담우리의 내과 진료에 대해 자세히 알려드립니다.
       	</div><br>

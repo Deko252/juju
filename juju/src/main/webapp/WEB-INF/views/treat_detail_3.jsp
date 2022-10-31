@@ -54,10 +54,10 @@ p{
 	    font-size: 24px !important;
 }
 
-#notice_box_1{
+#notice_box_3{
 	margin: 0 auto;
 	width: 1000px;
-	height: 1000px;
+	height: 700px;
 	border-top: 2px solid #207ecd;
 }
 .top_text_all{
@@ -70,48 +70,32 @@ p{
 	font-weight:800;
 }
 
-#top_text_1{
+#top_text3_1{
 	width: 80%;
 	position:relative;
-	padding: 7% 5px;
+	padding: 12% 5px;
+	height: 350px;
 	/* border: 1px solid black; */
 }
-#top_text_2{
-	width: 80%;
-	position:relative;
-	padding: 5% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_3{
+#top_text3_2{
 	width: 80%;
 	position:relative;
 	padding: 6% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_4{
-	width: 80%;
-	position:relative;
-	padding: 1% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_5{
-	width: 80%;
-	position:relative;
-	padding: 6% 5px;
+	height: 350px;
 	/* border: 1px solid black; */
 }
 
-#thumnail_1{
+#thumnail_3{
 	width: 40%;
-	padding: 75px 24px;
+	padding: 155px 24px;
 	background-color: #f0f0f0;
 	border-right: 1px solid #CCC;
 	/* border: 1px red solid; */
 }
 
-#top_content_1{
+#top_content3_1{
 	width: 100%;
-	height:20%;
+	height:50%;
 	display: flex;
 	text-align: center;
 	border: 1px solid #CCC;
@@ -370,7 +354,7 @@ p{
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
               <h6 class="text-body text-uppercase mb-2">얏파한</h6>
               <h1 class="display-6 mb-0">
-                내과 클리닉
+                피부과
               </h1>
             </div>
             
@@ -416,7 +400,7 @@ p{
                 <div
                   class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
                 >
-                  <h1 class="text-white">내과</h1>
+                  <h1 class="text-white">피부과</h1>
                   <h2 class="text-white"></h2>
                   <h5 class="text-white mb-0"></h5>
                 </div>
@@ -427,9 +411,9 @@ p{
       </div>
       <br>
       <br>
-      <div><h3>내과는</h3>
+      <div><h3>주요 피부질환 종류</h3>
       <div id="text">
-      밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
+      청담우리동물병원 피부과 클리닉에서 알려드리는 주요 피부질환입니다.
       	</div>
       	<div id="imgs">
      		<div id="imgs2">
@@ -438,22 +422,22 @@ p{
 	     				<ul id="imgs4">
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng01.jpg" width="100%">
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/pbg01.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng02.jpg" width="100%">
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/pbg02.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng03.jpg" width="100%">
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/pbg03.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng04.jpg" width="100%">
+	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/pbg04.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     				</ul>
@@ -464,52 +448,30 @@ p{
      </div> 	
       
       <br>
-      <div><h3>내과 진료과목 안내</h3>
+      <div><h3>피부과 진료과목 안내</h3>
       <div id="text">
-      청담우리동물병원은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다. 청담우리의 내과 진료에 대해 자세히 알려드립니다.
+      청담우리동물병원은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다.
       	</div><br>
-      <div id="notice_box_1">
+      <div id="notice_box_3">
         	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>호흡기계 내과</h2></div>
-		          			<div id="top_text_1" class="top_text_all">
-		          			코와 비강질환 및 심장과 폐의 청진, 방사선 검사, 혈액검사 등을 통해 <font class="top_text_color">급성호흡기 감염증, 만성적 기관지와 폐질환 등에 대한 치료요법</font>을 실시합니다.
+            		<div id="top_content3_1">
+		          		<div id="thumnail_3"><h2>귀질환</h2></div>
+		          			<div id="top_text3_1" class="top_text_all">
+		          			귀에 발생하는 질병들은 보호자들의 세심한 보호가 있다면 예방하거나 발병을 줄일수 있음을 인지하고 병원내원시 마다 정기적으로 검진하여야 합니다. 귀속에서 불괘한 냄새가 나거나, 고개를 좌우로 흔들거나, 귀를 만지면 아파하는 것들은 귓병을 의심해 볼수 있는 증상들입니다. <font class="top_text_color">귀의 해부학적 구조에 의해서 외이도염, 중이염, 내이염으로 구분</font>을 합니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>순환기 내과</h2></div>
-		          			<div id="top_text_2" class="top_text_all">
-		          			심장사상충증 등의 진단과 치료, 만성적 심장질환을 가진 노령견에 대한 최신 약물요법을 실시하고 있으며, <font class="top_text_color">특히 심장질환의 경우 점진적인 활력감소, 운동감소 외에 만성적인 기침과 호흡곤란증, 식욕저하, 전신발작 및 마비와 실신증상, 복부팽대증, 호기시와 흡기기의 잡음, 혀의 청색증 등</font>을 보이는 경우 의심할 수 있습니다.
+            		<div id="top_content3_1">
+		          		<div id="thumnail_3"><h2>피부질환</h2></div>
+		          			<div id="top_text3_2" class="top_text_all">
+		          			반려동물의 피부는 사람과 다르게 피모(털)로서 피부를 덥고 있습니다. 이러한 털과 피부는 여려가지 환경, 영양, 호르몬등에 의해 영향을 받게됩니다. 또한 이러한 피모나 피부에 영향을 주는 질환은 광범위합니다.
+							<font class="top_text_color">곰팡이나 외부기생충</font>이 직접 피부에 감염되는 병이 있는가 하면 <font class="top_text_color">내분비 질환에 의한 호르몬 영향</font>으로 피부에 탈모나 병변을 나타내는 경우나 과민반응의 일종인 음식 알러지, 흡입된 알러지 발생 물질에 의해 피부병을 발생하는 아토피에 이르기 까지 매우 많습니다.
+							우리가 흔히볼 수 있고 치료를 필요로 하는 질병에 대해서만 간단히 분류를 한다면 세균성 피부질환, 곰팡이성 피부질환, 기생충성 피부질환, 내분비성 피부질환, 면역매계성 피부질환, 종양이나 신생물 그리고 음식알러지, 아토피, 접촉성 피부염과 같은 과민성 피부질환들이 있습니다.
               				</div>
             		</div>	
         	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>소화기계 내과</h2></div>
-		          			<div id="top_text_3" class="top_text_all">
-		          			<font class="top_text_color">강, 식도, 위, 소장 대장질환을 포함</font>하여, 소화효소분비와 복부장기에 속하는 간과 췌장, 담도관련 질환의 검진을 위해 초음파검사, 임상병리 혈액검사, 방사선 검사가 이루어지며, 질병의 정도와 급만성의 경과에 따라 치료를 실시하고 있습니다.
-              				</div>
-            		</div>	
-        	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>비뇨기계 내과</h2></div>
-		          			<div id="top_text_4" class="top_text_all">
-		          			암수의 여부에 따라 비뇨생식기계 질환이 다양하게 나타나고 있습니다. 각종 특발성환경이나 약물, 스트레스, 감염 등에 의한 <font class="top_text_color">급만성 신장질환</font>(신부전, 사구체신염, 신결석 등)을 비롯해 <font class="top_text_color">전립선비대와 전립선염, 방광염, 방광종양, 요로결석의 질환들이 다발</font>하고 있습니다.
-방사선검사, 초음파검사, 요로조영술, 신장기능조영술, 정기적인 뇨검사와 기타 검사를 통해 정확한 진단과 치료를 실시하고 있습니다. 만성신부전의 경우 정기적인 신장의 기능검사와 장기간의 관리를 위해 최신의 약물과 신장의 기능을 높여주는 한방요법을 병행치료하고 있습니다.
-              				</div>
-            		</div>	
-        	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>기타 내과 질환</h2></div>
-		          			<div id="top_text_5" class="top_text_all">
-		          			최근 증가추세인 <font class="top_text_color">유선종양</font>을 비롯해 <font class="top_text_color">피부종양 등의 특수질환</font>에 대한 적절한 치료단계와 예후판단, 보호자의 치료선택에 세포학적 진단과 임상병리검사를 진행하며, 치료에 필수적인 면역계 관련 한방치료를 병행합니다.
-              				</div>
-            		</div>	
-        	</table>
+        	
 		    </div>
       </div>
     </div>
