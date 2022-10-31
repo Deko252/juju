@@ -28,14 +28,14 @@ function linkPage(pageNo){location.href="./notice.do?pageNo="+pageNo;}
 <style type="text/css">
 
 body{
-	border: 1px red solid;
+	
 	height: 3000px;
 }
 #img_wrap{
 	width: 100%;
 	height: 450px;
 	object-fit:cover;
-	border: 1px blue solid;
+	
 }
 h2{
 	margin:100 0 30 0;
@@ -46,24 +46,21 @@ h2{
 	margin: 0 auto;
 	width: 1000px;
 	height: 2000px;
-	border: 1px solid red;
+	
 }
 #top_content{
 	width: 100%;
 	height:10%;
 	display: flex;
 	text-align: left;
-	border: 1px green solid;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 #top_text{
 	width: 80%;
 	position:relative;
-	border: 1px solid red;
-	
 }
 #content_tit{
-	font-size: 20px;
+	font-size: 25px;
 	margin-bottom: 5px;
 }
 #text_wrap{
@@ -73,6 +70,11 @@ h2{
 	bottom:10;
 	max-width: 500px;
 	height: 80%;
+}
+#top_writer{
+	position: absolute;
+	width:150px;
+	bottom: -25;
 }
 #thumnail{
 	width: 20%;
@@ -106,7 +108,6 @@ h2{
 	height: 30px; 
 	text-align: center;
     text-decoration: none;
-    border: 1px red solid;
 }
 
 a{
@@ -137,10 +138,11 @@ footer{
 		          				<div id="text_wrap">
               						<div id="content_tit">${s.board_title }</div>
               						<div>
-  
               							<a href="./notice_detail.do?bno=${s.board_no }">${s.board_content }</a>
               						</div>
-              							<div>${s.a_name } / ${s.board_date }</div>
+              								<div id="top_writer">
+              									${s.a_name } / ${s.board_date }
+              								</div>
               							</div>
               				</div>
             		</div>

@@ -250,10 +250,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="#main01" class="nav-item nav-link active">홈으로</a>
-          <a href="#intro02" class="nav-item nav-link">병원소개</a>
+          <a href="./main.do" class="nav-item nav-link active">홈으로</a>
+          <a href="./intro.do" class="nav-item nav-link">병원소개</a>
           <div class="nav-item dropdown">
-            <a href="#treat03" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+            <a href="./treat.do" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
             진료과목</a>
             <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
               <a href="./treat_detail_1.do" class="dropdown-item dorpdown-font">내과</a>
@@ -261,7 +261,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
               <a href="./treat_detail_3.do" class="dropdown-item dorpdown-font">피부과</a>
             </div>
           </div> 
-          <a href="#treat03" class="nav-item nav-link">진료예약</a>
+          <a href="./appo_detail.do" class="nav-item nav-link">진료예약</a>
           <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
           <a href="./notice.do" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
