@@ -33,9 +33,7 @@ body{
 #notice_tit h2{
 	text-align: center;
 	width:500px;
-	
 }
-
 #notice_box{
 	margin: 0 auto;
 	width: 1000px;
