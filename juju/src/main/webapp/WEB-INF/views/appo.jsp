@@ -140,35 +140,34 @@
   				예약하기
 			</button>
 			
-			<%@ include file="appo_detail.jsp" %>
+			<%-- <%@ include file="appo_detail.jsp" %> --%>
 			
          	</div>
            
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">
-              
-              <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-        	  <div class="carousel-inner">
-          	  <div class="carousel-item active">
-              <img class="w-100" src="./resources/img/mainImg01.jpg" alt="Image" />
-              <div class="carousel-caption">
-              
-              <img class="position-absolute w-100 h-100" src="./resources/img/doc02.jpg" alt="" style="object-fit: cover"/>
-              <div class="position-absolute top-0 start-0 bg-white pe-3 pb-3" style="width: 150px; height: 150px">
-                <div class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3">
+            <div
+              class="position-relative overflow-hidden ps-5 pt-5 h-100"
+              style="min-height: 400px"
+            >
+              <img
+                class="position-absolute w-100 h-100"
+                src="./resources/img/doc02.jpg"
+                alt=""
+                style="object-fit: cover"
+              />
+              <div
+                class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
+                style="width: 150px; height: 150px"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
+                >
                   <h2 class="text-white">의료진 소개</h2>
                   <h2 class="text-white"></h2>
                   <h5 class="text-white mb-0"></h5>
                 </div>
               </div>
-              
-              </div>
-              </div>
-              </div>
-              </div>
-            
-              
             </div>
           </div>
         </div>
