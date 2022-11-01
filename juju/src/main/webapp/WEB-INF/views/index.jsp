@@ -10,6 +10,7 @@
 <%@ include file="head.jsp"%>
 
 <style type="text/css">
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-family: 'Noto Sans KR', sans-serif !important;
 }
@@ -25,7 +26,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .navbar .navbar-nav .nav-link {
 	color: #8D9297 !important;
 }
-
+li .login-out {
+	color: #CDCDCD !important;
+}
 .dropdown-item {
 	color: #8D9297 !important;
 }
@@ -149,6 +152,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .back-to-top {
 	border-radius: 5px !important;
+	background-color: #C68B59 !important;
+	border-color: #C68B59 !important;
+}
+.back-to-top:hover {
+	background-color: #865439 !important;
+	border-color: #865439 !important;
 }
 
 /* 미디어 */
@@ -255,10 +264,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
           <a href="#info-05" class="nav-item nav-link">펫정보</a>
           <a href="#info-05" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
-	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
+	          <li> <a href="./admin_login.do" class="nav-item nav-link login-out">로그인</a></li>
           </c:if>
 		  <c:if test="${sessionScope.id ne null }">
-		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
+		  	<a href="./logout.do" class="nav-item nav-link login-out">로그아웃</a>
 		  </c:if>
           
           <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->

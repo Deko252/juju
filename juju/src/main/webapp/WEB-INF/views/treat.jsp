@@ -27,7 +27,7 @@
 .service-text h5 {
 	font-size: 28px;
 }
-.service-text p {
+.service-text p { 
 	font-size: 16px;
 }
 .small {

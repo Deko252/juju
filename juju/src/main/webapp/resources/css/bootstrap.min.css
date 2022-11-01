@@ -27,7 +27,7 @@
 	-bs-light: #F8F9FA; -
 	-bs-dark: #182333; -
 	-bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-		"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+		"Helvetica Neue", Arial, "Noto Sans", "Noto Sans KR", "Liberation Sans", sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
 		"Noto Color Emoji"; -
 	-bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
@@ -48,9 +48,9 @@
 
 body {
 	margin: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: 100;
 	line-height: 1.5;
 	color: #8D9297;
 	background-color: #fff;

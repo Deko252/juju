@@ -57,8 +57,10 @@
 	text-align: center;
 }
 .appo-check {
-	justify-content: center;
-	padding-right: 10px;
+	display: flex !important;
+	justify-content: center !important;
+	padding-right: 50px !important;
+	padding-left: 50px !important;
 }
 .wow > span {
 	text-align: center;
@@ -137,26 +139,11 @@
             <button type="button" class="btn btn-primary small" data-bs-toggle="modal" data-bs-target="#exampleModal">
   				예약하기
 			</button>
-			<div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		      </div>
-		      <div class="modal-body">
-		        ...
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
+			
+			<%@ include file="appo_detail.jsp" %>
+			
          	</div>
            
-            
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div
