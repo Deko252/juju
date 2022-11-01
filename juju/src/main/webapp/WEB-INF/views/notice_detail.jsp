@@ -79,7 +79,6 @@ h2 {
 	align-items: center;
 	justify-content: space-around;
 	border: 1px red solid;
-	
 }
 </style>
 

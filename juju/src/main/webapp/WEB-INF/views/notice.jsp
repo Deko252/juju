@@ -13,7 +13,6 @@
 function linkPage(pageNo){location.href="./notice.do?pageNo="+pageNo;}
 </script>
 
-
 <style type="text/css">
 
 body{
@@ -22,17 +21,19 @@ body{
 #img_wrap{
 	width: 100%;
 	height: 450px;
-	object-fit:cover;
+	position: relative;
+	margin-bottom: 50px;
 }
-#notice_tit{
-	margin: auto;
-	width:500px;
-	margin-bottom:50px;
-	border-bottom: 1px black solid;
+#img_wrap img{
+	width: 100%;
+	height: 450px;
 }
-#notice_tit h2{
+h2{
+	color:#fff;
 	text-align: center;
-	width:500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 #notice_box{
 	margin: 0 auto;
@@ -40,7 +41,8 @@ body{
 	height: 2250px;
 }
 #top_border{
-	border-bottom:1px #666666 solid;
+	border-top:1px #f0f0f0 solid;
+	border-bottom:1px #f0f0f0 solid;
 }
 #top_wrap{
 	width: 1000px;
@@ -115,10 +117,8 @@ footer{
 <body>	
 <%@ include file="header.jsp" %>
 	 <div id="img_wrap">
-		<img alt="귀여운 뭄뭄쓰" src="">
-	</div>
-	<div id="notice_tit">
-	<h2>공지사항</h2>
+			<h2>공지사항</h2>
+		<img alt="귀여운 뭄뭄쓰" src="./resources/img/notice_main.jpg">
 	</div>
 		<div id="notice_box">
         	<table>
@@ -146,14 +146,10 @@ footer{
            	<div id="paging">
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
            	</div>
-                    	<!-- 글쓰기 -->
                     	<c:if test="${sessionScope.id ne null}">
               				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./write.do'">글쓰기</button>
               			</c:if>
              <%@ include file="footer.jsp" %>
-              
 		</body> 
-		
-	
 </html>
 	
