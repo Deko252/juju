@@ -107,7 +107,7 @@
               <div class="info-content">
               <c:forEach items="${in_no }" var="n">
               	  <div class="info-detail">
-		              <a class="info-font" href="">${n.board_title }</a><br>
+		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
               	  </div>        	  
               </c:forEach> 
               </div>
