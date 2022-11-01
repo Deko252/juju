@@ -285,6 +285,7 @@ buildcalendar();
 	background-color: #ffffff;
 	vertical-align: middle;
 	color: black;
+	
 }
 .calendar > .day {width:100%; display: table; table-layout: fixed;}
 .calendar > .day > div {display: table-cell; text-align: center; height: 50px; vertical-align: middle;}
