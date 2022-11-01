@@ -11,52 +11,55 @@
 
 <style type="text/css">
 
-.wow-1{
-	width: 200px;
+.text-body {
+	color: #ffffff !important;s
 }
-
-
+.wow-1{
+	width: 150px !important;	
+}
+.wow-1 > .service-item {
+}
 p{
 	color: #8D9297;
 }
-
 .bg-primary {
     background-color: #8FC1D4 !important;
 }
-
 #text{
-	font-size: 20px;
+	font-size: 17px;
 }
-
 .container2{
-	
 	height: 200px;
     width: 700px;
     padding-left: 0px;
     padding-right: 0px;
-	
 }
-
 .w-101{
-	height: 450px;
+	height: 400px;
 }
-
-.h-101{
-	height: 150px !important;
+.title-03 {
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	display: flex !important;
+	justify-content: center !important;
+}
+.small-title {
+	color: #8D9297 !important;
+	padding-left: 5px;
+}
+h3 > span {
+	color: #8D9297 !important;
 }
 #detail-img02 {
 	padding-top: 3rem !important;
 }
-
 .title1{
 	margin-top: 0;
 }
-
 .mm-1{
 	    margin-top: 33px;
 	    font-size: 24px !important;
 }
-
 #notice_box_2{
 	margin: 0 auto;
 	width: 1000px;
@@ -73,38 +76,38 @@ p{
 	font-weight:800;
 }
 
-#top_text2_1{
-	width: 80%;
-	position:relative;
-	padding-top: 70px;
-    padding-bottom: 30px;
-    height: 325px;
-	/* border: 1px solid black; */
-}
-#top_text2_2{
-	width: 80%;
-	position:relative;
-	padding-bottom: 20px;
-    padding-top: 100px;
-    height: 325px;
-	/* border: 1px solid black; */
-}
+ #top_text2_1{
+     width: 80%;
+     position:relative;
+     padding-top: 70px;
+      padding-bottom: 30px;
+      height: 325px;
+     /* border: 1px solid black; */
+  }
+  #top_text2_2{
+     width: 80%;
+     position:relative;
+     padding-bottom: 20px;
+      padding-top: 100px;
+      height: 325px;
+     /* border: 1px solid black; */
+  }
 
 #thumnail_2{
-	width: 40%;
-	padding: 145px 24px;
-	background-color: #f0f0f0;
-	border-right: 1px solid #CCC;
-	/* border: 1px red solid; */
-}
-
+     width: 40%;
+     padding: 145px 24px;
+     background-color: #f0f0f0;
+     border-right: 1px solid #CCC;
+     /* border: 1px red solid; */
+  }
+  
 #top_content2_1{
-	width: 100%;
-	height:50%;
-	display: flex;
-	text-align: center;
-	border: 1px solid #CCC;
-	/* border: 1px blue solid; */
+   width: 100%;
+   height:50%;
+   display: flex;
+   text-align: center;
+   border: 1px solid #CCC;
+   /* border: 1px blue solid; */
 }
 
 .wow > .py-5 {
@@ -135,7 +138,9 @@ p{
 .bar_text{
 	margin-top: 30px;
 }
-
+/* .pt-5 {
+	padding-top: 0 !important;
+} */
 @media ( min-width : 768px) {
 .col-lg-5 {
   flex: 0 0 auto;
@@ -144,8 +149,8 @@ p{
 }
 @media (min-width: 992px) {
 .col-lg-5 {
-  flex: 0 0 auto;
-  width: 100%;
+    flex: 0 0 auto;
+    width: 100%;
 }
 .appointment {
 	height: 300px;
@@ -160,7 +165,9 @@ p{
 	background-color: #f0f0f0;
 	height: 400px;
 	width: 100%;
-	display: inline-block;	
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #imgs2{
@@ -192,18 +199,24 @@ p{
 	font-size: 0px;
 	width: 100%;
 }
-
-
 #imgs5{
 	float: left;
 	padding-left: 20.4px;
 }
-
 .bar1:after {
 	margin-left: 0px !important;
 }
 .service-text::before {
     background: #8FC1D4 !important;
+}
+.treat-sel {
+	background-color: #865439 !important;
+}
+.treat-sel > h5 {
+	color: #ffffff !important;
+}
+.position-relative > h5 {
+	margin: 20px 0 !important;	
 }
 
 </style>
@@ -292,13 +305,13 @@ p{
 											<div class="row g-4 justify-content-center">
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.1s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back01.jpg" 
 															alt="">-->
 														<a href="./treat_detail_1.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3 mm-1">내과 클리닉</h5>
+															<h5 class="mb-3 mm-1">내과</h5>
 															<!-- <a class="btn btn-primary small"
 																href="./treat_detail_1.do">자세히 보기</a> -->
 														</div>
@@ -307,12 +320,11 @@ p{
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.3s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back02.jpg"
 															alt="" /> -->
-														<a href="./treat_detail_2.do">
 														<div
-															class="service-text position-relative text-center h-100 p-4">
+															class="position-relative text-center h-100 p-4 treat-sel">
 															 <h5 class="mb-3 mm-1">외과</h5>
 															<!-- <p>골관절질환, 신경계등</p>
 															<a class="btn btn-primary small"
@@ -323,7 +335,7 @@ p{
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.5s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back03.jpg"
 															alt="" /> -->
 														<a href="./treat_detail_3.do">
@@ -358,7 +370,7 @@ p{
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
-              <h6 class="text-body text-uppercase mb-2">얏파한</h6>
+              <h6 class="text-body text-uppercase mb-2 small-title">surgery</h6>
               <h1 class="display-6 mb-0">
                 외과
               </h1>
@@ -366,16 +378,16 @@ p{
             
             <div class="row gy-5 gx-4">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">일반외과</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">일반외과</h4>
                 </div>
                 <span
                   >일반 외과에서는 소화기계(위 장관 수술, 간엽 절제술, 담낭 절제술, 위 염전 교정술, 췌장 부분 절제술, 비장 부분/전 절제술, 항문성형술 등)와 비뇨기계 질환(신장 절제술, 요관 절개술, 음경 부분/전 절제술 등)에 대한 수술적인 치료를 담당하고 있으며, 이외에도 만성적인 이염의 치료를 위한 외이도 적출 술과 이도 전적 출술 등의 다양한 수술을 실시합니다.
 또한, 광범위한 피부 결손이 발생한 경우, 심한 외부 창상에 의한 허니아 수술 등을 실시하고 있습니다.</span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">흉부외과</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">흉부외과</h4>
                 </div>
                 <span
                   >본원에 준비된 심장용 C-arm을 이용하여 고도의 세밀한 심장 및 흉부 수술이 이루어지고 있습니다. 심장 기형의 확진을 위한 다양한 심장 카테터법이 이용되고 있으며 Sick Sinus Syndrome이나 Atrioventricular Block등의 심장 질환시에 일시적 또는 영구적인 형태의 체외 심박동기(Pacemaker, 페이스 메이커] 시술이 이루어 집니다. 이는 또한 동맥관 개존증(PDA)이나 우대동맥궁 잔존증(PRAA), 좌측 쇄골하동맥 잔존증(ASCA)등의 수술중에 페이스 메이커를 장착하고 수술함으로써 술중 사망 확률이 현저히 개선되었습니다.</span
@@ -415,7 +427,7 @@ p{
       </div>
       <br>
       <br>
-      <div><h3>외과는</h3>
+      <div><h3>외과<span>(Surgery)</span>는-</h3>
       <div id="text">
     점차 반려동물에 대한 인식개선과 노령화로 종양의 치료/관리에 대한 필요성이 증가하여 여러 장기에 여러 형태로 발생하는 종양의 외과적 관리 또한 증가하고 있는 추세입니다. 종양의 침습성과 전이, 인접 장기의 기능부전 여부 등을 알기 위해 세포학검사, 방사선, 초음파, CT/ MRI, 혈액검사 등 다각적인 접근이 필 요한 경우가 많습니다.
       	</div>
@@ -454,7 +466,7 @@ p{
       <br>
       <div><h3>외과 진료과목 안내</h3>
       <div id="text">
-      주주은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다.
+      주주는 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다.
       	</div><br>
       <div id="notice_box_2">
         	<table>

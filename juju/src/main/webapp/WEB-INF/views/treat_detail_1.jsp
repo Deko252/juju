@@ -11,37 +11,44 @@
 
 <style type="text/css">
 
-.wow-1{
-	width: 200px;
+.text-body {
+	color: #ffffff !important;s
 }
-
-
+.wow-1{
+	width: 150px !important;	
+}
+.wow-1 > .service-item {
+}
 p{
 	color: #8D9297;
 }
-
 .bg-primary {
     background-color: #8FC1D4 !important;
 }
-
 #text{
-	font-size: 20px;
+	font-size: 17px;
 }
-
 .container2{
 	height: 200px;
     width: 700px;
     padding-left: 0px;
     padding-right: 0px;
-	
 }
-
 .w-101{
-	height: 450px;
+	height: 400px;
 }
-
-.h-101{
-	height: 150px !important;
+.title-03 {
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	display: flex !important;
+	justify-content: center !important;
+}
+.small-title {
+	color: #8D9297 !important;
+	padding-left: 5px;
+}
+h3 > span {
+	color: #8D9297 !important;
 }
 #detail-img02 {
 	padding-top: 3rem !important;
@@ -49,12 +56,10 @@ p{
 .title1{
 	margin-top: 0;
 }
-
 .mm-1{
 	    margin-top: 33px;
 	    font-size: 24px !important;
 }
-
 #notice_box_1{
 	margin: 0 auto;
 	width: 1000px;
@@ -158,8 +163,8 @@ p{
 }
 @media (min-width: 992px) {
 .col-lg-5 {
-  flex: 0 0 auto;
-  width: 100%;
+    flex: 0 0 auto;
+    width: 100%;
 }
 .appointment {
 	height: 300px;
@@ -174,7 +179,9 @@ p{
 	background-color: #f0f0f0;
 	height: 400px;
 	width: 100%;
-	display: inline-block;	
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #imgs2{
@@ -206,19 +213,26 @@ p{
 	font-size: 0px;
 	width: 100%;
 }
-
-
 #imgs5{
 	float: left;
 	padding-left: 20.4px;
 }
-
 .bar1:after {
 	margin-left: 0px !important;
 }
 .service-text::before {
     background: #8FC1D4 !important;
 }
+.treat-sel {
+	background-color: #865439 !important;
+}
+.treat-sel > h5 {
+	color: #ffffff !important;
+}
+.position-relative > h5 {
+	margin: 20px 0 !important;	
+}
+
 </style>
 
 
@@ -278,8 +292,7 @@ p{
 	<%@ include file="header.jsp"%>
 	<!-- -->
 	<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-		<div id="header-carousel" class="carousel slide"
-			data-bs-ride="carousel">
+		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img class="w-100 w-101" src="./resources/img/treat_detail3.jpg" alt="Image" />
@@ -290,11 +303,11 @@ p{
 									<div class="container-xxl py-5">
 										<div class="container container2">
 											<div class="row g-5 align-items-end mb-5">
-												<div class="col-lg-6 wow fadeInUp treat_title title1"
-													data-wow-delay="0.1s">
+												<div class="col-lg-6 wow fadeInUp treat_title title1" data-wow-delay="0.1s">
 													<div class="border-start border-5 border-primary ps-4">
-														<h6 class="text-body text-uppercase mb-2">Treatment
-															Subject</h6>
+														<h6 class="text-body text-uppercase mb-2">
+															Treatment Subject
+														</h6>
 														<h1 class="display-6 mb-0">진료과목 안내</h1>
 													</div>
 												</div>
@@ -303,29 +316,24 @@ p{
           </div> -->
 											</div>
 											<div class="row g-4 justify-content-center">
-												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
-													data-wow-delay="0.1s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back01.jpg" 
 															alt="">-->
-														<a href="./treat_detail_1.do">
-														<div
-															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3 mm-1">내과 클리닉</h5>
+														<div class="position-relative text-center h-100 p-4 treat-sel">
+															<h5 class="mb-3 mm-1">내과</h5>
 															<!-- <a class="btn btn-primary small"
 																href="./treat_detail_1.do">자세히 보기</a> -->
 														</div>
 														</a>
 													</div>
 												</div>
-												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
-													data-wow-delay="0.3s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1" data-wow-delay="0.3s">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back02.jpg"
 															alt="" /> -->
 														<a href="./treat_detail_2.do">
-														<div
-															class="service-text position-relative text-center h-100 p-4">
+														<div class="service-text position-relative text-center h-100 p-4">
 															 <h5 class="mb-3 mm-1">외과</h5>
 															<!-- <p>골관절질환, 신경계등</p>
 															<a class="btn btn-primary small"
@@ -336,7 +344,7 @@ p{
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.5s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back03.jpg"
 															alt="" /> -->
 														<a href="./treat_detail_3.do">
@@ -371,7 +379,7 @@ p{
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
-              <h6 class="text-body text-uppercase mb-2">얏파한</h6>
+              <h6 class="text-body text-uppercase mb-2 small-title">internal medicine</h6>
               <h1 class="display-6 mb-0">
                 내과 클리닉
               </h1>
@@ -382,16 +390,16 @@ p{
             </p>
             <div class="row gy-5 gx-4">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">추가 케어 서비스</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">추가 케어 서비스</h4>
                 </div>
                 <span
                   >최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.</span
                 >
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">25살 이상의 의사</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">25살 이상의 의사</h4>
                 </div>
                 <span
                   >최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.</span
@@ -431,7 +439,7 @@ p{
       </div>
       <br>
       <br>
-      <div><h3>내과는</h3>
+      <div><h3>내과<span>(Internal Medicine)</span>는-</h3>
       <div id="text">
       밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
       	</div>

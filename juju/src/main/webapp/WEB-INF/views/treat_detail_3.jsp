@@ -11,52 +11,55 @@
 
 <style type="text/css">
 
-.wow-1{
-	width: 200px;
+.text-body {
+	color: #ffffff !important;s
 }
-
-
+.wow-1{
+	width: 150px !important;	
+}
+.wow-1 > .service-item {
+}
 p{
 	color: #8D9297;
 }
-
 .bg-primary {
     background-color: #8FC1D4 !important;
 }
-
 #text{
-	font-size: 20px;
+	font-size: 17px;
 }
-
 .container2{
-	
 	height: 200px;
     width: 700px;
     padding-left: 0px;
     padding-right: 0px;
-	
 }
-
 .w-101{
-	height: 450px;
+	height: 400px;
 }
-
-.h-101{
-	height: 150px !important;
+.title-03 {
+	padding-left: 0rem !important;
+	padding-right: 0rem !important;
+	display: flex !important;
+	justify-content: center !important;
+}
+.small-title {
+	color: #8D9297 !important;
+	padding-left: 5px;
+}
+h3 > span {
+	color: #8D9297 !important;
 }
 #detail-img02 {
 	padding-top: 3rem !important;
 }
-
 .title1{
 	margin-top: 0;
 }
-
 .mm-1{
 	    margin-top: 33px;
 	    font-size: 24px !important;
 }
-
 #notice_box_3{
 	margin: 0 auto;
 	width: 1000px;
@@ -74,35 +77,35 @@ p{
 }
 
 #top_text3_1{
-	width: 80%;
-	position:relative;
-	padding: 12% 5px;
-	height: 350px;
-	/* border: 1px solid black; */
+    width: 80%;
+    position:relative;
+    padding: 12% 5px;
+    height: 350px;
+    /* border: 1px solid black; */
 }
 #top_text3_2{
-	width: 80%;
-	position:relative;
-	padding: 6% 5px;
-	height: 350px;
-	/* border: 1px solid black; */
+  width: 80%;
+  position:relative;
+  padding: 6% 5px;
+  height: 350px;
+  /* border: 1px solid black; */
 }
 
 #thumnail_3{
-	width: 40%;
-	padding: 155px 24px;
-	background-color: #f0f0f0;
-	border-right: 1px solid #CCC;
-	/* border: 1px red solid; */
-}
-
+    width: 40%;
+    padding: 155px 24px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #CCC;
+    /* border: 1px red solid; */
+  }
+  
 #top_content3_1{
-	width: 100%;
-	height:50%;
-	display: flex;
-	text-align: center;
-	border: 1px solid #CCC;
-	/* border: 1px blue solid; */
+  width: 100%;
+  height:50%;
+  display: flex;
+  text-align: center;
+  border: 1px solid #CCC;
+  /* border: 1px blue solid; */
 }
 
 .wow > .py-5 {
@@ -133,7 +136,9 @@ p{
 .bar_text{
 	margin-top: 30px;
 }
-
+/* .pt-5 {
+	padding-top: 0 !important;
+} */
 @media ( min-width : 768px) {
 .col-lg-5 {
   flex: 0 0 auto;
@@ -142,8 +147,8 @@ p{
 }
 @media (min-width: 992px) {
 .col-lg-5 {
-  flex: 0 0 auto;
-  width: 100%;
+    flex: 0 0 auto;
+    width: 100%;
 }
 .appointment {
 	height: 300px;
@@ -158,7 +163,9 @@ p{
 	background-color: #f0f0f0;
 	height: 400px;
 	width: 100%;
-	display: inline-block;	
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #imgs2{
@@ -190,19 +197,26 @@ p{
 	font-size: 0px;
 	width: 100%;
 }
-
-
 #imgs5{
 	float: left;
 	padding-left: 20.4px;
 }
-
 .bar1:after {
 	margin-left: 0px !important;
 }
 .service-text::before {
     background: #8FC1D4 !important;
 }
+.treat-sel {
+	background-color: #865439 !important;
+}
+.treat-sel > h5 {
+	color: #ffffff !important;
+}
+.position-relative > h5 {
+	margin: 20px 0 !important;	
+}
+
 </style>
 
 
@@ -289,13 +303,13 @@ p{
 											<div class="row g-4 justify-content-center">
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.1s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back01.jpg" 
 															alt="">-->
 														<a href="./treat_detail_1.do">
 														<div
 															class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3 mm-1">내과 클리닉</h5>
+															<h5 class="mb-3 mm-1">내과</h5>
 															<!-- <a class="btn btn-primary small"
 																href="./treat_detail_1.do">자세히 보기</a> -->
 														</div>
@@ -304,7 +318,7 @@ p{
 												</div>
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
 													data-wow-delay="0.3s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back02.jpg"
 															alt="" /> -->
 														<a href="./treat_detail_2.do">
@@ -318,14 +332,11 @@ p{
 														</a>
 													</div>
 												</div>
-												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
-													data-wow-delay="0.5s">
-													<div class="service-item bg-light overflow-hidden h-100 h-101">
+												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1" data-wow-delay="0.5s">
+													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<!-- <img class="img-fluid" src="./resources/img/back03.jpg"
 															alt="" /> -->
-														<a href="./treat_detail_3.do">
-														<div
-															class="service-text position-relative text-center h-100 p-4">
+														<div class="position-relative text-center h-100 p-4  treat-sel">
 															 <h5 class="mb-3 mm-1">피부과</h5>
 															<!-- <p>귀질환, 피부질환 등</p>
 															<a class="btn btn-primary small"
@@ -355,7 +366,7 @@ p{
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
-              <h6 class="text-body text-uppercase mb-2">얏파한</h6>
+              <h6 class="text-body text-uppercase mb-2 small-title">dermatology</h6>
               <h1 class="display-6 mb-0">
                 피부과
               </h1>
@@ -367,16 +378,16 @@ p{
             </p>
             <div class="row gy-5 gx-4">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">감염성 피부질환 진단</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">감염성 피부질환 진단</h4>
                 </div>
                 <span
                   >피부 감염 세균 및 피부사상균 감염의 신속 진단을 위한 PCR 검사를 실시하고 있으며 피부 세균 감염 시세 균동정 및 항생제 감수성 검사를 바탕으로 한 항생제 요법을 실시하고 있습니다.</span
                 >
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">외이염 및 중이염 관리</h6>
+                <div class="d-flex align-items-center mb-3 title-03">
+                  <h4 class="mb-0">외이염 및 중이염 관리</h4>
                 </div>
                 <span
                   >외이도를 평가하는 디지털검이경을 구비해 외이도와 고막의 상태를 정확히 평가하고 있으며 만성의 난치 성 외이염 및 중이염의 내과적 관리에 역점을 두고 있습니다</span
@@ -416,7 +427,7 @@ p{
       </div>
       <br>
       <br>
-      <div><h3>피부과는</h3>
+      <div><h3>피부과<span>(Dermatology)</span>는-</h3>
       <div id="text">
      동물의 피부(귀, 발톱, 항문낭, 눈꺼풀 포함)에 발생하는 질병에 대한 진단 및 치료를 담당하고 있습니다.
       	</div>
