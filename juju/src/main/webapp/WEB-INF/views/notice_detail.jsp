@@ -31,7 +31,6 @@
 </head>
 <style>
 body {
-	border: 1px red solid;
 	height: 800px;
 }
 
@@ -41,21 +40,20 @@ h2 {
 }
 
 #tit_detail {
-	border: 1px red solid;
 	display: flex;
 	justify-content:space-around;
 	width:150px;
-	margin-left: 300px;
+	margin: 20;
+	
 }
 #dc_container {
-	border: 1px solid black;
+	border: 1px solid ;
 	margin: 50 200 0 200;
 	height: 500px;
 }
 #dc_main{
 	width:1000px;
 	height: 400px;
-	border: 1px solid green;
 	margin: 20 auto;
 	display: block;
 }
@@ -65,20 +63,20 @@ h2 {
 	margin: 0 auto;
 	text-align: center;
 	overflow:hidden;
-	border: 1px blue solid;	
+	
 }
 #dc_text{
-	border: 1px red solid;
 	width:500px;
 	margin: 15 auto;
+	text-align: center;
 }
 #dc_btn{
 	width: 300px;
-	margin: 0 auto;
+	margin: 20 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	border: 1px red solid;
+	
 }
 </style>
 
@@ -86,11 +84,11 @@ h2 {
 	
 	<h2>${notice_detail.board_title }</h2>
 	
+	<div id="dc_container">
 		<div id="tit_detail">
 			<div>${notice_detail.a_name }</div>
 			<div>${notice_detail.board_date }</div>
 		</div>
-	<div id="dc_container">
 		<div id="dc_main">
 		
 			<div id="dc_img">

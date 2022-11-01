@@ -16,7 +16,7 @@ function linkPage(pageNo){location.href="./notice.do?pageNo="+pageNo;}
 <style type="text/css">
 
 body{
-	height: 3300px;
+	height: 3000px;
 }
 #img_wrap{
 	width: 100%;
@@ -28,12 +28,13 @@ body{
 	width: 100%;
 	height: 450px;
 }
-h2{
+#img_wrap h1{
 	color:#fff;
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	transform: translate( -50%, -50% );
 }
 #notice_box{
 	margin: 0 auto;
@@ -117,8 +118,8 @@ footer{
 <body>	
 <%@ include file="header.jsp" %>
 	 <div id="img_wrap">
-			<h2>공지사항</h2>
-		<img alt="귀여운 뭄뭄쓰" src="./resources/img/notice_main.jpg">
+			<h1>공지사항</h1>
+		<img alt="귀여운 뭄뭄쓰" src="./resources/img/notice_head.jpg">
 	</div>
 		<div id="notice_box">
         	<table>

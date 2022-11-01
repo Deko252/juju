@@ -126,7 +126,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
           <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
         <h1 class="m-0">
-        	JUJU
+        JUJU
         </h1>
       </a>
       <button
