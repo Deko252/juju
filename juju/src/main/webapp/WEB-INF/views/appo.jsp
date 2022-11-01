@@ -42,8 +42,7 @@
 .appo-button {
 	margin-top: 30px;
 	text-align: center !important;
-	flex: 0 0 auto;
-	width: 100%;
+	height: auto;
 }
 .appo-button .small {
 	height: 50px;
@@ -138,7 +137,7 @@
             <button type="button" class="btn btn-primary small" data-bs-toggle="modal" data-bs-target="#exampleModal">
   				예약하기
 			</button>
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
 		      <div class="modal-header">

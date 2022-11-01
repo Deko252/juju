@@ -108,7 +108,6 @@
                 </p>
                 <a class="btn btn-primary small" href="">자세히 보기</a>
               </div>
-          	<a name="appo-04"></a>
             </div>
           </div>
           
