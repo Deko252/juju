@@ -82,7 +82,7 @@
                 <p>
                   호흡기계, 순환기계등
                 </p>
-                <a class="btn btn-primary small" href="">자세히 보기</a>
+                <a class="btn btn-primary small" href="./treat_detail_1.do">자세히 보기</a>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
                 <p>
                   골관절질환, 신경계등
                 </p>
-                <a class="btn btn-primary small" href="">자세히 보기</a>
+                <a class="btn btn-primary small" href="./treat_detail_2.do">자세히 보기</a>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
                 <p>
                   귀질환, 피부질환 등
                 </p>
-                <a class="btn btn-primary small" href="">자세히 보기</a>
+                <a class="btn btn-primary small" href="./treat_detail_3.do">자세히 보기</a>
               </div>
             </div>
           </div>

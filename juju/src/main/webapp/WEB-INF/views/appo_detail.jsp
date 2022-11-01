@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<style type="text/css">
+<style type="text/css"> 
 
 .modal-content {
 	text-align: center;

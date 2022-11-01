@@ -51,7 +51,7 @@
 .appo-button .small:hover {
 	background-color: #ffffff;
 	color: #865439;
-	border-color: #C68B59;
+	border-color: #C68B59; 
 }
 .appo-detail {
 	text-align: center;
