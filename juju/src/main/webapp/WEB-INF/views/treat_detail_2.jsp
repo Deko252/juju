@@ -54,10 +54,10 @@ p{
 	    font-size: 24px !important;
 }
 
-#notice_box_1{
+#notice_box_2{
 	margin: 0 auto;
 	width: 1000px;
-	height: 1000px;
+	height: 650px;
 	border-top: 2px solid #207ecd;
 }
 .top_text_all{
@@ -70,48 +70,34 @@ p{
 	font-weight:800;
 }
 
-#top_text_1{
+#top_text2_1{
 	width: 80%;
 	position:relative;
-	padding: 7% 5px;
+	padding-top: 70px;
+    padding-bottom: 30px;
+    height: 325px;
 	/* border: 1px solid black; */
 }
-#top_text_2{
+#top_text2_2{
 	width: 80%;
 	position:relative;
-	padding: 5% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_3{
-	width: 80%;
-	position:relative;
-	padding: 6% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_4{
-	width: 80%;
-	position:relative;
-	padding: 1% 5px;
-	/* border: 1px solid black; */
-}
-#top_text_5{
-	width: 80%;
-	position:relative;
-	padding: 6% 5px;
+	padding-bottom: 20px;
+    padding-top: 100px;
+    height: 325px;
 	/* border: 1px solid black; */
 }
 
-#thumnail_1{
+#thumnail_2{
 	width: 40%;
-	padding: 75px 24px;
+	padding: 145px 24px;
 	background-color: #f0f0f0;
 	border-right: 1px solid #CCC;
 	/* border: 1px red solid; */
 }
 
-#top_content_1{
+#top_content2_1{
 	width: 100%;
-	height:20%;
+	height:50%;
 	display: flex;
 	text-align: center;
 	border: 1px solid #CCC;
@@ -216,6 +202,7 @@ p{
 .service-text::before {
     background: #8FC1D4 !important;
 }
+
 </style>
 
 
@@ -374,24 +361,21 @@ p{
               </h1>
             </div>
             
-            <p class="mb-5">
-              최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.
-            </p>
             <div class="row gy-5 gx-4">
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">추가 케어 서비스</h6>
+                  <h6 class="mb-0">일반외과</h6>
                 </div>
                 <span
-                  >최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.</span
-                >
+                  >일반 외과에서는 소화기계(위 장관 수술, 간엽 절제술, 담낭 절제술, 위 염전 교정술, 췌장 부분 절제술, 비장 부분/전 절제술, 항문성형술 등)와 비뇨기계 질환(신장 절제술, 요관 절개술, 음경 부분/전 절제술 등)에 대한 수술적인 치료를 담당하고 있으며, 이외에도 만성적인 이염의 치료를 위한 외이도 적출 술과 이도 전적 출술 등의 다양한 수술을 실시합니다.
+또한, 광범위한 피부 결손이 발생한 경우, 심한 외부 창상에 의한 허니아 수술 등을 실시하고 있습니다.</span>
               </div>
               <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
                 <div class="d-flex align-items-center mb-3">
-                  <h6 class="mb-0">25살 이상의 의사</h6>
+                  <h6 class="mb-0">흉부외과</h6>
                 </div>
                 <span
-                  >최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.</span
+                  >본원에 준비된 심장용 C-arm을 이용하여 고도의 세밀한 심장 및 흉부 수술이 이루어지고 있습니다. 심장 기형의 확진을 위한 다양한 심장 카테터법이 이용되고 있으며 Sick Sinus Syndrome이나 Atrioventricular Block등의 심장 질환시에 일시적 또는 영구적인 형태의 체외 심박동기(Pacemaker, 페이스 메이커] 시술이 이루어 집니다. 이는 또한 동맥관 개존증(PDA)이나 우대동맥궁 잔존증(PRAA), 좌측 쇄골하동맥 잔존증(ASCA)등의 수술중에 페이스 메이커를 장착하고 수술함으로써 술중 사망 확률이 현저히 개선되었습니다.</span
                 >
               </div>
               
@@ -429,7 +413,7 @@ p{
       <br>
       <div><h3>외과는</h3>
       <div id="text">
-      밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
+    점차 반려동물에 대한 인식개선과 노령화로 종양의 치료/관리에 대한 필요성이 증가하여 여러 장기에 여러 형태로 발생하는 종양의 외과적 관리 또한 증가하고 있는 추세입니다. 종양의 침습성과 전이, 인접 장기의 기능부전 여부 등을 알기 위해 세포학검사, 방사선, 초음파, CT/ MRI, 혈액검사 등 다각적인 접근이 필 요한 경우가 많습니다.
       	</div>
       	<div id="imgs">
      		<div id="imgs2">
@@ -438,22 +422,22 @@ p{
 	     				<ul id="imgs4">
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng01.jpg" width="100%">
+	     							<img src="./resources/img/a01.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng02.jpg" width="100%">
+	     							<img src="./resources/img/a02.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng03.jpg" width="100%">
+	     							<img src="./resources/img/a03.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng04.jpg" width="100%">
+	     							<img src="./resources/img/a04.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     				</ul>
@@ -466,56 +450,32 @@ p{
       <br>
       <div><h3>외과 진료과목 안내</h3>
       <div id="text">
-      청담우리동물병원은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다. 청담우리의 내과 진료에 대해 자세히 알려드립니다.
+      주주은 특화진료과목 이외에도 각 진료과목별 전문 클리닉을 운영하고 있습니다.
       	</div><br>
-      <div id="notice_box_1">
+      <div id="notice_box_2">
         	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>호흡기계 내과</h2></div>
-		          			<div id="top_text_1" class="top_text_all">
-		          			코와 비강질환 및 심장과 폐의 청진, 방사선 검사, 혈액검사 등을 통해 <font class="top_text_color">급성호흡기 감염증, 만성적 기관지와 폐질환 등에 대한 치료요법</font>을 실시합니다.
+            		<div id="top_content2_1">
+		          		<div id="thumnail_2"><h2>일반외과</h2></div>
+		          			<div id="top_text2_1" class="top_text_all">
+		          			경우에 따라 복강경을 이용하여 개복 또는 개흉을 하지 않고, 최소한의 절개로 수술적 교정을 실시하기도 합니다. 절개 부위가 작아 흉터가 작으며, 수술 후 통증, 회복이 비교적 빠른 장점이 있습니다. 생검, 영양관 (feeding tube) 장착, 암컷의 중성화수술, 위 고정술, 방광결석 제거 등에 이용될 수 있습니다. 일반적으로 선천성 혹은 후천성의 질환들로 인해 생명이 위험하거나, 수술적 교정 / 마취과정에 위험성이 있는 경우, 원인이 밝혀지지 않거나 여러 원인이 있는 경우, 수술 후 합병증의 교정이 필요한 경우에 본원에 의뢰되어 내원하시게 됩니다. 따라서 경우에 따라 위험하고 응급을 요하는 수술이 많이 행해지게 됩니다.
               				</div>
             		</div>	
         	</table>
         	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>순환기 내과</h2></div>
-		          			<div id="top_text_2" class="top_text_all">
-		          			심장사상충증 등의 진단과 치료, 만성적 심장질환을 가진 노령견에 대한 최신 약물요법을 실시하고 있으며, <font class="top_text_color">특히 심장질환의 경우 점진적인 활력감소, 운동감소 외에 만성적인 기침과 호흡곤란증, 식욕저하, 전신발작 및 마비와 실신증상, 복부팽대증, 호기시와 흡기기의 잡음, 혀의 청색증 등</font>을 보이는 경우 의심할 수 있습니다.
+            		<div id="top_content2_1">
+		          		<div id="thumnail_2"><h2>흉부외과</h2></div>
+		          			<div id="top_text2_2" class="top_text_all">
+		          			Carval Syndrome을 보이는 말기 심장사상충 동물에게 수술을 통한 심장사상충 제거를 하고 있으며 횡격막 허니아, 심낭복막 횡격막 허니아등도 수술합니다. 또한 식도천공된 흉부 식도의 절제술등이 가능하여 흉부식도이물이 부식도를 관통하여 음식물이 흉강으로 새는 경우도 수술하여 동물의 생명을 살리게 되었습니다. 그리고 폐의 부분/전적출술과 폐종양의 수술이 이루어집니다.
               				</div>
             		</div>	
         	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>소화기계 내과</h2></div>
-		          			<div id="top_text_3" class="top_text_all">
-		          			<font class="top_text_color">강, 식도, 위, 소장 대장질환을 포함</font>하여, 소화효소분비와 복부장기에 속하는 간과 췌장, 담도관련 질환의 검진을 위해 초음파검사, 임상병리 혈액검사, 방사선 검사가 이루어지며, 질병의 정도와 급만성의 경과에 따라 치료를 실시하고 있습니다.
-              				</div>
-            		</div>	
-        	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>비뇨기계 내과</h2></div>
-		          			<div id="top_text_4" class="top_text_all">
-		          			암수의 여부에 따라 비뇨생식기계 질환이 다양하게 나타나고 있습니다. 각종 특발성환경이나 약물, 스트레스, 감염 등에 의한 <font class="top_text_color">급만성 신장질환</font>(신부전, 사구체신염, 신결석 등)을 비롯해 <font class="top_text_color">전립선비대와 전립선염, 방광염, 방광종양, 요로결석의 질환들이 다발</font>하고 있습니다.
-방사선검사, 초음파검사, 요로조영술, 신장기능조영술, 정기적인 뇨검사와 기타 검사를 통해 정확한 진단과 치료를 실시하고 있습니다. 만성신부전의 경우 정기적인 신장의 기능검사와 장기간의 관리를 위해 최신의 약물과 신장의 기능을 높여주는 한방요법을 병행치료하고 있습니다.
-              				</div>
-            		</div>	
-        	</table>
-        	<table>
-            		<div id="top_content_1">
-		          		<div id="thumnail_1"><h2>기타 내과 질환</h2></div>
-		          			<div id="top_text_5" class="top_text_all">
-		          			최근 증가추세인 <font class="top_text_color">유선종양</font>을 비롯해 <font class="top_text_color">피부종양 등의 특수질환</font>에 대한 적절한 치료단계와 예후판단, 보호자의 치료선택에 세포학적 진단과 임상병리검사를 진행하며, 치료에 필수적인 면역계 관련 한방치료를 병행합니다.
-              				</div>
-            		</div>	
-        	</table>
+        	
 		    </div>
       </div>
     </div>
       <!-- 그럴싸한 문구 -->
     <div
-      class="container-fluid appointment my-5 py-5 wow fadeIn"
+      class="container-fluid appointment my-5 py-5 wow fadeIn juju01" 
       data-wow-delay="0.1s"
     >
       <div class="container py-5">

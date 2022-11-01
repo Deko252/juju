@@ -146,7 +146,9 @@ p{
 .bar_text{
 	margin-top: 30px;
 }
-
+/* .pt-5 {
+	padding-top: 0 !important;
+} */
 @media ( min-width : 768px) {
 .col-lg-5 {
   flex: 0 0 auto;

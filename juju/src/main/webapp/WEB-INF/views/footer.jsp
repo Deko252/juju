@@ -80,6 +80,11 @@
 	    width: 30% !important;
 	}
 }
+
+.pt-5 {
+    padding-top: 0 !important;
+}
+
 </style>	
 </head>
 
