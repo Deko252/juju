@@ -5,8 +5,16 @@
 <!DOCTYPE html>
 <html lang="ko"> 
 
-
+<script type="text/javascript">
+	$(function(){
+		$(".loginModal").click(function(){
+			$("#exampleModal").modal("show");
+		});
+	});
+</script>
 <head>
+
+
 <%@ include file="head.jsp"%>
 
 <style type="text/css">
@@ -184,8 +192,27 @@ li .login-out {
 	}
 	.navbar .nav-item .dropdown-menu {
 		right: none !important;
-	}
+	}		
 }
+.modal-content {
+	border-radius: 5px !important;
+}
+.modal-body {
+	padding: 1rem 2rem !important;
+}
+.index-loginBtn {
+	background-color: #C68B59 !important;
+	border-color: #C68B59 !important;
+	border-radius: 5px !important;
+}
+.index-loginBtn:hover {
+	background-color: #8FC1D4 !important;
+	border-color: #8FC1D4 !important;
+}
+.cancelBtn {
+	border-radius: 5px !important;
+}
+
 </style>
 
 </head>
@@ -264,7 +291,7 @@ li .login-out {
           <a href="#info-05" class="nav-item nav-link">펫정보</a>
           <a href="#info-05" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
-	          <li> <a href="./admin_login.do" class="nav-item nav-link login-out">로그인</a></li>
+	          <li><a class="nav-item nav-link loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">로그인</a></li>
           </c:if>
 		  <c:if test="${sessionScope.id ne null }">
 		  	<a href="./logout.do" class="nav-item nav-link login-out">로그아웃</a>
@@ -511,6 +538,46 @@ li .login-out {
       </div>
     </div> -->
     <!-- Testimonial End -->
+    
+    <!-- Modal -->
+       
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">로그인 화면</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-form col-md-12 mx-auto">
+        <h2 class="mb-3">로그인</h2>
+        <form action="./admin_login.do" method="post" class="validation-form" novalidate >
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name">아이디</label>
+              <input type="text" class="form-control" id="name" name="id" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                아이디를 입력해주세요.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="nickname">비밀번호</label>
+              <input type="password" class="form-control" id="nickname" name="pw" placeholder="" value="" required >
+              <div class="invalid-feedback">
+                비밀번호를 입력해주세요.
+              </div>
+            </div>
+          </div>
+          <div class="mb-4"></div>       
+          <button id="login" class="btn btn-primary btn-lg btn-block index-loginBtn" type="submit">로그인</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- Footer Start -->
     <%@ include file="footer.jsp"%>

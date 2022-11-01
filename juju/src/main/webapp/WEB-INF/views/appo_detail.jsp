@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 576px) {
-	.modal-dialog {
+	.appo-dialog {
 	  max-width: 1500px;
 	  margin: 1.75rem auto;
 	}
@@ -35,7 +35,7 @@
 </head>
 	
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   	<div class="modal-dialog modal-dialog-centered">
+   	<div class="modal-dialog modal-dialog-centered appo-dialog">
    		<div class="modal-content">
      			<div class="modal-header">
        			<h2 class="modal-title" id="exampleModalLabel">진료시간예약</h2>
