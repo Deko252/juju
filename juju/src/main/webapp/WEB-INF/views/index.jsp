@@ -226,14 +226,14 @@ li .login-out {
             ></a>
             <a class="btn btn-square border-end" href=""
               ><i class="fab fa-twitter"></i
-            ></a>
+            ></a> 
             <a class="btn btn-square border-end" href=""
               ><i class="fab fa-linkedin-in"></i
             ></a>
             <a class="btn btn-square border-end" href=""
               ><i class="fab fa-instagram"></i
             ></a>
-          </div>
+          </div> 
         </div>
       </div>
     </div> -->
