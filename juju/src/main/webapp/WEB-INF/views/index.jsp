@@ -106,7 +106,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .main-button-1 {
-	font-size: 17px;
+	font-size: 18px !important;
     background-color: #8FC1D4 !important;
     border-color: #8FC1D4 !important;
     border-radius: 5px !important;
@@ -231,39 +231,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     <!-- Topbar End -->
 
     <!-- 헤더 -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color"
-    >
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color">
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
-          <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
-        <h1 class="m-0">
-        	JUJU
-        </h1>
+        <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
+        <h1 class="m-0">JUJU</h1>
       </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
-          <a href="./main.do" class="nav-item nav-link active">홈으로</a>
-          <a href="./intro.do" class="nav-item nav-link">병원소개</a>
+          <a href="#home-01" class="nav-item nav-link active">홈으로</a>
+          <a href="#intro-02" class="nav-item nav-link">병원소개</a>
           <div class="nav-item dropdown">
-            <a href="./treat.do" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
-            진료과목</a>
+            <a href="#treat-03" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">진료과목</a>
             <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
               <a href="./treat_detail_1.do" class="dropdown-item dorpdown-font">내과</a>
               <a href="./treat_detail_2.do" class="dropdown-item dorpdown-font">외과</a>
               <a href="./treat_detail_3.do" class="dropdown-item dorpdown-font">피부과</a>
             </div>
           </div> 
-          <a href="./appo_detail.do" class="nav-item nav-link">진료예약</a>
-          <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
-          <a href="./notice.do" class="nav-item nav-link">공지사항</a>
+          <a href="#appo-04" class="nav-item nav-link">진료예약</a>
+          <a href="#info-05" class="nav-item nav-link">펫정보</a>
+          <a href="#info-05" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
 	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
           </c:if>
@@ -278,8 +268,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     <!-- -->
 
     <!-- Carousel Start -->
+    <a name="intro-02"></a>
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    	<a name="main01"></a> 
       <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -305,7 +295,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
                         반려동물 안전강화
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary py-3 px-5 main-button-1">자세히보기</a>
+                    <a href="" class="btn btn-primary py-3 px-5 main-button-1">병원소개</a>
                   </div>
                 </div>
               </div>
@@ -361,10 +351,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     <!-- Carousel End -->
 
     <!-- 진료과목 -->
+    <a name="treat-03"></a>
     <%@ include file="treat.jsp"%>
-    <a name="treat03"></a>
     <!--  -->
-
 
 	<!-- 진료예약 -->
     <%@ include file="appo.jsp"%>

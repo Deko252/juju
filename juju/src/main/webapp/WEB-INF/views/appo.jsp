@@ -36,13 +36,18 @@
 	color: #8FC1D4 !important;
 }
 .appo-box {
-	padding-top: 1.5rem;
+	padding: 1.5rem 0 1.5rem;
+	
 }
 .appo-button {
 	margin-top: 30px;
 	text-align: center !important;
 	flex: 0 0 auto;
 	width: 100%;
+}
+.appo-button .small {
+	height: 50px;
+	padding-top: 0.3rem;
 }
 .appo-button .small:hover {
 	background-color: #ffffff;

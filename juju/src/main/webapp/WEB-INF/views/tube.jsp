@@ -5,13 +5,16 @@
 <!DOCTYPE html>
 <style type="text/css">
 
+.tube-body {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 .tube-location {
 	margin-left: 70px;
 }
 .tubesize {
     padding-left: 0px !important;
 }
-
 .tubesize:after {
     content: "";
     display: block;
@@ -21,11 +24,10 @@
     margin: 10px 0;
 }
 
-
 </style>
 
 
-<div class="container-xxl py-5">
+<div class="container-xxl py-5 tube-body">
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -65,10 +67,12 @@
                     ></i>
                     <a class="btn btn-primary3" href="https://youtu.be/J7m0YJSVG-w">youtube3</a>                   
                   </div>
+   		<a name="info-05"></a>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

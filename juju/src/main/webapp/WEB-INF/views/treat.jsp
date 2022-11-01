@@ -31,6 +31,8 @@
 	font-size: 16px;
 }
 .small {
+	padding-top: 0.7rem;
+	height: 50px;
 	font-size: 17px;
 	background-color: #C68B59;
 	border-color: #C68B59;
@@ -106,9 +108,9 @@
                 </p>
                 <a class="btn btn-primary small" href="">자세히 보기</a>
               </div>
+          	<a name="appo-04"></a>
             </div>
           </div>
-          
           
           
         </div>
