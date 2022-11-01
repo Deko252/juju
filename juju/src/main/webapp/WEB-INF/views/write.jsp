@@ -21,7 +21,6 @@
 }
 body {
 	min-height: 100vh;
-	background-color: #F4AE34;
 	overflow: hidden;
 }
 .blind {
