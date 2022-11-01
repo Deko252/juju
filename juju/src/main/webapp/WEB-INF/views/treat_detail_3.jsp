@@ -44,6 +44,9 @@ p{
 .h-101{
 	height: 150px !important;
 }
+#detail-img02 {
+	padding-top: 3rem !important;
+}
 
 .title1{
 	margin-top: 0;
@@ -385,6 +388,7 @@ p{
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div
+            	id="detail-img02" 
               class="position-relative overflow-hidden ps-5 pt-5 h-100"
               style="min-height: 400px"
             >
@@ -703,8 +707,21 @@ p{
 	<!-- Footer Start -->
 	<%@ include file="footer.jsp"%>
 	<!-- Footer End -->
+
 	<!-- Back to Top -->
 	<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
 		class="bi bi-arrow-up"></i></a>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./resources/lib/wow/wow.min.js"></script>
+	<script src="./resources/lib/easing/easing.min.js"></script>
+	<script src="./resources/lib/waypoints/waypoints.min.js"></script>
+	<script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="./resources/js/main.js"></script>
 </body>
 </html>

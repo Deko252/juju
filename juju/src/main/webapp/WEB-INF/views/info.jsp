@@ -97,7 +97,7 @@
       <div class="row g-0">
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
           <div class="position-relative">
-            <img class="img-fluid w-100" src="./resources/img/fact-1.jpg" alt="" />
+            <img class="img-fluid w-100" src="./resources/img/juju_board.jpg" alt="" />
             <div class="facts-overlay">
               <!-- <h1 class="display-1">I</h1> -->
               <div class="info-title-wrap">
@@ -105,11 +105,15 @@
 	              <h4 class="text-white mb-3 info-title">공지사항</h4>
               </div>
               <div class="info-content">
-              <c:forEach items="${in_no }" var="n">
               	  <div class="info-detail">
-		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
-              	  </div>        	  
-              </c:forEach> 
+		              <a class="info-font" href="">공지 첫번째</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">공지 두번째</a><br>
+              	  </div>
+              	  <div class="info-detail">
+		              <a class="info-font" href="">공지 세번째</a><br>
+              	  </div>
               </div>
               <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
@@ -117,7 +121,7 @@
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
           <div class="position-relative">
-            <img class="img-fluid w-100" src="./resources/img/fact-2.jpg" alt="" />
+            <img class="img-fluid w-100" src="./resources/img/juju_animal.gif" alt="" />
             <div class="facts-overlay">
               <!-- <h1 class="display-1">II</h1> -->
               <div class="info-title-wrap">
@@ -140,7 +144,7 @@
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
           <div class="position-relative">
-            <img class="img-fluid w-100" src="./resources/img/fact-3.jpg" alt="" />
+            <img class="img-fluid w-100" src="./resources/img/juju_hotel.png" alt="" />
             <div class="facts-overlay">
               <!-- <h1 class="display-1">III</h1> -->
 			  <div class="info-title-wrap">              
@@ -163,7 +167,7 @@
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
           <div class="position-relative">
-            <img class="img-fluid w-100" src="./resources/img/fact-4.jpg" alt="" />
+            <img class="img-fluid w-100" src="./resources/img/juju_map.png" alt="" />
             <div class="facts-overlay">
               <!-- <h1 class="display-1">IV</h1> -->
               <div class="info-title-wrap">
@@ -172,7 +176,7 @@
 	          </div>    
               <p class="text-white contact-us">
                 <div class="contact-phone">02.123.4567</div>
-	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>OO시 OO구 OO로</div>
+	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>남극 사우스셰틀랜드 제도의 킹 조지 섬 바톤 반도 62.223 S, 58.787 W</div>
               </p>
             </div>
           </div>
