@@ -105,15 +105,11 @@
 	              <h4 class="text-white mb-3 info-title">공지사항</h4>
               </div>
               <div class="info-content">
+              <c:forEach items="${in_no }" var="n">
               	  <div class="info-detail">
-		              <a class="info-font" href="">공지 첫번째</a><br>
-              	  </div>
-              	  <div class="info-detail">
-		              <a class="info-font" href="">공지 두번째</a><br>
-              	  </div>
-              	  <div class="info-detail">
-		              <a class="info-font" href="">공지 세번째</a><br>
-              	  </div>
+		              <a class="info-font" href="">${n.board_title }</a><br>
+              	  </div>        	  
+              </c:forEach> 
               </div>
               <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
