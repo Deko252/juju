@@ -54,8 +54,6 @@ public class PetinfoController {
 			if (map.get("title") != null && map.get("content") != null && map.get("cate") != null) {
 				map.put("id", session.getAttribute("id"));
 				
-				System.out.println(map.getMap());
-				
 				if(!file.isEmpty()) {
 					String realPath = servletContext.getRealPath("resources/upload");
 					String fileName = Util.save(realPath, file);

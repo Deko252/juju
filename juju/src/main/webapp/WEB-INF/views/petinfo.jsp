@@ -22,19 +22,36 @@ body{
 	width: 100%;
 	height: 450px;
 	position: relative;
+	display:flex;
 	margin-bottom: 50px;
+	border: 1px solid red;
 }
 #img_wrap img{
 	width: 100%;
 	height: 450px;
 }
-#img_wrap h1{
-	color:#fff;
+#menu_list{
+	width: 600px;
+	height: 300px;
+	border: 1px solid red;
+	color:black;
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate( -50%, -50% );
+}
+#pet_menu{
+	text-align:center;
+	display: flex;
+	justify-content: space-around;
+	
+}
+#pet_menu a{
+	width: 30%;
+	height: 100px;
+	border: 1px solid blue;
+	
 }
 #notice_box{
 	margin: 0 auto;
@@ -117,8 +134,17 @@ footer{
 </head>
 <body>	
 <%@ include file="header.jsp" %>
+
+
 	 <div id="img_wrap">
-			<h1>펫 정보</h1>
+			<div id="menu_list">
+				<h1>펫 정보</h1>
+					<div id="pet_menu">
+						<a href="./petinfo.do?cate=1">강아지 게시판</a>
+						<a href="./petinfo.do?cate=2">고양이 게시판</a>
+						<a href="./petinfo.do?cate=3">특수동물 게시판</a>
+					</div>	
+			</div>
 		<img alt="귀여운 뭄뭄쓰" src="./resources/img/notice_head.jpg">
 	</div>
 		<div id="notice_box">

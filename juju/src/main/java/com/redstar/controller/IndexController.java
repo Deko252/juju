@@ -34,15 +34,7 @@ public class IndexController {
 		mv.addObject("in_no", in_no);
 		
 		return mv;
-	}
-	
-	@GetMapping("appo_detail.do")
-	public ModelAndView appo_detail(CommandMap map) {
-		ModelAndView mv = new ModelAndView("appo_detail");
-		
-		return mv;
-	}
-	 
+	} 
 	@GetMapping("intro.do")
 	public String intro() {
 		return "intro";
