@@ -10,7 +10,7 @@
 <%@ include file="head.jsp" %> 
 
 <script type="text/javascript">
-function linkPage(pageNo){location.href="./notice.do?pageNo="+pageNo;}
+function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 </script>
 
 <style type="text/css">
@@ -131,7 +131,7 @@ footer{
 		          				<div id="text_wrap">
               						<div id="content_tit">${p.board_title }</div>
               						<div>
-              							<a href="./petinfo_detail.do?bno=${p.board_no }">${p.board_content }</a>
+              							<a href="./petinfo_detail.do?cate=${p.board_cate }&bno=${p.board_no }">${p.board_content }</a>
               						</div>
               						<div id="top_writer">
               							${p.a_name }
@@ -147,7 +147,7 @@ footer{
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
            	</div> --%>
                     	<c:if test="${sessionScope.id ne null}">
-              				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./petwrite.do'">글쓰기</button>
+              				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./petwrite.do?cate=${p_no[0].board_cate}'">글쓰기</button>
               			</c:if>
 		</body> 
 </html>

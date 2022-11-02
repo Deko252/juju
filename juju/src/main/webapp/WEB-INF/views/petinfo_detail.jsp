@@ -81,7 +81,7 @@ h2 {
 </style>
 
 <body>
-	
+	$
 	<h2>${petdetail.board_title }</h2>
 	
 	<div id="dc_container">
