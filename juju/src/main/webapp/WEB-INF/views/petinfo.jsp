@@ -22,7 +22,8 @@ body{
 	color: #ffffff !important;
 }
 .wow-1{
-	width: 150px !important;	
+	width: 200px !important;
+	height: 150px !important;
 }
 .wow-1 > .service-item {
 }
@@ -40,6 +41,7 @@ p{
     width: 700px;
     padding-left: 0px;
     padding-right: 0px;
+    border: 1px rgba(0, 0, 0, 0) solid;
 }
 .carousel-inner {
 } 
@@ -55,6 +57,7 @@ p{
 	padding-right: 0rem !important;
 	display: flex !important;
 	justify-content: center !important;
+	
 }
 .small-title {
 	color: #8D9297 !important;
@@ -178,15 +181,16 @@ footer{
 												</div>
 											</div>
 											<div class="row g-4 justify-content-center">
-												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1">
+												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1"
+													data-wow-delay="0.1s">
 													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
-															<a href="./petinfo.do?cate=1">
-														<div class="position-relative text-center h-100 p-4 treat-sel">
+														<a href="./petinfo.do?cate=1">
+														<div class="service-text position-relative text-center h-100 p-4">
 															<h5 class="mb-3 mm-1">강아지</h5>
 														</div>
 														</a>
 													</div>
-												</div>
+												</div>	
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1" data-wow-delay="0.3s">
 													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<a href="./petinfo.do?cate=2">
