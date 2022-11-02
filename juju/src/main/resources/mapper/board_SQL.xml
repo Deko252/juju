@@ -34,7 +34,11 @@
 		<if test="id != null">	
 			AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
 		</if>
+	</select>
 		
+	<select id="detailAjax" parameterType="HashMap" resultType="HashMap">
+		SELECT * FROM notice_boardview
+		WHERE board_no=#{no } 
 	</select>
 	
 	<update id="update" parameterType="HashMap">

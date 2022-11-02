@@ -18,6 +18,8 @@ public interface BoardService {
 	void postDel(Map<String, Object> map);
 
 	int totalCount(Map<String, Object> map);
+
+	Map<String, Object> detailAjax(Map<String, Object> map);
 	
 	
 }

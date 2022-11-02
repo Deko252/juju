@@ -50,5 +50,11 @@ public class BoardServiceImpl implements BoardService{
 		return boardDAO.totalCount(map);
 	}
 	
+	//detailAjax = 에이작스로 소통하기
+	@Override
+	public Map<String, Object> detailAjax(Map<String, Object> map) {
+		return boardDAO.detailAjax(map);
+	}
+	
 	
 }

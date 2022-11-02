@@ -8,6 +8,8 @@
 		SELECT n.*, a.a_name   
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 
+		ORDER BY board_no DESC
+		LIMIT #{startPage }, #{lastPage }
 	</select>
 	
 	<!-- 동적쿼리 : 상황에 맞게, 오는 데이터에 맞게 if -->
@@ -19,7 +21,6 @@
 		WHERE n.board_no=#{bno }
 	</select>
 
-	
 	<insert id="write" parameterType="HashMap">
 		INSERT INTO notice_board (board_title, board_content, b_no
 		<if test="file != null">, board_file</if>)
@@ -33,7 +34,11 @@
 		<if test="id != null">	
 			AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
 		</if>
+	</select>
 		
+	<select id="detailAjax" parameterType="HashMap" resultType="HashMap">
+		SELECT * FROM notice_boardview
+		WHERE board_no=#{no } 
 	</select>
 	
 	<update id="update" parameterType="HashMap">
@@ -45,6 +50,10 @@
 		UPDATE notice_board SET board_del=1 
 		WHERE board_no=#{bno } AND b_no=(SELECT a_no FROM admin WHERE a_id=#{id })
 	</update>
+	
+	<select id="totalCount" parameterType="HashMap" resultType="integer">
+		SELECT COUNT(*) FROM notice_boardview
+	</select>
 	
 		
 </mapper>

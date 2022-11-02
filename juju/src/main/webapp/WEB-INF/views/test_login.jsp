@@ -8,6 +8,7 @@
 <style type="text/css">
 .modal-content {
 	border-radius: 5px !important;
+	text-align: center;
 }
 .modal-body {
 	padding: 1rem 2rem 1.5rem !important;

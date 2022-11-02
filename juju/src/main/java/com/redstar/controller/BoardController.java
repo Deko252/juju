@@ -8,10 +8,12 @@ import javax.annotation.Resource;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -45,8 +47,8 @@ public class BoardController {
 
 		PaginationInfo paginationInfo = new PaginationInfo();
 		paginationInfo.setCurrentPageNo(pageNo);
-		paginationInfo.setRecordCountPerPage(10);
-		paginationInfo.setPageSize(10);
+		paginationInfo.setRecordCountPerPage(5);
+		paginationInfo.setPageSize(5);
 		paginationInfo.setTotalRecordCount(totalCount);
 
 		int startPage = paginationInfo.getFirstRecordIndex();// 0
@@ -90,7 +92,18 @@ public class BoardController {
 			}
 		} 
 	
-	
+	//detailAjax = 에이작스 사용
+	@ResponseBody
+	@GetMapping(value="/detailAjax.do",  produces="application/json;charset=UTF-8")
+	public String detailAjax(CommandMap map) {
+		JSONObject json = new JSONObject();
+		System.out.println("detailAjax : " + map.getMap());
+		Map<String, Object> detail = boardService.detailAjax(map.getMap());
+		System.out.println("map : " + detail);
+		
+		json.put("detail", detail);
+		return json.toString();
+	}
 	
 	@GetMapping("notice_detail.do")
 	public ModelAndView notice_detail(CommandMap map) {

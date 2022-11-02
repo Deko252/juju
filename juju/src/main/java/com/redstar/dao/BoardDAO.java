@@ -39,6 +39,11 @@ public class BoardDAO extends AbstractDAO {
 	public int totalCount(Map<String, Object> map) {
 		return (int) selectOne("board.totalCount", map);
 	}
+
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> detailAjax(Map<String, Object> map) {
+		return (Map<String, Object>) selectOne("board.detailAjax", map);
+	}
 	
 	
 }

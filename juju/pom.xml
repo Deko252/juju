@@ -209,7 +209,14 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
+		
+		<!-- JSON https://mvnrepository.com/artifact/org.json/json -->
+	      <dependency>
+	         <groupId>org.json</groupId>
+	         <artifactId>json</artifactId>
+	         <version>20160810</version>
+	      </dependency>
+		
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
