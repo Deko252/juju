@@ -35,7 +35,6 @@ public class PetinfoController {
 		if (!map.containsKey("cate")) {
 			map.put("cate", 1);
 		}
-		System.out.println(map.get("cate"));
 		
 		List<Map<String, Object>> p_no = petinfoService.pet_boardList(map.getMap());
 		mv.addObject("p_no", p_no);
@@ -61,8 +60,9 @@ public class PetinfoController {
 				}
 				
 				int result = petinfoService.pet_write(map.getMap());
+				System.out.println(map.getMap());
 				
-				return "redirect:/petinfo.do?result=" + map.get("cate") + result;
+				return "redirect:/petinfo.do?cate="+ map.get("cate") +"&result=" + result;
 			} else {
 				return "redirect:/petwrite.do?error=1250";
 			}

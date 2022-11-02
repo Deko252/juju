@@ -88,7 +88,7 @@ a.btn-secondary{
 				<!-- SideBar -->
                     <!-- 본문내용은 여기에 -->
                     <div class="input-form col-md-12 mx-auto">
-                    	<form action="./petwrite.do" method="post" enctype="multipart/form-data">
+                    	<form action="./petwrite.do?cate=${board_cate }" method="post" enctype="multipart/form-data">
 							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required>
 							<div class="form-group">
 								<textarea class="form-control" placeholder="내용을 입력해주세요." rows="20" name="content" required></textarea>
@@ -97,7 +97,7 @@ a.btn-secondary{
 							<input id="findFile" type="file" name="file" accept=".png, .jpg, .gif, .jpeg, .bmp">
 							<div id="writeBtn">
 							<button type="submit" class="btn btn-secondary mb-3">글쓰기</button>
-							<a href="./petinfo.do" role="button" class="btn btn-secondary">취소</a>
+							<a href="./petinfo.do?cate=${board_cate }" role="button" class="btn btn-secondary">취소</a>
 							</div>
 						</form>
                     </div>

@@ -12,7 +12,7 @@
 <style type="text/css">
 
 .text-body {
-	color: #ffffff !important;s
+	color: #ffffff !important;
 }
 .wow-1{
 	width: 150px !important;	
