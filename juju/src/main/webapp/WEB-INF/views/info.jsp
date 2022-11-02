@@ -126,13 +126,13 @@
 	          </div>                  
               <div class="info-content">
               	  <div class="info-detail">
-		              <a class="info-font" href="">고양이</a><br>
+		              <a class="info-font" href="./petinfo.do?cate=1">강아지</a><br>
               	  </div>
               	  <div class="info-detail">
-		              <a class="info-font" href="">강아지</a><br>
+		              <a class="info-font" href="./petinfo.do?cate=2">고양이</a><br>
               	  </div>
               	  <div class="info-detail">
-		              <a class="info-font" href="">특수 동물</a><br>
+		              <a class="info-font" href="./petinfo.do?cate=3">특수 동물</a><br>
               	  </div>
               </div>
             </div>
