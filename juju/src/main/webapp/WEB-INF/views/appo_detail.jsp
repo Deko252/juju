@@ -153,7 +153,7 @@ body {
 
           <div class="mb-3">
             <label for="phoneNumber">전화번호<span class="text-muted">&nbsp;</span></label>
-            <input type="text" maxlength="11" oninput="numberMaxLength(this);" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="-빼고 입력해 주세요" required>
+            <input type="number" maxlength="11" oninput="numberMaxLength(this);" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="-빼고 입력해 주세요" required>
           </div>
           
           <div class="mb-3">
@@ -247,12 +247,16 @@ function fn_selectDate(date){
 		$("#period_2").val(year+"-"+month+"-"+date);
 		check = 0;
 		selectCk = 0;
+		
 		if(check == 0){
 			const target = document.getElementById('btnS');
 			target.disabled = false;
 		}
 	}
 	
+	$(".validation-form").submit(function(event){
+		alert("예약 되었습니다.");
+	});
 }
 
 buildcalendar();
@@ -260,13 +264,16 @@ buildcalendar();
 const target = document.getElementById('btnS');
 target.disabled = true;
 
+
+
 function numberMaxLength(e){
 
     if(e.value.length > e.maxLength){
         e.value = e.value.slice(0, e.maxLength);
     }
 
-}	
+}
+
 </script>
 
 

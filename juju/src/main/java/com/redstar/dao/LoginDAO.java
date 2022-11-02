@@ -12,4 +12,8 @@ public class LoginDAO extends AbstractDAO{
 		return (Map<String, Object>) selectOne("login.login", map);
 	}
 
+	public int appo_detail(Map<String, Object> map) {		
+		return (int) insert("login.appo_detail", map);
+	}
+
 }

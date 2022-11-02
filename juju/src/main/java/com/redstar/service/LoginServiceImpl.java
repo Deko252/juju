@@ -18,4 +18,9 @@ public class LoginServiceImpl implements LoginService {
 		return loginDAO.login(map);
 	}
 
+	@Override
+	public int appo_detail(Map<String, Object> map) {
+		return loginDAO.appo_detail(map);
+	}
+
 }

@@ -62,5 +62,20 @@ public class LoginController {
 		return "redirect:/index.do";
 	}
 	
+	@GetMapping("/appo_detail.do")
+	public String appo_detail() {		
+		return "appo_detail";
+	}
+	
+	@PostMapping("/appo_detail.do")
+	public String appo_detail(CommandMap map) {
+		//사용자가 입력한 데이터를 데이터베이스에 저장하고 페이지 이동하는 메소드
+		System.out.println(map.getMap());
+		//{name=po1, pw2=01234657, id=poseidon1, pw1=01234567, email=email@email.co.kr}
+		int result = loginService.appo_detail(map.getMap());
+		
+		//System.out.println("결과는 : " + result);
+		return "redirect:/index.do?result=" + result;
+	}
 	
 }
