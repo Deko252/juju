@@ -89,13 +89,6 @@ body {
 
 </style>
 	
-<script type="text/javascript">
-	$(function(){
-		const target = document.getElementById('btnS');
-		  target.disabled = true;
-	});	
-</script>	
-	
 </head>
 <body>
 <div class="calendar">
@@ -155,13 +148,12 @@ body {
             <div class="invalid-feedback">
               날짜를 골라주세요.
             </div>
-            <input type="hidden" id="period_1" name="period_1"required="required" >
            	 <p id="resultMsg2"></p>
           </div>
 
           <div class="mb-3">
             <label for="phoneNumber">전화번호<span class="text-muted">&nbsp;</span></label>
-            <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="010-1234-5678" required>
+            <input type="text" maxlength="11" oninput="numberMaxLength(this);" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="-빼고 입력해 주세요" required>
           </div>
           
           <div class="mb-3">
@@ -187,6 +179,8 @@ body {
 var CDate = new Date(); 
 var today = new Date();
 var selectCk = 0;
+var check = 1;
+
 
 var buildcalendar = function(){
 	var htmlDates = ''; 
@@ -251,13 +245,30 @@ function fn_selectDate(date){
 		
 		$("#period_1").val(year+"-"+month+"-"+date);
 		$("#period_2").val(year+"-"+month+"-"+date);
+		check = 0;
 		selectCk = 0;
+		if(check == 0){
+			const target = document.getElementById('btnS');
+			target.disabled = false;
+		}
 	}
 	
 }
 
 buildcalendar();
+
+const target = document.getElementById('btnS');
+target.disabled = true;
+
+function numberMaxLength(e){
+
+    if(e.value.length > e.maxLength){
+        e.value = e.value.slice(0, e.maxLength);
+    }
+
+}	
 </script>
+
 
 
 <!-- JavaScript Libraries -->
