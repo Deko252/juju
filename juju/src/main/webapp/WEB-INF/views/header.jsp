@@ -120,9 +120,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 </head>
 <body>
-	<nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color"
-    >
+	<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color">
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
           <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
         <h1 class="m-0">
@@ -142,11 +140,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
           <a href="./index.do" class="nav-item nav-link active">홈으로</a>
           <a href="./intro.do" class="nav-item nav-link">병원소개</a>
           <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true"    
-              >진료과목</a
-            >
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+            	진료과목
+           	</a>
             <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
               <a href="./treat_detail_1.do" class="dropdown-item dorpdown-font">내과</a>
               <a href="./treat_detail_2.do" class="dropdown-item dorpdown-font">외과</a>
@@ -157,7 +153,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
           <a href="./petinfo.do" class="nav-item nav-link">펫정보</a>
           <a href="./notice.do" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
-	          <li> <a href="./admin_login.do" class="nav-item nav-link">로그인</a></li>
+	          <!-- <li><a href="./admin_login.do" class="nav-item nav-link">로그인</a></li> -->
+	          <li><a class="nav-item nav-link loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">로그인</a></li>
           </c:if>
 		  <c:if test="${sessionScope.id ne null }">
 		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
@@ -167,6 +164,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         </div>
       </div>
     </nav>
+    
+    <!-- Modal : login -->       
+	<%@ include file="test_login.jsp" %>
+    
     <!-- JavaScript Libraries -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script
