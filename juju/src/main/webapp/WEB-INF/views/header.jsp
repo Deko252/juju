@@ -149,7 +149,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
               <a href="./treat_detail_3.do" class="dropdown-item dorpdown-font">피부과</a>
             </div>
           </div> 
-          <a href="./appo.do" class="nav-item nav-link">진료예약</a>
+          <a href="./appo_detail.do" class="nav-item nav-link">진료예약</a>
           <a href="./petinfo.do?cate=1" class="nav-item nav-link">펫정보</a>
           <a href="./notice.do" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">

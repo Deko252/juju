@@ -8,6 +8,17 @@
 <meta content="" name="keywords" />
 <meta content="" name="description" />
 
+<!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./resources/lib/wow/wow.min.js"></script>
+    <script src="./resources/lib/easing/easing.min.js"></script>
+    <script src="./resources/lib/waypoints/waypoints.min.js"></script>
+    <script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./resources/js/main.js"></script>
+
 <!-- bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
