@@ -104,7 +104,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	border-width: 5px;
 	margin: 20px auto;
 }
-
 @media ( min-width : 992px) {
 	.treat_title {
 		flex: 0 0 auto;

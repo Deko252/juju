@@ -17,13 +17,16 @@
 	background-color: #C68B59 !important;
 	border-color: #C68B59 !important;
 	border-radius: 5px !important;
+	padding-top: 0.5rem !important;
+	padding-right: 2rem !important;
+	padding-left: 2rem !important;
+    height: 50px !important;
+    font-size: 18px !important;
+    width: auto;
 }
 .index-loginBtn:hover {
 	background-color: #8FC1D4 !important;
 	border-color: #8FC1D4 !important;
-}
-.cancelBtn {
-	border-radius: 5px !important;
 }
 </style>
 
