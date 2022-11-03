@@ -9,7 +9,7 @@
 	$(function(){
 		$(".loginModal").click(function(){
 			$("#exampleModal").modal("show");
-		});
+		});		
 	});
 </script>
 <head>
@@ -542,5 +542,14 @@ li .login-out {
 
     <!-- Template Javascript -->
     <script src="./resources/js/main.js"></script>
+    <script>
+    var appo_result = 3;
+    <c:if test="${param.result eq 0}">appo_result = 0;</c:if>
+    <c:if test="${param.result eq 1}">appo_result = 1;</c:if>
+    if(appo_result == 1){
+    	alert("예약 되었습니다.");
+    	appo_result = 3;
+    }
+    </script>
   </body>
 </html>

@@ -74,11 +74,11 @@ public class LoginController {
 		//{name=po1, pw2=01234657, id=poseidon1, pw1=01234567, email=email@email.co.kr}
 		
 		Map<String, Object> appo_count = loginService.appo_count(map.getMap());
-		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) >= 3) {			
-			return "redirect:/appo_detail.do?msg='full'";	
-			
-		}else {
-			
+		System.out.println(appo_count);
+		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) > 3) {
+			int result = 0;			
+			return "redirect:/appo_detail.do?result=" + result;				
+		}else {		
 			int result = loginService.appo_detail(map.getMap());
 			//System.out.println("결과는 : " + result);
 			return "redirect:/index.do?result=" + result;
