@@ -24,6 +24,14 @@
     margin: 10px 0;
 }
 
+.icon_1{
+	visibility: visible;
+    animation-delay: 0.1s;
+    padding-left: 32px !important;
+    width: 164px;
+    margin-top: 0px;
+}
+
 </style>
 
 
@@ -41,31 +49,31 @@
                   수의사들의 하루
                 </h1>
               </div>
-              <p>
-                소개문구
-              </p>
               <p class="mb-4">
               반려동물들을 책임지는 수의사들의 하루에 대해 알아보는 시간~! 
               </p>
+              <p>
+             	좋아요 구독 필수
+              </p>
               <div class="border-top mt-4 pt-4">
                 <div class="row g-4">
-                  <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">
+                  <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.1s">
                     <i
-                      class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
+                      href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                     <a class="btn btn-primary1" href="https://youtu.be/Kv5smyLY3Y0">youtube1</a>            
+                     <a class="btn btn-primary3" href="https://youtu.be/5NjxaNjbftc"><img src="./resources/img/youtube.png" alt="" /><br>유콘의 <br>수호자</a>            
                   </div>
-                  <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
+                  <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.3s">
                     <i
-                      class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
+                       href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                    <a class="btn btn-primary2" href="https://youtu.be/OY1jmWMruzs">youtube2</a>                
+                    <a class="btn btn-primary3" href="https://youtu.be/kGCc858zWRY"><img src="./resources/img/youtube.png" alt="" />동물병원 <br>응급실</a>                
                   </div>
-                  <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
+                  <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.5s">
                     <i
-                      class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
+                      href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                    <a class="btn btn-primary3" href="https://youtu.be/J7m0YJSVG-w">youtube3</a>                   
+                    <a class="btn btn-primary3" href="https://youtu.be/DXeroPf0MFs"><img src="./resources/img/youtube.png" alt="" />쪼꼬미 <br>동물병원</a>                   
                   </div>
    		<a name="info-05"></a>
                 </div>
