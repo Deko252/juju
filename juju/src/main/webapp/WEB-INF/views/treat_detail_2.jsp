@@ -296,7 +296,7 @@ h3 > span {
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100 w-101" src="./resources/img/treat_detail3.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/treat-back.jpg" alt="Image" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
@@ -419,7 +419,7 @@ h3 > span {
             >
               <img
                 class="position-absolute w-100 h-100"
-                src="./resources/img/treat_detail_1.jpg"
+                src="./resources/img/treat_detail_3.jpg"
                 alt=""
                 style="object-fit: cover"
               />
@@ -487,7 +487,7 @@ h3 > span {
             		<div id="top_content2_1">
 		          		<div id="thumnail_2"><h2>일반외과</h2></div>
 		          			<div id="top_text2_1" class="top_text_all">
-		          			경우에 따라 복강경을 이용하여 개복 또는 개흉을 하지 않고, 최소한의 절개로 수술적 교정을 실시하기도 합니다. 절개 부위가 작아 흉터가 작으며, 수술 후 통증, 회복이 비교적 빠른 장점이 있습니다. 생검, 영양관 (feeding tube) 장착, 암컷의 중성화수술, 위 고정술, 방광결석 제거 등에 이용될 수 있습니다. 일반적으로 선천성 혹은 후천성의 질환들로 인해 생명이 위험하거나, 수술적 교정 / 마취과정에 위험성이 있는 경우, 원인이 밝혀지지 않거나 여러 원인이 있는 경우, 수술 후 합병증의 교정이 필요한 경우에 본원에 의뢰되어 내원하시게 됩니다. 따라서 경우에 따라 위험하고 응급을 요하는 수술이 많이 행해지게 됩니다.
+		          			경우에 따라 복강경을 이용하여 개복 또는 개흉을 하지 않고, <font class="top_text_color">최소한의 절개로 수술적 교정을 실시하기도 합니다. 절개 부위가 작아 흉터가 작으며, 수술 후 통증, 회복이 비교적 빠른 장점</font>이 있습니다. 생검, 영양관 (feeding tube) 장착, 암컷의 중성화수술, 위 고정술, 방광결석 제거 등에 이용될 수 있습니다. 일반적으로 선천성 혹은 후천성의 질환들로 인해 생명이 위험하거나, 수술적 교정 / 마취과정에 위험성이 있는 경우, 원인이 밝혀지지 않거나 여러 원인이 있는 경우, <font class="top_text_color">수술 후 합병증의 교정이 필요한 경우에 본원에 의뢰되어 내원</font>하시게 됩니다. 따라서 경우에 따라 위험하고 응급을 요하는 수술이 많이 행해지게 됩니다.
               				</div>
             		</div>	
         	</table>
@@ -495,7 +495,7 @@ h3 > span {
             		<div id="top_content2_1">
 		          		<div id="thumnail_2"><h2>흉부외과</h2></div>
 		          			<div id="top_text2_2" class="top_text_all">
-		          			Carval Syndrome을 보이는 말기 심장사상충 동물에게 수술을 통한 심장사상충 제거를 하고 있으며 횡격막 허니아, 심낭복막 횡격막 허니아등도 수술합니다. 또한 식도천공된 흉부 식도의 절제술등이 가능하여 흉부식도이물이 부식도를 관통하여 음식물이 흉강으로 새는 경우도 수술하여 동물의 생명을 살리게 되었습니다. 그리고 폐의 부분/전적출술과 폐종양의 수술이 이루어집니다.
+		          			Carval Syndrome을 보이는 말기 심장사상충 동물에게 수술을 통한 심장사상충 제거를 하고 있으며 횡격막 허니아, 심낭복막 횡격막 허니아등도 수술합니다. 또한 <font class="top_text_color">식도천공된 흉부 식도의 절제술등이 가능하여 흉부식도이물이 부식도를 관통하여 음식물이 흉강으로 새는 경우도 수술하여 동물의 생명을 살리게 되었습니다</font>. 그리고 폐의 부분/전적출술과 폐종양의 수술이 이루어집니다.
               				</div>
             		</div>	
         	</table>

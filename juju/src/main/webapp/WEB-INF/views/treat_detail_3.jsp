@@ -294,7 +294,7 @@ h3 > span {
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100 w-101" src="./resources/img/treat_detail3.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/treat-back.jpg" alt="Image" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
@@ -419,7 +419,7 @@ h3 > span {
             >
               <img
                 class="position-absolute w-100 h-100"
-                src="./resources/img/treat_detail_1.jpg"
+                src="./resources/img/treat_detail_2.jpg"
                 alt=""
                 style="object-fit: cover"
               />
