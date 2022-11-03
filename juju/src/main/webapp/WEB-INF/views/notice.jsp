@@ -138,6 +138,22 @@ footer{
  	display: none;
  	}
 }
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+	border-radius: 5px !important;
+	width: 50px;
+	height: 50px;
+}
+.back-to-top {
+	border-radius: 5px !important;
+	background-color: #C68B59 !important;
+	border-color: #C68B59 !important;
+}
+.back-to-top:hover {
+	background-color: #865439 !important;
+	border-color: #865439 !important;
+}
 
 </style>
 </head>
@@ -244,6 +260,25 @@ $(function(){
 	  </div>
 	</div>              			
              <%@ include file="footer.jsp" %>
+             
+             		<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i
+		class="bi bi-arrow-up"></i></a>
+
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./resources/lib/wow/wow.min.js"></script>
+	<script src="./resources/lib/easing/easing.min.js"></script>
+	<script src="./resources/lib/waypoints/waypoints.min.js"></script>
+	<script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="./resources/js/main.js"></script>
+	
+	
+             
+             
 		</body> 
 </html>
 	

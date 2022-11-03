@@ -175,6 +175,20 @@ font-size: 20px;
 .picci p{
 font-weight: bold;
 }
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+	border-radius: 5px !important;
+}
+.back-to-top {
+	border-radius: 5px !important;
+	background-color: #C68B59 !important;
+	border-color: #C68B59 !important;
+}
+.back-to-top:hover {
+	background-color: #865439 !important;
+	border-color: #865439 !important;
+}
 
 </style>
 
