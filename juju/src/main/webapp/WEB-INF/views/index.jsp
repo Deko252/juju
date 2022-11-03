@@ -249,6 +249,7 @@ li .login-out {
     <!-- Topbar End -->
 
     <!-- 헤더 -->
+    <a name="home-01"></a>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color">
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
         <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
