@@ -181,13 +181,13 @@ footer{
 				
 				<c:choose>
 				<c:when test="${param.cate == 1 }">
-					<img class="w-100 w-101" src="./resources/img/puppy_cate1.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate1.jpg" alt="Image" />
 				</c:when>
 				<c:when test="${param.cate == 2 }">
-					<img class="w-100 w-101" src="./resources/img/kittens_cate2.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate2.jpg" alt="Image" />
 				</c:when>
 				<c:otherwise>
-					<img class="w-100 w-101" src="./resources/img/animals_cate3.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate3.jpg" alt="Image" />
 				</c:otherwise>
 				</c:choose>	
 					<div class="carousel-caption">
