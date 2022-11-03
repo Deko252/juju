@@ -33,9 +33,6 @@ p{
 .bg-primary {
     background-color: #8FC1D4 !important;
 }
-#text{
-	font-size: 17px;
-}
 .container2{
 	height: 200px;
     width: 700px;
@@ -163,7 +160,18 @@ footer{
 		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100 w-101" src="./resources/img/treat-back.jpg" alt="Image" />
+				
+				<c:choose>
+				<c:when test="${param.cate == 1 }">
+					<img class="w-100 w-101" src="./resources/img/puppy_cate1.jpg" alt="Image" />
+				</c:when>
+				<c:when test="${param.cate == 2 }">
+					<img class="w-100 w-101" src="./resources/img/kittens_cate2.jpg" alt="Image" />
+				</c:when>
+				<c:otherwise>
+					<img class="w-100 w-101" src="./resources/img/animals_cate3.jpg" alt="Image" />
+				</c:otherwise>
+				</c:choose>	
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
