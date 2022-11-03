@@ -25,8 +25,8 @@ public class PetinfoServiceImpl implements PetinfoService {
 	}
 
 	@Override
-	public Map<String, Object> pet_detail(Map<String, Object> map) {
-		return petinfoDAO.pet_detail(map);
+	public Map<String, Object> pet_updetail(Map<String, Object> map) {
+		return petinfoDAO.pet_updetail(map);
 	}
 
 	@Override

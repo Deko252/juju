@@ -18,8 +18,8 @@ public class PetinfoDAO extends AbstractDAO{
 	}
 
 	@SuppressWarnings("unchecked")
-	public Map<String, Object> pet_detail(Map<String, Object> map) {
-		return (Map<String, Object>) selectOne("petinfo.pet_detail", map);
+	public Map<String, Object> pet_updetail(Map<String, Object> map) {
+		return (Map<String, Object>) selectOne("petinfo.pet_updetail", map);
 	}
 
 	public int pet_update(Map<String, Object> map) {

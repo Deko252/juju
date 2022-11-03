@@ -8,6 +8,7 @@ import javax.annotation.Resource;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpSession;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +31,8 @@ public class PetinfoController {
 	@Autowired
 	private ServletContext servletContext;
 	
+	
+	/* 펫인포 메인 */
 	@GetMapping("petinfo.do")
 	public ModelAndView petinfo(CommandMap map) {
 		ModelAndView mv = new ModelAndView("petinfo");
@@ -67,6 +70,19 @@ public class PetinfoController {
 		return mv;
 	}
 	
+	/* 펫인포 게시글 보기 */
+	@GetMapping("petinfo_detail.do")
+	public ModelAndView petInfo_detail(CommandMap map) {
+		ModelAndView mv = new ModelAndView("petinfo_detail");
+		
+		Map<String, Object> petdetail = petinfoService.petinfo_detail(map.getMap());
+		mv.addObject("petdetail", petdetail);
+		return mv;
+	}
+	
+	
+	
+	/* 펫인포 글작성 */
 	@GetMapping("/petwrite.do")
 	public String petwrite() {
 		return "petwrite";	
@@ -94,25 +110,19 @@ public class PetinfoController {
 		} 
 	
 	
-	@GetMapping("petinfo_detail.do")
-	public ModelAndView petInfo_detail(CommandMap map) {
-		ModelAndView mv = new ModelAndView("petinfo_detail");
-		
-		Map<String, Object> petdetail = petinfoService.petinfo_detail(map.getMap());
-		mv.addObject("petdetail", petdetail);
-		return mv;
-	}
 	
+		/* 펫인포 글수정 */
 	@GetMapping("/petupdate.do")
-	public ModelAndView update(HttpSession session, CommandMap map) {
+	public ModelAndView pet_update(HttpSession session, CommandMap map) {
 		ModelAndView mv = new ModelAndView("redirect:/error.do?error=error");
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {
-				Map<String, Object> pet_update = petinfoService.pet_detail(map.getMap());
-				if (pet_update != null) {
-					mv.addObject("pet_update", pet_update);
-					mv.setViewName("petupdate");
+				Map<String, Object> pet_updetail = petinfoService.pet_updetail(map.getMap());
+				System.out.println(pet_updetail);
+				if (pet_updetail != null) {
+					mv.addObject("pet_updetail", pet_updetail);
+					mv.setViewName("petupdate");	
 				}
 			}
 		}
@@ -120,7 +130,7 @@ public class PetinfoController {
 	}
 
 	@PostMapping("/petupdate.do")
-	public String update(CommandMap map, HttpSession session) {
+	public String petupdate(CommandMap map, HttpSession session) {
 		if (session.getAttribute("id") != null) {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
@@ -136,13 +146,15 @@ public class PetinfoController {
 		}
 	}
 	
+	
+	/* 펫인포 삭제 */
 	@GetMapping("/petpostDel.do")
 	public String postDel(CommandMap map, HttpSession session) {
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			petinfoService.pet_postDel(map.getMap());
 
-			return "redirect:/petinfo.do";
+			return "redirect:/petinfo.do?cate=" + map.get("cate");
 		} else {
 			return "redirect:/error.do";
 		}

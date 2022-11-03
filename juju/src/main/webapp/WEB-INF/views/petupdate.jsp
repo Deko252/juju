@@ -93,16 +93,15 @@ a.btn-secondary{
 				<!-- SideBar -->				 
                     <!-- 본문내용은 여기에 -->
                     <div class="input-form col-md-12 mx-auto">
-                   
-                    	<form action="./update.do" method="post">
-							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required value="${detail.board_title }">
+                    	<form action="./petupdate.do?bno=${pet_updetail.board_no }" method="post">
+							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required value="${pet_updetail.board_title }">
 							<div class="form-group">
-								<textarea class="form-control" rows="20" name="content" required>${detail.board_content }</textarea>
+								<textarea class="form-control" rows="20" name="content" required>${pet_updetail.board_content }</textarea>
 							</div>
-							<input type="hidden" name="board_no" value="${detail.board_no }">
+							<input type="hidden" name="board_no" value="${pet_updetail.board_no }">
 							<div id="right-btnn">
 								<button type="submit" class="btn btn-secondary mb-3">수정하기</button>
-								<a href="notice_detail.do?bno=${detail.board_no }" role="button" class="btn btn-secondary">취소</a>
+								<a href="petinfo_detail.do?bno=${pet_updetail.board_no }" role="button" class="btn btn-secondary">취소</a>
 							</div>
 						</form>
                     </div>               

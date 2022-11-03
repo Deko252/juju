@@ -16,13 +16,14 @@
 			//alert("삭제버튼을 눌렀습니다");
 			if (confirm("게시글을 삭제하시겠습니까?")) {
 				alert("삭제합니다");
-				location.href = "./petpostDel.do?bno=${petinfo_detail.board_no }";
+				location.href = "./petpostDel.do?bno=${petdetail.board_no }&cate=${param.cate}";
+				//파라미터는 링크 창의 값을 그대로 긁어오는 것을 말한다. 
 			}
 		});
 		$("#updateBtn").click(function() {
 			if (confirm("게시글을 수정하시겠습니까?")) {
 				alert("수정합니다");
-				location.href = "./petupdate.do?bno=${petinfo_detail.board_no}";
+				location.href = "./petupdate.do?bno=${petdetail.board_no}";
 			}
 		});
 	});
@@ -81,7 +82,6 @@ h2 {
 </style>
 
 <body>
-	$
 	<h2>${petdetail.board_title }</h2>
 	
 	<div id="dc_container">
@@ -107,7 +107,7 @@ h2 {
 				<button class="btn btn-primary" id="updateBtn">수정</button>
 				<button class="btn btn-danger" id="delBtn">삭제</button>
 			</c:if>
-				<button class="btn btn-success" onclick="location.href='./petinfo.do'">이전</button>
+				<button class="btn btn-success" onclick="location.href='./petinfo.do?cate=${param.cate }'">이전</button>
 		</div>
 
 </body>

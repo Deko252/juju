@@ -9,7 +9,7 @@ public interface PetinfoService {
 
 	int pet_write(Map<String, Object> map);
 
-	Map<String, Object> pet_detail(Map<String, Object> map);
+	Map<String, Object> pet_updetail(Map<String, Object> map);
 
 	int pet_update(Map<String, Object> map);
 
