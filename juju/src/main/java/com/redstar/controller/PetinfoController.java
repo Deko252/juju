@@ -19,6 +19,8 @@ import com.redstar.common.CommandMap;
 import com.redstar.service.PetinfoService;
 import com.redstar.util.Util;
 
+import egovframework.rte.ptl.mvc.tags.ui.pagination.PaginationInfo;
+
 @Controller
 public class PetinfoController {
 	
@@ -36,9 +38,32 @@ public class PetinfoController {
 			map.put("cate", 1);
 		}
 		
+		int pageNo = 1;
+		if (map.containsKey("pageNo")) {
+			pageNo = Util.strToInt((String) map.get("pageNo"));
+		}
+
+		// totalCount
+		int totalCount = petinfoService.totalCount(map.getMap());
+
+		PaginationInfo paginationInfo = new PaginationInfo();
+		paginationInfo.setCurrentPageNo(pageNo);
+		paginationInfo.setRecordCountPerPage(5);
+		paginationInfo.setPageSize(5);
+		paginationInfo.setTotalRecordCount(totalCount);
+
+		int startPage = paginationInfo.getFirstRecordIndex();// 0
+		int lastPage = paginationInfo.getRecordCountPerPage();// 10
+
+		map.put("startPage", startPage);
+		map.put("lastPage", lastPage);
+		
+		
 		List<Map<String, Object>> p_no = petinfoService.pet_boardList(map.getMap());
 		mv.addObject("p_no", p_no);
 		mv.addObject("cate", map.get("cate"));
+		mv.addObject("pageNo", pageNo);
+		mv.addObject("paginationInfo", paginationInfo);
 		return mv;
 	}
 	

@@ -35,4 +35,8 @@ public class PetinfoDAO extends AbstractDAO{
 	public Map<String, Object> petinfo_detail(Map<String, Object> map) {
 		return (Map<String, Object>) selectOne("petinfo_detail", map);
 	}
+
+	public int totalCount(Map<String, Object> map) {
+		return (int) selectOne("petinfo.totalCount", map);
+	}
 }

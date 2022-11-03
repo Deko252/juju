@@ -16,4 +16,6 @@ public interface PetinfoService {
 	void pet_postDel(Map<String, Object> map);
 
 	Map<String, Object> petinfo_detail(Map<String, Object> map);
+
+	int totalCount(Map<String, Object> map);
 }

@@ -44,5 +44,10 @@ public class PetinfoServiceImpl implements PetinfoService {
 	public Map<String, Object> petinfo_detail(Map<String, Object> map) {
 		return petinfoDAO.petinfo_detail(map);
 	}
+
+	@Override
+	public int totalCount(Map<String, Object> map) {
+		return petinfoDAO.totalCount(map);
+	}
 	
 }

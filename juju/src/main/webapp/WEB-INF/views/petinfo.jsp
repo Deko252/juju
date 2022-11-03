@@ -19,7 +19,7 @@ body{
 	height: 3000px;
 }
 .text-body {
-	color: #ffffff !important;
+	color: #fff !important;
 }
 .wow-1{
 	width: 200px !important;
@@ -62,6 +62,7 @@ p{
 }
 h3 > span {
 	color: #8D9297 !important;
+	border: 1px solid red;
 }
 #detail-img02 {
 	padding-top: 3rem !important;
@@ -70,8 +71,8 @@ h3 > span {
 	margin-top: 0;
 }
 .mm-1{
-	    margin-top: 33px;
-	    font-size: 24px !important;
+    margin-top: 33px;
+    font-size: 24px !important;
 }
 #notice_box{
 	margin: 0 auto;
@@ -251,9 +252,9 @@ footer{
           		</c:forEach>	
         	</table>
 		    </div>
-         <%--   	<div id="paging">
+         	<div id="paging">
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
-           	</div> --%>
+           	</div> 
                     	<c:if test="${sessionScope.id ne null}">
               				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./petwrite.do?cate=${param.cate}'">글쓰기</button>
               			</c:if>
