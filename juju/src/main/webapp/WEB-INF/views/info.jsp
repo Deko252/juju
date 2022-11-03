@@ -149,13 +149,13 @@
 	          </div>    
               <div class="info-content">
               	  <div class="info-detail">
-		              <a class="info-font" href="">첫번째 글</a><br>
+		              <a class="info-font" href="https://www.facebook.com/petgroundhbc">펫그라운드_해방촌</a><br>
               	  </div>
               	  <div class="info-detail">
-		              <a class="info-font" href="">두번째 글</a><br>
+		              <a class="info-font" href="https://www.barkleycleveland.com/">멍클리 펫 호텔</a><br>
               	  </div>
               	  <div class="info-detail">
-		              <a class="info-font" href="">세번째 글</a><br>
+		              <a class="info-font" href="https://thepethotel.fr/">더 펫 호텔</a><br>
               	  </div>
               </div>
             </div>
