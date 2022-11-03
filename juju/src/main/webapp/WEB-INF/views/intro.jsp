@@ -17,22 +17,11 @@ font-size: 60px;
 background-color: rgb(44, 62, 80);
 color:#ffffff;
 }
-div.title{
-  width: 703px;
-  margin-left: 600px;
+#hos{
+font-size: 40px;
 }
-.title{
-background-size: 900px;
- padding-right:50px;
- text-align:center;
- font-size: 30px;
- margin:60px;
-
- background-color: green;
-}
-.title span{
-  font-weight: bold;
- 
+#clin{
+font-size: 30px;
 }
 div.pic{
 width: 900px;
@@ -41,7 +30,13 @@ img.famliy{
  width:900px;
  margin-left: 500px;
 }
-p{
+
+.hop p {
+font-size: 40px;
+text-align: center;
+}
+.in p {
+font-size: 40px;
 text-align: center;
 }
 div.title2{
@@ -64,7 +59,7 @@ img.famliy2{
  margin-left: 500px;
 }
 .sr_tit2{
- border: 1px solid red;
+
  margin: 0 auto;
  padding: 100px;
  margin-left:200px; 
@@ -79,7 +74,7 @@ img.famliy2{
 }
 
 .sr_graph4{
-border: 1px solid gray;
+
     position: relative;
     width: 100%;
     background: #f8f8f8;
@@ -140,8 +135,46 @@ margin: 5px;
     /* padding-top: 68px; */
 }
 
-
-
+.oo {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+}
+.aa{
+/* position: relative; */
+/* vertical-align: middle ; */
+height:auto;
+width:100%;
+display: flex ;
+}
+.bb{
+margin: 0 auto;
+text-align: center;
+height:auto;
+padding-bottom: 100px;
+}
+.cc{
+float: left;
+width:300px;
+margin: 0 10px;
+}
+.pp{
+width: 300px;
+height: 200px;
+}
+.picci {
+font-size: 20px;
+}
+.picci p{
+font-weight: bold;
+}
 
 </style>
 
@@ -155,12 +188,14 @@ margin: 5px;
 <body>
 <%@ include file="header.jsp"%>
 
-	<div class="intro">병원 소개</div>
-	<div class="title"> <span> 원 클리닉 </span></div>
+	<div class="intro">병원 소개<span id="hos" > <br> Hospital introduction </span>  </div>
+	<div class="hop">
 	<p>
-	클리닉 순서
+	 클리닉 절차<span id="clin"> <br>Clinic Procedure </span>
 	</p>
-	                <section class="pdb70">
+	    
+	</div>
+            <section class="pdb70">
                     <!-- 컨텐츠타이틀 및 내용 2단 -->
                     <div class="sr_tit2">
                         <h1><span class="bnum pt">01</span><p>One Stop Total Clinic</p></h1>
@@ -215,15 +250,59 @@ one-stop total clinic 서비스를 제공하고 있습니다.<br><br>
 
 
 
-
-	<div class="title2"> <span> 제목 </span></div>
+	<div class="in">
 	<p>
-	강아지 고양이 가족이용
+		강아지들을 위한 진료, 미용, 호텔, VIP room service
 	</p>
-	<img class="famliy2" alt="picc" src="./resources/img/int2.jpg">
+	</div>
+	
+	
+<div class="aa">
+      <div class="bb">
+        <div class="cc" data-wow-delay="0.1s">
+          <div class="posi">
+            <img class="pp" src="./resources/img/jin.png" alt="" />
+            <div class = "picci">
+            <p >병원 진료</p>
+            </div>
+            <div class="facts">
+            </div>
+          </div>
+        </div>
+        <div class="cc" data-wow-delay="0.3s">
+          <div class="posi">
+            <img class="pp" src="./resources/img/hair.jpg" alt="" />
+            <div class = "picci">
+            <p >애견 미용</p>
+            </div>
+            <div class="facts">
+             </div>
+            </div>
+          </div>
+        <div class="cc" data-wow-delay="0.5s">
+          <div class="posi">
+            <img class="pp" src="./resources/img/hotel.jpg" alt="" />
+            <div class = "picci">
+            <p >애견 호텔</p>
+            </div>
+            <div class="facts">
+        </div>
+          </div>
+        </div>
 
-
-
+        <div class="cc" data-wow-delay="0.7s">
+          <div class="posi">
+            <img class="pp" src="./resources/img/VIP-ROOM.jpg" alt="" />
+             <div class = "picci">
+            <p >VIP-ROOM</p>
+            </div>
+            <div class="facts">
+        	</div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
 
 
 
