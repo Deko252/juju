@@ -470,22 +470,22 @@ h3 > span {
 	     				<ul id="imgs4">
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng01.jpg" width="100%">
+	     							<img src="./resources/img/b01.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng02.jpg" width="100%">
+	     							<img src="./resources/img/b02.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng03.jpg" width="100%">
+	     							<img src="./resources/img/b03.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     					<li id="imgs5">
 	     						<span>
-	     							<img src="http://www.chungdamah.co.kr/theme/hp001/img/ng04.jpg" width="100%">
+	     							<img src="./resources/img/b04.jpg" width="100%">
 	     						</span>
 	     					</li>
 	     				</ul>
