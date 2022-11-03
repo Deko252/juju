@@ -72,10 +72,20 @@ public class LoginController {
 		//사용자가 입력한 데이터를 데이터베이스에 저장하고 페이지 이동하는 메소드
 		System.out.println(map.getMap());
 		//{name=po1, pw2=01234657, id=poseidon1, pw1=01234567, email=email@email.co.kr}
-		int result = loginService.appo_detail(map.getMap());
 		
-		//System.out.println("결과는 : " + result);
-		return "redirect:/index.do?result=" + result;
+		Map<String, Object> appo_count = loginService.appo_count(map.getMap());
+		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) >= 3) {			
+			return "redirect:/appo_detail.do?msg='full'";	
+			
+		}else {
+			
+			int result = loginService.appo_detail(map.getMap());
+			//System.out.println("결과는 : " + result);
+			return "redirect:/index.do?result=" + result;
+		}
+			
 	}
+	
+	
 	
 }

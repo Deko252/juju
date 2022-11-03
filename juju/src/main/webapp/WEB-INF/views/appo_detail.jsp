@@ -244,10 +244,9 @@ function fn_selectDate(date){
 		$("#date_"+date).css("color", "white");
 		
 		$("#period_1").val(year+"-"+month+"-"+date);
-		$("#period_2").val(year+"-"+month+"-"+date);
 		check = 0;
 		selectCk = 0;
-		
+			
 		if(check == 0){
 			const target = document.getElementById('btnS');
 			target.disabled = false;
@@ -263,7 +262,6 @@ buildcalendar();
 
 const target = document.getElementById('btnS');
 target.disabled = true;
-
 
 
 function numberMaxLength(e){

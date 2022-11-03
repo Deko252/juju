@@ -14,4 +14,8 @@
 		VALUES(#{name }, #{p_name }, #{phoneNumber }, #{p_type }, #{period_1 }, #{comment })
 	</insert>
 	
+	<select id="appo_count" parameterType="HashMap" resultType="HashMap">
+		SELECT count(*) as count FROM appo WHERE date=#{period_1 }
+	</select>
+	
 </mapper>

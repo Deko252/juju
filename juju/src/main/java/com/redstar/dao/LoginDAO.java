@@ -16,4 +16,9 @@ public class LoginDAO extends AbstractDAO{
 		return (int) insert("login.appo_detail", map);
 	}
 
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> appo_count(Map<String, Object> map) {
+		return (Map<String, Object>) selectOne("login.appo_count", map);
+	}
+
 }

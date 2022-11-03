@@ -23,4 +23,9 @@ public class LoginServiceImpl implements LoginService {
 		return loginDAO.appo_detail(map);
 	}
 
+	@Override
+	public Map<String, Object> appo_count(Map<String, Object> map) {
+		return loginDAO.appo_count(map);
+	}
+
 }
