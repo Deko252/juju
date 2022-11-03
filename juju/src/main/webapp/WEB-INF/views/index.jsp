@@ -2,14 +2,14 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>    
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ko"> 
 
 <script type="text/javascript">
 	$(function(){
 		$(".loginModal").click(function(){
 			$("#exampleModal").modal("show");
-		});		
+		});
 	});
 </script>
 <head>
@@ -19,7 +19,7 @@
 
 <style type="text/css">
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, a{
 	font-family: 'Noto Sans KR', sans-serif !important;
 }
 
@@ -32,6 +32,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-size: 50px;
 }
 .navbar .navbar-nav .nav-link {
+	font-family: 'Noto Sans KR', sans-serif !important;
 	color: #8D9297 !important;
 }
 li .login-out {
@@ -249,7 +250,6 @@ li .login-out {
     <!-- Topbar End -->
 
     <!-- 헤더 -->
-    <a name="home-01"></a>
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0 header-color">
       <a href="./index.do" class="navbar-brand d-flex align-items-center">
         <img class="logo-img" src="./resources/img/logo.png" alt="JUJU">
@@ -338,7 +338,7 @@ li .login-out {
                         조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해<br>최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
-                    <a href="./petinfo.do?cate=1" class="btn btn-primary py-3 px-5 main-button-2">자세히보기</a>
+                    <a href="" class="btn btn-primary py-3 px-5 main-button-2">자세히보기</a>
                   </div>
                 </div>
               </div>
@@ -543,19 +543,5 @@ li .login-out {
 
     <!-- Template Javascript -->
     <script src="./resources/js/main.js"></script>
-    <script>
-    window.onkeydown = function() {
-    	var kcode = event.keyCode;
-    	if(kcode == 116) {
-    	history.replaceState({}, null, location.pathname);
-    	}
-    	}
-    
-    var appo_result = 3;
-    <c:if test="${param.result eq 1}">appo_result = 1;</c:if>
-    if(appo_result == 1){
-    	alert("예약 되었습니다.");
-    }
-    </script>
   </body>
 </html>

@@ -117,7 +117,7 @@
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
           <div class="position-relative">
-            <img class="img-fluid w-100" src="./resources/img/juju_animal.gif" alt="" />
+            <img class="img-fluid w-100" src="./resources/img/info01.jpg" alt="" />
             <div class="facts-overlay">
               <!-- <h1 class="display-1">II</h1> -->
               <div class="info-title-wrap">
