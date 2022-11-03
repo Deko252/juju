@@ -87,18 +87,42 @@
 .pt-5 {
 	padding-top: 0 !important;
 }
+.appo-icon {
+	width: 3.5rem;
+	height: 3.5rem;
+	background-color: #CDCDCD;
+    border: 10px solid #CDCDCD;
+}
+.carousel-img {
+	height: 400px !important;
+	overflow: hidden;
+	padding-left: 1rem;
+}
+.appo-intro {
+	margin-left: 1rem;
+	padding-right: 0.8rem !important;
+	padding-bottom: 0.8rem !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	filter: drop-shadow(0px 0px 4px gray) !important;
+}
 @media (min-width: 992px) {
-.appo-title {
-    flex: 0 0 auto;
-    width: 100%;
-}
-.appo-box {
-    background-color: #F8F9FA;	
-}
-.appo-button{
-	flex: 0 0 auto;
-	width: 100%;
-}
+	.appo-title {
+	    flex: 0 0 auto;
+	    width: 100%;
+	}
+	.appo-box {
+	    background-color: #F8F9FA;	
+	}
+	.appo-button{
+		flex: 0 0 auto;
+		width: 100%;
+	}
+	#carouselControls {
+		flex: 0 0 auto !important;
+		width: 50% !important;
+	}
 }
 </style>
 
@@ -146,30 +170,75 @@
          	</div>
            
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div
-              class="position-relative overflow-hidden ps-5 pt-5 h-100"
-              style="min-height: 400px"
-            >
-              <img
-                class="position-absolute w-100 h-100"
-                src="./resources/img/doc02.jpg"
-                alt=""
-                style="object-fit: cover"
-              />
-              <div
-                class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
-                style="width: 150px; height: 150px"
-              >
-                <div
-                  class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
-                >
+          
+          <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">
+              	<div id="appo-carousel">
+	              <img class="position-absolute w-100 h-100" src="./resources/img/doc02.jpg" alt="" style="object-fit: cover"/>
+              	</div>
+
+			        <button
+			          class="carousel-control-prev"
+			          type="button"
+			          data-bs-target="#appo-carousel"
+			          data-bs-slide="prev"
+			        >
+			          <span class="carousel-control-prev-icon appo-icon" aria-hidden="true"></span>
+			          <span class="visually-hidden">Previous</span>
+			        </button>
+			        <button
+			          class="carousel-control-next"
+			          type="button"
+			          data-bs-target="#appo-carousel"
+			          data-bs-slide="next"
+			        >
+			          <span class="carousel-control-next-icon appo-icon" aria-hidden="true"></span>
+			          <span class="visually-hidden">Next</span>
+			        </button>
+         	  </div>	 
+              
+			        
+              <div class="position-absolute top-0 start-0 bg-white pe-3 pb-3" style="width: 150px; height: 150px;">
+                <div class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3">
                   <h2 class="text-white">의료진 소개</h2>
                   <h2 class="text-white"></h2>
                   <h5 class="text-white mb-0"></h5>
                 </div>
               </div>
-            </div>
+              
+            </div> -->
+            
+            <div id="carouselControls" class="col-lg-6 wow fadeInUp carousel slide fadeInUp carousel-img" data-wow-delay="0.1s" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="./resources/img/doctor05.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./resources/img/doctor06.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="./resources/img/doctor07.jpg" class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			  
+			  <div class="position-absolute top-0 start-0 bg-white pe-3 pb-3 appo-intro" style="width: 150px; height: 150px;">
+                <div class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3">
+                  <h2 class="text-white">의료진 소개</h2>
+                  <h2 class="text-white"></h2>
+                  <h5 class="text-white mb-0"></h5>
+                </div>
+              </div>
+			  
+			</div>
+            
           </div>
         </div>
       </div>
