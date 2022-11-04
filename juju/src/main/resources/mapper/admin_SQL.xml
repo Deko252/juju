@@ -6,7 +6,7 @@
 
 	
 	<select id="appoList" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM appo
+		SELECT *, DATE_FORMAT(date, '%Y-%m-%d') AS appodate FROM appo
 		ORDER BY date
 		LIMIT #{startPage }, #{lastPage }
 	</select>

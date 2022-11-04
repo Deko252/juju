@@ -115,7 +115,7 @@ a {
 			<td class="td2">${p.p_name }</td>
 			<td class="td3">${p.num }</td>
 			<td class="td4">${p.p_type }</td>
-			<td class="td5">${p.date }</td>
+			<td class="td5">${p.appodate }</td>
 			<td class="td6">${p.comment }</td>
 			<td class="td7">
 			<c:choose>
