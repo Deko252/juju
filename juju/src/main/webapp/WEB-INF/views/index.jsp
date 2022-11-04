@@ -32,14 +32,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, a{
 	font-size: 50px;
 }
 .navbar .navbar-nav .nav-link {
+	font-size: 18px;
 	font-family: 'Noto Sans KR', sans-serif !important;
+	font-weight: 100 !important;
 	color: #8D9297 !important;
 }
 li .login-out {
 	color: #CDCDCD !important;
 }
 .dropdown-item {
+	font-size: 18px;
+	font-family: 'Noto Sans KR', sans-serif !important;
+	font-weight: 100 !important;
 	color: #8D9297 !important;
+	transition: all 0.2s ease-in-out;
 }
 
 .dorpdown-font:hover{
@@ -168,7 +174,6 @@ li .login-out {
 	background-color: #865439 !important;
 	border-color: #865439 !important;
 }
-
 /* 미디어 */
 @media (min-width: 1200px) {
 

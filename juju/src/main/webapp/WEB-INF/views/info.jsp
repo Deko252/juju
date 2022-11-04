@@ -63,7 +63,7 @@
 	background-color: #8FC1D4;
 	font-size: 30px;
 	padding-top: 0;
-	padding-left: 14px;
+	padding-left: 17px;
 	transition: all 0.15s ease-in-out;
 }
 .facts-overlay {

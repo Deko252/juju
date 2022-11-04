@@ -1,14 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page session="false" %>
 
 <html>
 <head>
-<%@ include file="head.jsp"%>
-	<title>Home</title>
-	<style type="text/css">
+   <title>Home</title>
+   <style type="text/css">
 h2{
-	text-align: center;
+   text-align: center;
 }
 body {
   min-height: 100vh;
@@ -29,38 +27,38 @@ body {
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
 }
 .input-form > h2 {
-	font-family: 'Jua', sans-serif;
+   font-family: 'Jua', sans-serif;
     font-size: 50px;
-	font-weight: 400;
+   font-weight: 400;
 }
 .custom-control{
-	text-align: center;
+   text-align: center;
 }
 #resultMsg{
-	width: 100%;
-	margin-top: 0.25rem;
-	font-size: 80%;
-	color: #dc3545;
+   width: 100%;
+   margin-top: 0.25rem;
+   font-size: 80%;
+   color: #dc3545;
 }
 #resultMsg2{
-	width: 100%;
-	margin-top: 0.25rem;
-	font-size: 80%;
-	color: #dc3545;
+   width: 100%;
+   margin-top: 0.25rem;
+   font-size: 80%;
+   color: #dc3545;
 }
 #resultMsg3{
-	width: 100%;
-	margin-top: 0.25rem;
-	font-size: 80%;
-	color: #dc3545;
+   width: 100%;
+   margin-top: 0.25rem;
+   font-size: 80%;
+   color: #dc3545;
 }
 .btn-primary{
-	background-color: #EB2524; 
-	border-color: #EB2524;
+   background-color: #EB2524; 
+   border-color: #EB2524;
 }
 .btn-primary:hover{
-	background-color: #1F1D1E;
-	border-color: #1F1D1E;
+   background-color: #1F1D1E;
+   border-color: #1F1D1E;
 }
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
@@ -84,29 +82,29 @@ body {
 }
 
 .mt-4{
-	margin-top: 15px !important;
+   margin-top: 15px !important;
 }
 
 </style>
-	
+   
 </head>
 <body>
 <div class="calendar">
-	<div class="header">
-		<button class="calendar_btn" onclick="prevCal();">&lt;</button>
-		<div class="title"><span class="year"></span><span class="month"></span></div>
-		<button class="calendar_btn" onclick="nextCal();">&gt;</button>
-	</div>
-	<div class="day">
-		<div>S</div>
-		<div>M</div>
-		<div>T</div>
-		<div>W</div>
-		<div>T</div>
-		<div>F</div>
-		<div>S</div>
-	</div>
-	<div class="dates"></div>
+   <div class="header">
+      <button class="calendar_btn" onclick="prevCal();">&lt;</button>
+      <div class="title"><span class="year"></span><span class="month"></span></div>
+      <button class="calendar_btn" onclick="nextCal();">&gt;</button>
+   </div>
+   <div class="day">
+      <div>S</div>
+      <div>M</div>
+      <div>T</div>
+      <div>W</div>
+      <div>T</div>
+      <div>F</div>
+      <div>S</div>
+   </div>
+   <div class="dates"></div>
 </div>
 <!-- <input type="text" id="period_1"> -->
 
@@ -123,7 +121,7 @@ body {
               <div class="invalid-feedback">
                 성함을 입력해 주세요.
               </div>
-	              <p id="resultMsg"></p>
+                 <p id="resultMsg"></p>
             </div>
             <div class="col-md-6 mb-3">
               <label for="p_name">반려동물 이름</label>
@@ -148,7 +146,7 @@ body {
             <div class="invalid-feedback">
               날짜를 골라주세요.
             </div>
-           	 <p id="resultMsg2"></p>
+               <p id="resultMsg2"></p>
           </div>
 
           <div class="mb-3">
@@ -183,77 +181,77 @@ var check = 1;
 
 
 var buildcalendar = function(){
-	var htmlDates = ''; 
-	var prevLast = new Date(CDate.getFullYear(), CDate.getMonth(), 0); //지난 달의 마지막 날 
-	var thisFirst = new Date(CDate.getFullYear(), CDate.getMonth(), 1); //이번 달의 첫쨰 날
-	var thisLast = new Date(CDate.getFullYear(), CDate.getMonth() + 1, 0); //이번 달의 마지막 날
-	document.querySelector(".year").innerHTML = CDate.getFullYear() + "년";  // year에 년도 출력
-	document.querySelector(".month").innerHTML = (CDate.getMonth() + 1) + "월";  //month에 월 출력
-	const dates = []; 
-	if(thisFirst.getDay()!=0){ 
-		for(var i = 0; i < thisFirst.getDay(); i++){
-			dates.unshift(prevLast.getDate()-i); // 지난 달 날짜 채우기
-		} 
-	} 
-	for(var i = 1; i <= thisLast.getDate(); i++){
-			 dates.push(i); // 이번 달 날짜 채우기 
-	} 
-	for(var i = 1; i <= 13 - thisLast.getDay(); i++){ 
-			 dates.push(i); // 다음 달 날짜 채우기 (나머지 다 채운 다음 출력할 때 42개만 출력함)
-	} 
-	
-	for(var i = 0; i < 42; i++){
-		if(i < thisFirst.getDay()){
-			htmlDates += '<div class="date last">'+dates[i]+'</div>'; 
-		}else if(today.getDate()==dates[i] && today.getMonth()==CDate.getMonth() && today.getFullYear()==CDate.getFullYear()){
-			 htmlDates += '<div id="date_'+dates[i]+'" class="date today" onclick="fn_selectDate('+dates[i]+');">'+dates[i]+'</div>'; 
-		}else if(i >= thisFirst.getDay() + thisLast.getDate()){
-			 htmlDates += '<div class="date next">'+dates[i]+'</div>'; 
-		}else{
-			htmlDates += '<div id="date_'+dates[i]+'" class="date" onclick="fn_selectDate('+dates[i]+');">'+dates[i]+'</div>'; 
-		}
-	 } 
+   var htmlDates = ''; 
+   var prevLast = new Date(CDate.getFullYear(), CDate.getMonth(), 0); //지난 달의 마지막 날 
+   var thisFirst = new Date(CDate.getFullYear(), CDate.getMonth(), 1); //이번 달의 첫쨰 날
+   var thisLast = new Date(CDate.getFullYear(), CDate.getMonth() + 1, 0); //이번 달의 마지막 날
+   document.querySelector(".year").innerHTML = CDate.getFullYear() + "년";  // year에 년도 출력
+   document.querySelector(".month").innerHTML = (CDate.getMonth() + 1) + "월";  //month에 월 출력
+   const dates = []; 
+   if(thisFirst.getDay()!=0){ 
+      for(var i = 0; i < thisFirst.getDay(); i++){
+         dates.unshift(prevLast.getDate()-i); // 지난 달 날짜 채우기
+      } 
+   } 
+   for(var i = 1; i <= thisLast.getDate(); i++){
+          dates.push(i); // 이번 달 날짜 채우기 
+   } 
+   for(var i = 1; i <= 13 - thisLast.getDay(); i++){ 
+          dates.push(i); // 다음 달 날짜 채우기 (나머지 다 채운 다음 출력할 때 42개만 출력함)
+   } 
+   
+   for(var i = 0; i < 42; i++){
+      if(i < thisFirst.getDay()){
+         htmlDates += '<div class="date last">'+dates[i]+'</div>'; 
+      }else if(today.getDate()==dates[i] && today.getMonth()==CDate.getMonth() && today.getFullYear()==CDate.getFullYear()){
+          htmlDates += '<div id="date_'+dates[i]+'" class="date today" onclick="fn_selectDate('+dates[i]+');">'+dates[i]+'</div>'; 
+      }else if(i >= thisFirst.getDay() + thisLast.getDate()){
+          htmlDates += '<div class="date next">'+dates[i]+'</div>'; 
+      }else{
+         htmlDates += '<div id="date_'+dates[i]+'" class="date" onclick="fn_selectDate('+dates[i]+');">'+dates[i]+'</div>'; 
+      }
+    } 
 document.querySelector(".dates").innerHTML = htmlDates; 
 } 
 
 function prevCal(){
-	 CDate.setMonth(CDate.getMonth()-1); 
-	 buildcalendar(); 
+    CDate.setMonth(CDate.getMonth()-1); 
+    buildcalendar(); 
 } 
 function nextCal(){
-	 CDate.setMonth(CDate.getMonth()+1);
-	 buildcalendar(); 
+    CDate.setMonth(CDate.getMonth()+1);
+    buildcalendar(); 
 }
 
 function fn_selectDate(date){
-	
-	var year = CDate.getFullYear();
-	var month = CDate.getMonth() + 1;
-	var date_txt = "";
-	if(CDate.getMonth + 1 < 10){
-		month = "0" + (CDate.getMonth() + 1);
-	}
-	if(date < 10){
-		date_txt = "0" + date;
-	}
-	
-	if(selectCk == 0){
-		$(".date").css("background-color", "");
-		$(".date").css("color", "");
-		$("#date_"+date).css("background-color", "red");
-		$("#date_"+date).css("color", "white");
-		
-		$("#period_1").val(year+"-"+month+"-"+date);
-		check = 0;
-		selectCk = 0;
-			
-		if(check == 0){
-			const target = document.getElementById('btnS');
-			target.disabled = false;
-		}
-	
-	}
-	
+   
+   var year = CDate.getFullYear();
+   var month = CDate.getMonth() + 1;
+   var date_txt = "";
+   if(CDate.getMonth + 1 < 10){
+      month = "0" + (CDate.getMonth() + 1);
+   }
+   if(date < 10){
+      date_txt = "0" + date;
+   }
+   
+   if(selectCk == 0){
+      $(".date").css("background-color", "");
+      $(".date").css("color", "");
+      $("#date_"+date).css("background-color", "red");
+      $("#date_"+date).css("color", "white");
+      
+      $("#period_1").val(year+"-"+month+"-"+date);
+      check = 0;
+      selectCk = 0;
+         
+      if(check == 0){
+         const target = document.getElementById('btnS');
+         target.disabled = false;
+      }
+   
+   }
+   
 }
 
 buildcalendar();
@@ -271,34 +269,23 @@ function numberMaxLength(e){
 }
 
 window.onkeydown = function() {
-	var kcode = event.keyCode;
-	if(kcode == 116) {
-	history.replaceState({}, null, location.pathname);
-	}
-	}
+   var kcode = event.keyCode;
+   if(kcode == 116) {
+   history.replaceState({}, null, location.pathname);
+   }
+   }
 
 var appo_result = 3;
 <c:if test="${param.result eq 0}">appo_result = 0;</c:if>
 if(appo_result == 0){
-	alert("예약이 불가능합니다. 다른날을 선택해 주세요.");
-	
+   alert("예약이 불가능합니다. 다른날을 선택해 주세요.");
+   
 }
 
 
 </script>
 
 
-
-<!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./resources/lib/wow/wow.min.js"></script>
-    <script src="./resources/lib/easing/easing.min.js"></script>
-    <script src="./resources/lib/waypoints/waypoints.min.js"></script>
-    <script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="./resources/js/main.js"></script>
 </body>
 <style>
 
@@ -307,14 +294,14 @@ if(appo_result == 0){
 .calendar > .header {text-align: center;}
 .calendar > .header > .title {width:50%; display: inline-block;}
 .calendar > .header > .calendar_btn {
-	width: 30px;
-	height: 30px;
-	border: none;
-	padding: 0;
-	background-color: #ffffff;
-	vertical-align: middle;
-	color: black;
-	
+   width: 30px;
+   height: 30px;
+   border: none;
+   padding: 0;
+   background-color: #ffffff;
+   vertical-align: middle;
+   color: black;
+   
 }
 .calendar > .day {width:100%; display: table; table-layout: fixed;}
 .calendar > .day > div {display: table-cell; text-align: center; height: 50px; vertical-align: middle;}
