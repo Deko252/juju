@@ -182,6 +182,19 @@ $(function(){
 		});
 		
 	});
+	$("#delBtn").click(function() {
+		//alert("삭제버튼을 눌렀습니다");
+		if (confirm("게시글을 삭제하시겠습니까?")) {
+			alert("삭제합니다");
+			location.href = "./postDel.do?bno=${notice_detail.board_no }";
+		}
+	});
+	$("#updateBtn").click(function() {
+		if (confirm("게시글을 수정하시겠습니까?")) {
+			alert("수정합니다");
+			location.href = "./update.do?bno=${notice_detail.board_no}";
+		}
+	});
 	
 });
 
@@ -242,8 +255,12 @@ $(function(){
 	              <div id="n_mname">데이터가 없습니다.</div>
 	           </div>
 	           <div class="col">
-	              <button type="button" class="btn btn-primary btn-sm detailUpdate">수정</button>
-	              <button type="button" class="btn btn-danger btn-sm detailDelete">삭제</button>
+	              <div id="dc_btn">
+					<c:if test="${sessionScope.id ne null}">
+						<button class="btn btn-primary" id="updateBtn">수정</button> 
+						<button class="btn btn-danger" id="delBtn">삭제</button>
+					</c:if>
+			 </div>
 	           </div>
 	           <div class="col">
 	              <div id="n_date">데이터가 없습니다.</div>
