@@ -12,12 +12,12 @@
 	</select>
 	
 	<update id="postChange" parameterType="HashMap">
-		UPDATE appo SET appo_del=<choose><when test="del == 1">1</when><otherwise>0</otherwise></choose> 
-		WHERE board_no=#{bno }
+		UPDATE appo SET dismiss=<choose><when test="del == 1">1</when><otherwise>0</otherwise></choose> 
+		WHERE a_no=#{ano }
 	</update>
 	
 	<update id="postReAJAX" parameterType="HashMap">
-		UPDATE appo SET appo_del=<choose><when test="command eq 'del'">1</when><otherwise>0</otherwise></choose> 
+		UPDATE appo SET dismiss=<choose><when test="command eq 'del'">1</when><otherwise>0</otherwise></choose> 
 		WHERE board_no=#{bno }
 	</update>
 	
