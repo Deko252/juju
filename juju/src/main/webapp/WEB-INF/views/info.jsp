@@ -35,16 +35,17 @@
 	height: 40px;
 	padding-left: 20px;
 	padding-top:7px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.25);
 	margin-bottom: 50px;
 	color: #C68B59 !important; 
 	transition: all 0.15s ease-in-out;
 	
 }
 .facts-overlay > .info-content .info-detail:hover {
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.3);
 }
 .facts-overlay > .info-content .info-detail:hover .info-font {
+	font-weight: 500;
 	color: #000000 !important;
 }
 .facts-overlay > .info-content .info-font{
@@ -107,10 +108,18 @@
               </div>
               <div class="info-content">
               <c:forEach items="${in_no }" var="n">
-              	  <div class="info-detail">
+              
+              	  <%-- <div class="info-detail">
 		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
+              	  </div> --%>
+              	  
+              	  <a href="./notice_detail.do?bno=${n.board_no }">
+              	  <div class="info-detail">
+		              <div class="info-font">${n.board_title }</div>
               	  </div>
-				</c:forEach>
+              	  </a>
+              	  
+			  </c:forEach>
               </div>
               <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
@@ -126,15 +135,25 @@
 	              <h4 class="text-white mb-3">펫정보</h4>
 	          </div>                  
               <div class="info-content">
-              	  <a class="info-detail" href="./petinfo.do?cate=1">
-		              강아지
-              	  </a><br>
-              	  <a class="info-detail" href="./petinfo.do?cate=2">
-		              고양이
-              	  </a>
-              	  <div class="info-detail">
-		              <a class="info-font" href="./petinfo.do?cate=3">특수 동물</a><br>
+              	  
+              	  <a href="./petinfo.do?cate=1">
+              	  <div class="info-detail" >
+		              <div class="info-font">강아지</div>
               	  </div>
+              	  </a>
+              	  
+              	  <a href="./petinfo.do?cate=2">
+              	  <div class="info-detail" >
+		              <div class="info-font">고양이</div>
+              	  </div>
+              	  </a>
+              	  
+              	  <a href="./petinfo.do?cate=3">
+              	  <div class="info-detail" >
+		              <div class="info-font">특수동물</div>
+              	  </div>
+              	  </a>
+              	 
               </div>
             </div>
           </div>
@@ -151,7 +170,7 @@
               <div class="info-content">
               	  <a href="https://www.facebook.com/petgroundhbc">    
                    <div class="info-detail">
-                    <div class="info-font" ">펫그라운드_해방촌</div><br>
+                    <div class="info-font">펫그라운드_해방촌</div><br>
                    </div>
                    </a>
               	  <a href="https://www.barkleycleveland.com/">    
