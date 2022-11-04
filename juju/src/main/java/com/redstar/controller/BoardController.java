@@ -105,6 +105,19 @@ public class BoardController {
 		return json.toString();
 	}
 	
+	//petdetailAjax = 에이작스 사용
+		@ResponseBody
+		@GetMapping(value="/petdetailAjax.do",  produces="application/json;charset=UTF-8")
+		public String petdetailAjax(CommandMap map) {
+			JSONObject json = new JSONObject();
+			System.out.println("petdetailAjax : " + map.getMap());
+			Map<String, Object> detail = boardService.petdetailAjax(map.getMap());
+			System.out.println("map : " + detail);
+			
+			json.put("detail", detail);
+			return json.toString();
+		}
+	
 	@GetMapping("notice_detail.do")
 	public ModelAndView notice_detail(CommandMap map) {
 		ModelAndView mv = new ModelAndView("notice_detail");

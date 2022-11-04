@@ -41,6 +41,11 @@
 		WHERE board_no=#{no } 
 	</select>
 	
+	<select id="petdetailAjax" parameterType="HashMap" resultType="HashMap">
+		SELECT * FROM pet_boardview
+		WHERE board_no=#{no } 
+	</select>
+	
 	<update id="update" parameterType="HashMap">
 		UPDATE notice_board SET board_title=#{title }, board_content=#{content } 
 		WHERE board_no=#{board_no } AND b_no= (SELECT a_no FROM admin WHERE a_id=#{id })

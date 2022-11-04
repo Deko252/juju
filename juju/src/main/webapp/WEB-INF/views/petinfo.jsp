@@ -172,8 +172,32 @@ footer{
 </head>
 <body>	
 <%@ include file="header.jsp" %>
-
-
+<script type="text/javascript">
+$(function(){
+	$(".detail").click(function(){
+		var no = $(this).parent(".board").children(".board_no").text();
+		$.ajax({
+			url: "./petdetailAjax.do",
+			data: {"no" : no },
+			type: "get",
+			dataType: "json"
+		}).done(function(data){
+			var detail = data.detail;
+			//alert(data.detail.board_content);
+			$("#viewModalLabel").text(detail.board_title); //제목
+			$("#p_mname").text(detail.b_no); //글쓴이
+			$("#p_date").text(detail.board_date); //날짜
+			$("#p_content").text(detail.board_content); //본문내용
+			
+			$("#detailModal").modal("show"); //모달 보이게 하기
+		}).fail(function(errorThrown){
+			alert("문제가 발생했습니다." + errorThrown);
+		});
+		
+	});
+	
+});
+</script>
 <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
 		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
@@ -256,8 +280,9 @@ footer{
 		          			<div id="top_text">
 		          				<div id="text_wrap">
               						<div id="content_tit">${p.board_title }</div>
-              						<div>
-              							<a href="./petinfo_detail.do?cate=${p.board_cate }&bno=${p.board_no }">${p.board_content }</a>
+              						<div  id="content_con" class="board">
+              							<div class="board_no">${p.board_no }</div>
+              							<a class="detail" >${p.board_content }</a>
               						</div>
               						<div id="top_writer">
               							${p.a_name }
@@ -275,6 +300,38 @@ footer{
                     	<c:if test="${sessionScope.id ne null}">
               				<button id="writeBtn" class="btn btn-primary" onclick="location.href='./petwrite.do?cate=${param.cate}'">글쓰기</button>
               			</c:if>
+              			
+      <!-- detail Modal -->        			
+      <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="viewModalLabel">데이터가 없습니다.</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row" style="height: 30px; padding-bottom:40px; border-bottom: 1px #dee2e6 solid;">
+	           <div class="col">
+	              <div id="p_mname">데이터가 없습니다.</div>
+	           </div>
+	           <div class="col">
+	              <button type="button" class="btn btn-primary btn-sm detailUpdate">수정</button>
+	              <button type="button" class="btn btn-danger btn-sm detailDelete">삭제</button>
+	           </div>
+	           <div class="col">
+	              <div id="p_date">데이터가 없습니다.</div>
+	           </div>
+	        </div>
+	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
+	           <div class="col" id="p_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">        
+	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
               			    <!-- Footer -->
     <%@ include file="footer.jsp"%>
 

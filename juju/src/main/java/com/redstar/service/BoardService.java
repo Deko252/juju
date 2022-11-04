@@ -21,5 +21,5 @@ public interface BoardService {
 
 	Map<String, Object> detailAjax(Map<String, Object> map);
 	
-	
+	Map<String, Object> petdetailAjax(Map<String, Object> map);
 }

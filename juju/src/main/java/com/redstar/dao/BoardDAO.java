@@ -45,5 +45,11 @@ public class BoardDAO extends AbstractDAO {
 		return (Map<String, Object>) selectOne("board.detailAjax", map);
 	}
 	
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> petdetailAjax(Map<String, Object> map) {
+		return (Map<String, Object>) selectOne("board.petdetailAjax", map);
+	}
+
+	
 	
 }

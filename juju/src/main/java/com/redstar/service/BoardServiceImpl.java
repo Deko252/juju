@@ -56,5 +56,11 @@ public class BoardServiceImpl implements BoardService{
 		return boardDAO.detailAjax(map);
 	}
 	
+	//petdetailAjax = 에이작스로 소통하기
+	@Override
+	public Map<String, Object> petdetailAjax(Map<String, Object> map) {
+		return boardDAO.petdetailAjax(map);
+	}
+	
 	
 }
