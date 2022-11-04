@@ -77,7 +77,7 @@ public class LoginController {
 		System.out.println(appo_count);
 		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) > 3) {
 			int result = 0;			
-			return "redirect:/appo_detail.do?result=" + result;				
+			return "redirect:/index.do?result=" + result;				
 		}else {		
 			int result = loginService.appo_detail(map.getMap());
 			//System.out.println("결과는 : " + result);

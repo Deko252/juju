@@ -189,7 +189,7 @@ myModal.addEventListener('shown.bs.modal', function () {
             
             <div class="col-lg-6 text-lg-end wow fadeInUp appo-button" data-wow-delay="0.3s">
             <!-- <a class="btn btn-primary py-3 px-5" href="">More Services</a> -->
-            <button type="button" class="btn btn-primary small" data-bs-toggle="modal" data-bs-target="#appoModal">
+            <button type="button" class="btn btn-primary small" id="appo_btn" data-bs-toggle="modal" data-bs-target="#appoModal">
   				예약하기
 			</button>
 			</div> 
@@ -477,8 +477,9 @@ window.onkeydown = function() {
 var appo_result = 3;
 <c:if test="${param.result eq 0}">appo_result = 0;</c:if>
 if(appo_result == 0){
+	$("#appo_top").get(0).click();
+	$("#appo_btn").trigger("click");
    alert("예약이 불가능합니다. 다른날을 선택해 주세요.");
-   
 }
 
 

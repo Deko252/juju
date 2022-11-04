@@ -275,7 +275,7 @@ li .login-out {
               <a href="#treat-03" class="dropdown-item dorpdown-font">피부과</a>
             </div>
           </div> 
-          <a href="#appo-04" class="nav-item nav-link">진료예약</a>
+          <a href="#appo-04" class="nav-item nav-link" id="appo_top">진료예약</a>
           <a href="#info-05" class="nav-item nav-link">펫정보</a>
           <a href="#info-05" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
@@ -537,6 +537,14 @@ li .login-out {
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
       ><i class="bi bi-arrow-up"></i
     ></a>
+<script>
+var appo_result = 3;
+<c:if test="${param.result eq 1}">appo_result = 1;</c:if>
+if(appo_result == 1){
+   alert("예약 되었습니다.");
+}
+
+</script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
