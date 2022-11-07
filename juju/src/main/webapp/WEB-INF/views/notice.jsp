@@ -174,6 +174,7 @@ $(function(){
 			$("#viewModalLabel").text(detail.board_title); //제목
 			$("#n_mname").text(detail.b_no); //글쓴이
 			$("#n_date").text(detail.board_date); //날짜
+			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
 			$("#n_content").text(detail.board_content); //본문내용
 			
 			$("#detailModal").modal("show"); //모달 보이게 하기
@@ -250,7 +251,9 @@ function linkPage(pageNo){
 	  <div class="modal-dialog modal-lg modal-dialog-centered">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="viewModalLabel">데이터가 없습니다.</h5>
+	      
+	   
+	        <h5 class="modal-title" id="viewModalLabel"></h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
@@ -271,9 +274,14 @@ function linkPage(pageNo){
 	           </div>
 	        </div>
 	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
+	        <div><img id="n_file" alt="이미지" src=""> </div>
 	           <div class="col" id="n_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
+	           
+	           
+	           
 	        </div>
 	      </div>
+	      
 	      <div class="modal-footer">        
 	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
 	      </div>
