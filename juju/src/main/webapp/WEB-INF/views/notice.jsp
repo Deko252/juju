@@ -198,6 +198,10 @@ $(function(){
 	
 });
 
+function linkPage(pageNo){
+	location.href="./notice.do?pageNo="+pageNo;
+	}
+
 </script>
 	<!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn notice-header" data-wow-delay="0.1s">
