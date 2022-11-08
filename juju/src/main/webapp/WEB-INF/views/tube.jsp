@@ -3,6 +3,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>    
 <!DOCTYPE html>
+
+<script type="text/javascript">
+$(function(){
+	$("#tube1").click(function(){	
+		window.open("https://youtu.be/5NjxaNjbftc", "child","width=900, height=600");			
+	});
+	$("#tube2").click(function(){	
+		window.open("https://youtu.be/kGCc858zWRY", "child","width=900, height=600");			
+	});
+	$("#tube3").click(function(){	
+		window.open("https://youtu.be/DXeroPf0MFs", "child","width=900, height=600");			
+	});
+});
+
+</script>
 <style type="text/css">
 
 .tube-body {
@@ -61,19 +76,19 @@
                     <i
                       href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                     <a class="btn btn-primary3" href="https://youtu.be/5NjxaNjbftc"><img src="./resources/img/youtube.png" alt="" /><br>유콘의 <br>수호자</a>            
+                     <a class="btn btn-primary3" id="tube1"><img src="./resources/img/youtube.png" alt="" /><br>유콘의 <br>수호자</a>            
                   </div>
                   <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.3s">
                     <i
                        href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                    <a class="btn btn-primary3" href="https://youtu.be/kGCc858zWRY"><img src="./resources/img/youtube.png" alt="" />동물병원 <br>응급실</a>                
+                    <a class="btn btn-primary3" id="tube2"><img src="./resources/img/youtube.png" alt="" />동물병원 <br>응급실</a>                
                   </div>
                   <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.5s">
                     <i
                       href="https://youtu.be/OY1jmWMruzs"
                     ></i>
-                    <a class="btn btn-primary3" href="https://youtu.be/DXeroPf0MFs"><img src="./resources/img/youtube.png" alt="" />쪼꼬미 <br>동물병원</a>                   
+                    <a class="btn btn-primary3" id="tube3"><img src="./resources/img/youtube.png" alt="" />쪼꼬미 <br>동물병원</a>                   
                   </div>
    		<a name="info-05"></a>
                 </div>
