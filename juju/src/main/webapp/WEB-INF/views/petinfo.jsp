@@ -14,12 +14,19 @@
 body{
 	height: 100%;
 }
-.text-body {
+.ps-4 > .text-body {
 	color: #8FC1D4 !important;
+	text-shadow: 0px 0px 10px black;
 }
 .wow-1{
-	width: 200px !important;
-	height: 150px !important;
+	width: 150px !important;
+	height: 120px !important;
+}
+a > .p-4 {
+	padding: 1rem !important;
+}
+.p-4 > h5 {
+	margin-top: 30px !important;
 }
 .wow-1 > .service-item {
 }
@@ -123,18 +130,17 @@ h3 > span {
 	object-fit:cover;
 }
 #writeBtn {
-	position:relative;
-	left: 90%;
-	margin-top: 10px;
-	width:70px;
+   position:relative;
+   left: 90%;
+   margin-top: 10px;
+   width:70px;
 }
+
 .btn-primary {
 	width: 80px;
 	height: 40px;
 	border: none;
 	background-color: #EB2524;	
-	
-	
 }
 .btn-primary:hover {
 	background-color: #1F1D1E;

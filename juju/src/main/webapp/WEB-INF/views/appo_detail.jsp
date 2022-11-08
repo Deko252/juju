@@ -115,10 +115,14 @@ myModal.addEventListener('shown.bs.modal', function () {
 .form-control::placeholder {
 	font-size: 14px;
 }
+.appo-modal-body {
+	padding-bottom: 2rem !important;
+}
 .modal-btn-sub {
 	margin-right: 5px;
 }
 .modal-btn-sub, .modal-btn-can {
+	width: 130px;
 	border-radius: 5px !important;
 	background-color: #C68B59;
 	border-color: #C68B59;
@@ -391,7 +395,8 @@ if(appo_result == 0){
 	box-sizing: border-box; 
 	border: 1px solid;
 	margin: 25px 0;
-	margin-left: 50px;
+	margin-left: 20px;
+	margin-right: 10px;
 }
 .calendar > .header {text-align: center;}
 .calendar > .header > .title {font-size: 25px; width:50%; display: inline-block;}

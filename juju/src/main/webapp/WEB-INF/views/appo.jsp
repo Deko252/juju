@@ -24,7 +24,8 @@ myModal.addEventListener('shown.bs.modal', function () {
 <style>
 
 .appo-body{
-	margin-top: 150px;
+	margin-top: 200px;
+	margin-bottom: 300px;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
@@ -199,7 +200,7 @@ myModal.addEventListener('shown.bs.modal', function () {
           </div>
           
           <!-- detail Modal -->
-		<div class="modal fade" id="appoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- <div class="modal fade" id="appoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-xl modal-dialog-centered">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -211,7 +212,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 		        <h2 class="mb-3">진료예약하기</h2>
 		        
 		        <div class="modal-inner">
-		        <!-- 달력 -->
+		        달력
 				<div class="calendar">
 				   <div class="header">
 				      <button class="calendar_btn" onclick="prevCal();">&lt;</button>
@@ -230,7 +231,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 				   <div class="dates"></div>
 				</div>
 				
-				<!-- 예약 폼 -->
+				예약 폼
 				<div class="container">
 				    <div class="input-form-backgroud row">
 				      <div class="input-form col-md-12 mx-auto">
@@ -296,12 +297,12 @@ myModal.addEventListener('shown.bs.modal', function () {
 		        </div>
         
 		      </div>
-		      <!-- <div class="modal-footer">        
+		      <div class="modal-footer">        
 		        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
-		      </div> -->
+		      </div>
 		    </div>
 		  </div>
-		</div>
+		</div> -->
           
           <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">

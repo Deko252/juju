@@ -17,6 +17,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-family: 'Noto Sans KR', sans-serif !important;
 	font-weight: 100 !important;
 	font-size: 18px !important;
+	cursor: pointer;
 }
 .dropdown-item {
 	font-size: 18px;
@@ -170,8 +171,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
            	관리자</a>
 		  <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
-		  	<a href="./admin/admin_appo.do" class="nav-item nav-link">관리자 페이지</a>
-		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
+		  	<a href="./admin/admin_appo.do" class="dropdown-item dorpdown-font">관리자 페이지</a>
+		  	<a href="./logout.do" class="dropdown-item dorpdown-font">로그아웃</a>
 		  	</div>
 		  	</div>
 		  </c:if>

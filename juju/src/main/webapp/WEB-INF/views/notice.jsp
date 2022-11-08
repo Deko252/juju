@@ -15,6 +15,10 @@
 body {
 	height: 100%;
 }
+.first-title {
+	color: #8FC1D4 !important;
+	text-shadow: 0px 0px 10px black;
+}
 .treat-title {
 	color: #ffffff;
 	text-shadow: 0px 0px 10px black;
@@ -261,7 +265,7 @@ a {
 												<div class="col-lg-6 wow fadeInUp treat_title title1"
 													data-wow-delay="0.1s">
 													<div class="border-start border-5 border-primary ps-4">
-														<h6 class="text-body text-uppercase mb-2">notice</h6>
+														<h6 class="text-body text-uppercase mb-2 first-title">notice</h6>
 														<h1 class="display-6 mb-0 treat-title">공지사항</h1>
 													</div>
 												</div>

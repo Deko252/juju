@@ -11,8 +11,9 @@
 
 <style type="text/css">
 
-.text-body {
+.first-title {
 	color: #8FC1D4 !important;
+	text-shadow: 0px 0px 10px black;
 }
 .wow-1{
 	width: 150px !important;	
@@ -330,7 +331,7 @@ h3 > span {
 											<div class="row g-5 align-items-end mb-5">
 												<div class="col-lg-6 wow fadeInUp treat_title title1" data-wow-delay="0.1s">
 													<div class="border-start border-5 border-primary ps-4">
-														<h6 class="text-body text-uppercase mb-2">
+														<h6 class="text-body text-uppercase mb-2 first-title">
 															Treatment Subject
 														</h6>
 														<h1 class="display-6 mb-0 treat-title">진료과목 안내</h1>

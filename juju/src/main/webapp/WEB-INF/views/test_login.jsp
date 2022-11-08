@@ -10,7 +10,7 @@
 	border-radius: 5px !important;
 	text-align: center;
 }
-.modal-body {
+.login-modal-body {
 	padding: 1rem 2rem 1.5rem !important;
 }
 .index-loginBtn {
@@ -41,7 +41,7 @@
 	        <h5 class="modal-title" id="exampleModalLabel"></h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
-	      <div class="modal-body">
+	      <div class="modal-body login-modal-body">
 	        <div class="input-form col-md-12 mx-auto">
 	        <h2 class="mb-3">로그인</h2>
 	        <form action="./admin_login.do" method="post" class="validation-form" novalidate >
