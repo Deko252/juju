@@ -103,7 +103,7 @@
             <p>
               <i class="fa fa-map-marker-alt me-3"></i>경북 울릉군 울릉읍 독도리 
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i>054 - 000 - 0000</p>
+            <p><i class="fa fa-phone-alt me-3"></i>054 - 123 - 4567</p>
             <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
           </div>
           <!-- <div class="col-lg-3 col-md-6">
@@ -131,7 +131,7 @@
               </button>
             </div> -->
           <div class="col-lg-3 col-md-6 footer-phone">
-			<h2 class="text-light mb-4 footer-title02">02-123-4567</h2>
+			<h2 class="text-light mb-4 footer-title02">054-123-4567</h2>
 			
 			<div class="d-flex pt-2">
               <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
