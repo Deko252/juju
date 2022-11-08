@@ -95,6 +95,51 @@
 
 </head>
 
+<script type="text/javascript">
+$(function(){
+	$(".detail").click(function(){
+		var no = $(this).parent(".board").children(".board_no").text();
+		$.ajax({
+			url: "./detailAjax.do",
+			data: {"no" : no },
+			type: "get",
+			dataType: "json"
+		}).done(function(data){
+			var detail = data.detail;
+			//alert(data.detail.board_content);
+			$("#viewModalLabel").text(detail.board_title); //제목
+			$("#n_mname").text(detail.b_no); //글쓴이
+			$("#n_date").text(detail.board_date); //날짜
+			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
+			$("#n_content").text(detail.board_content); //본문내용
+			
+			$("#detailModal").modal("show"); //모달 보이게 하기
+		}).fail(function(errorThrown){
+			alert("문제가 발생했습니다." + errorThrown);
+		});
+		
+	});
+	$("#delBtn").click(function() {
+		//alert("삭제버튼을 눌렀습니다");
+		if (confirm("게시글을 삭제하시겠습니까?")) {
+			alert("삭제합니다");
+			location.href = "./postDel.do?bno=${notice_detail.board_no }";
+		}
+	});
+	$("#updateBtn").click(function() {
+		if (confirm("게시글을 수정하시겠습니까?")) {
+			alert("수정합니다");
+			location.href = "./update.do?bno=${notice_detail.board_no}";
+		}
+	});
+	
+});
+
+
+</script>
+
+
+
 <div class="container-fluid my-5 p-0">
       <div class="row g-0">
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
@@ -107,17 +152,18 @@
 	              <h4 class="text-white mb-3 info-title">공지사항</h4>
               </div>
               <div class="info-content">
-              <c:forEach items="${in_no }" var="s">
-              
+              <c:forEach items="${in_no }" var="s">             	
               	  <%-- <div class="info-detail">
 		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
               	  </div> --%>
-              	  
-              	  <a href="./notice_detail.do" data-bs-toggle="modal" data-bs-target="#detailModal" class="detail">
+              	  <div id="content_con" class="board">
+              							<div class="board_no">${s.board_no }</div>
+              	  <a href="" data-bs-toggle="modal" data-bs-target="#detailModal" class="detail">
               	  <div class="info-detail">
 		              <div class="info-font">${s.board_title }</div>
-              	  </div>
+              	  </div>    	
               	  </a>
+              	  </div>              	  
               	  
 			  </c:forEach>
               	  <%@ include file="notice_detail.jsp" %>
@@ -200,10 +246,65 @@
 	          </div>    
               <p class="text-white contact-us">
                 <div class="contact-phone">02.123.4567</div>
-	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>경북 울릉군 울릉읍 독도리 30</div>
+	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>남극 사우스셰틀랜드 제도의 킹 조지 섬 바톤 반도 62.223 S, 58.787 W</div>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- detail Modal -->
+	<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      
+	   
+	        <h5 class="modal-title" id="viewModalLabel"></h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row" style="height: 30px; padding-bottom:40px; border-bottom: 1px #dee2e6 solid;">
+	           <div class="col">
+	              <div id="n_mname">데이터가 없습니다.</div>
+	           </div>
+	           <div class="col">
+	              <div id="dc_btn">
+					<c:if test="${sessionScope.id ne null}">
+						<button class="btn btn-primary" id="updateBtn">수정</button> 
+						<button class="btn btn-danger" id="delBtn">삭제</button>
+					</c:if>
+			 </div>
+	           </div>
+	           <div class="col">
+	              <div id="n_date">데이터가 없습니다.</div>
+	           </div>
+	        </div>
+	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
+	        <div><img id="n_file" alt="이미지" src=""> </div>
+	           <div class="col" id="n_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
+	           
+	           
+	           
+	        </div>
+	      </div>
+	      
+	      <div class="modal-footer">        
+	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>              			
+             
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./resources/lib/wow/wow.min.js"></script>
+	<script src="./resources/lib/easing/easing.min.js"></script>
+	<script src="./resources/lib/waypoints/waypoints.min.js"></script>
+	<script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- Template Javascript -->
+	<script src="./resources/js/main.js"></script>
+    

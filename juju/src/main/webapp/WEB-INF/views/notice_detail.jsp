@@ -155,7 +155,7 @@ footer{
 </head>
 <body>	
 <script type="text/javascript">
-$(function(){
+/* $(function(){
 	$(".detail").click(function(){
 		var no = $(this).parent(".board").children(".board_no").text();
 		$.ajax({
@@ -192,7 +192,7 @@ $(function(){
 		}
 	});
 	
-});
+}); */
 
 
 </script>
