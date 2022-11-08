@@ -205,6 +205,16 @@ ul {
 	background-color: #865439 !important;
 	border-color: #865439 !important;
 }
+
+.intro_title01{
+	margin-bottom: 0 !important;
+}
+.intro_title02{
+	margin-top: 100px !important;
+}
+
+
+
 </style>
 
 
@@ -218,19 +228,19 @@ ul {
 
 	
 							<div class="intro">
-	<img class="ntr" alt="quuu" src="./resources/img/ani.PNG ">
+	<img class="ntr" alt="quuu" src="./resources/img/ani03.png">
 					<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-12 col-lg-10">
 									<div class="container-xxl py-5">
 										<div class="container container2">
-											<div class="row g-5 align-items-end mb-5">
+											<div class="row g-5 align-items-end mb-5 intro_title01">
 												<div class="col-lg-6 wow fadeInUp treat_title title1" data-wow-delay="0.1s">
-													<div class="border-start border-5 border-primary ps-4">
+													<div class="border-start border-5 border-primary ps-4 intro_title02">
 														<h6 class="text-body text-uppercase mb-2">
 															Hospital introduction
 														</h6>
-														<h1 class="display-6 mb-0">병원 진료</h1>
+														<h1 class="display-6 mb-0">병원 소개</h1>
 													</div>
 												</div>
 											</div>
@@ -243,8 +253,6 @@ ul {
 						</div>
 						</div>
 
-	<br>
-	<br>
 	<br>
 	<br>
 	<br>
