@@ -172,7 +172,7 @@ $(function(){
 			var detail = data.detail;
 			//alert(data.detail.board_content);
 			$("#viewModalLabel").text(detail.board_title); //제목
-			$("#n_mname").text(detail.b_no); //글쓴이
+			$("#n_mname").text(detail.a_name); //글쓴이
 			$("#n_date").text(detail.board_date); //날짜
 			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
 			$("#n_content").text(detail.board_content); //본문내용

@@ -9,10 +9,6 @@
 <head> 
 <%@ include file="head.jsp" %> 
 
-<script type="text/javascript">
-function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
-</script>
-
 <style type="text/css">
 
 body{
@@ -185,8 +181,9 @@ $(function(){
 			var detail = data.detail;
 			//alert(data.detail.board_content);
 			$("#viewModalLabel").text(detail.board_title); //제목
-			$("#p_mname").text(detail.b_no); //글쓴이
+			$("#p_mname").text(detail.a_name); //글쓴이
 			$("#p_date").text(detail.board_date); //날짜
+			$("#p_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
 			$("#p_content").text(detail.board_content); //본문내용
 			
 			$("#detailModal").modal("show"); //모달 보이게 하기
@@ -213,9 +210,7 @@ $(function(){
 	
 });
 
-function linkPage(pageNo){
-	location.href="./petinfo.do?pageNo="+pageNo;
-	}
+function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 </script>
 <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
 		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -346,6 +341,7 @@ function linkPage(pageNo){
 	           </div>
 	        </div>
 	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
+	        <div><img id="p_file" alt="이미지" src=""> </div>
 	           <div class="col" id="p_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
 	        </div>
 	      </div>
