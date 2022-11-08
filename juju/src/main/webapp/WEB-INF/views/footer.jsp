@@ -101,9 +101,9 @@
           <div class="col-lg-3 col-md-6 footer-add">
             <h3 class="text-light mb-4 footer-title01">Address</h3>
             <p>
-              <i class="fa fa-map-marker-alt me-3"></i>서울특별시 OO구 OO로 OOO
+              <i class="fa fa-map-marker-alt me-3"></i>경북 울릉군 울릉읍 독도리 
             </p>
-            <p><i class="fa fa-phone-alt me-3"></i>02 - 000 - 0000</p>
+            <p><i class="fa fa-phone-alt me-3"></i>054 - 000 - 0000</p>
             <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
           </div>
           <!-- <div class="col-lg-3 col-md-6">
