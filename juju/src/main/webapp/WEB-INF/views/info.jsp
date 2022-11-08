@@ -245,8 +245,8 @@ $(function(){
 	              <h4 class="text-white mb-3">CONTACT US</h4>
 	          </div>    
               <p class="text-white contact-us">
-                <div class="contact-phone">02.123.4567</div>
-	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>남극 사우스셰틀랜드 제도의 킹 조지 섬 바톤 반도 62.223 S, 58.787 W</div>
+                <div class="contact-phone">054.123.4567</div>
+	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>경북 울릉군 울릉읍 독도리 30</div>
               </p>
             </div>
           </div>
