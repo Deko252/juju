@@ -105,10 +105,26 @@ body > div {
 a {
 	text-decoration: none;
 }
+.ho{
+padding:100px;
+padding-top:30px;
+font-size: 30px;
+text-decoration: none;
+font-style: italic;
+}
+.ii{
+background-color: #bbb;
+
+}
 
 </style>
 </head>
 <body>
+	<div class=" ho">
+	 <span class="ii"><a href="../index.do" >HOME</a></span>
+	 <span class="ii"><a href="../logout.do">LogOut</a></span>
+	</div>
+
 	<div id="list">
 	<!-- 로그 찍어줄겁니다. jstl -->
 	<h1>예약 관리</h1>
