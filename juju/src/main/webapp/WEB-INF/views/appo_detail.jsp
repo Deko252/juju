@@ -156,9 +156,9 @@ myModal.addEventListener('shown.bs.modal', function () {
 
 <body>
 
-<div class="container-xxl py-5 appo-body">
+<!-- <div class="container-xxl py-5 appo-body">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-5"> -->
           
           <!-- detail Modal -->
 		<div class="modal fade" id="appoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -263,9 +263,9 @@ myModal.addEventListener('shown.bs.modal', function () {
 		</div>
           
             
-          </div>
+          <!-- </div>
         </div>
-      </div>
+      </div> -->
 <script type="text/javascript">
 var CDate = new Date(); 
 var today = new Date();

@@ -33,6 +33,7 @@
 .small {
 	padding-top: 0.7rem;
 	height: 50px;
+	width: 130px !important;
 	font-size: 17px;
 	background-color: #C68B59;
 	border-color: #C68B59;

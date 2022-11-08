@@ -55,16 +55,16 @@
 	color: #000000 !important;
 }
 .info-button {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	bottom: 1rem;
-	right: 1rem;
-	background-color: #8FC1D4;
-	font-size: 30px;
-	padding-top: 0;
-	padding-left: 17px;
-	transition: all 0.15s ease-in-out;
+	width: 50px !important;
+	height: 50px !important;
+	position: absolute !important;
+	bottom: 1rem !important;
+	right: 1rem !important;
+	background-color: #8FC1D4 !important;
+	font-size: 30px !important;
+	padding-top: 0 !important;
+	padding-left: 17px !important;
+	transition: all 0.15s ease-in-out !important;
 }
 .facts-overlay {
 	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .1));

@@ -124,8 +124,11 @@ li .login-out {
 }
 
 .main-button-1 {
+	padding-top: .6rem !important;
+	width: 130px !important;
 	font-size: 18px !important;
     background-color: #8FC1D4 !important;
+    border: 1px solid #8FC1D4 !important;
     border-color: #8FC1D4 !important;
     border-radius: 5px !important;
 }
@@ -156,10 +159,12 @@ li .login-out {
 	width: 100% !important;
 }
 .main-button-2 {
-	font-size: 17px;
     background-color: #C68B59 !important;
-    border-color: #C68B59 !important;
     border-radius: 5px !important;
+    border: 1px solid #C68B59 !important;
+    padding-top: .6rem !important;
+	width: 140px !important;
+	font-size: 18px !important;
 }
 .main-button-2:hover {
 	background-color: rgba(0, 0, 0, 0.3) !important;
@@ -319,7 +324,7 @@ li .login-out {
                         반려동물 안전강화
                       </li>
                     </ol>
-                    <a href="./intro.do" class="btn btn-primary py-3 px-5 main-button-1">병원소개</a>
+                    <a href="./intro.do" class="btn btn-primary main-button-1">병원소개</a>
                   </div>
                 </div>
               </div>
@@ -343,7 +348,7 @@ li .login-out {
                         조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해<br>최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary py-3 px-5 main-button-2">자세히보기</a>
+                    <a href="" class="btn btn-primary main-button-2">자세히보기</a>
                   </div>
                 </div>
               </div>

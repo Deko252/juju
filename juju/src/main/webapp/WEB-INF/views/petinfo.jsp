@@ -15,7 +15,7 @@ body{
 	height: 100%;
 }
 .text-body {
-	color: #fff !important;
+	color: #8FC1D4 !important;
 }
 .wow-1{
 	width: 200px !important;
@@ -45,6 +45,10 @@ p{
 }
 .w-100{
 }
+.treat-title {
+	color: #ffffff;
+	text-shadow: 0px 0px 10px black;
+}
 .title-03 {
 	padding-left: 0rem !important;
 	padding-right: 0rem !important;
@@ -73,7 +77,13 @@ h3 > span {
 #notice_box{
 	margin: 0 auto;
 	width: 1000px;
-	height: 2250px;
+	height: auto;
+}
+.pet-dog {
+	background-color: #8FC1D4 !important;
+}
+.pet-dog > h5 {
+	color: #ffffff !important;
 }
 #top_border{
 	border-top:1px #f0f0f0 solid;
@@ -129,6 +139,7 @@ h3 > span {
 
 #paging {
 	margin:0 auto;
+	margin-top: 20px;
 	font-size: 18px;
 	letter-spacing: 2px;
 	text-decoration: none;
@@ -224,10 +235,14 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 				<c:when test="${param.cate == 2 }">
 					<img class="w-100 w-101" src="./resources/img/cate_2.jpg" alt="Image" />
 				</c:when>
-				<c:otherwise>
+				<c:when test="${param.cate == 3 }">
 					<img class="w-100 w-101" src="./resources/img/cate_3.jpg" alt="Image" />
-				</c:otherwise>
-				</c:choose>	
+				</c:when>
+				<%-- <c:otherwise>
+					<img class="w-100 w-101" src="./resources/img/cate_3.jpg" alt="Image" />
+				</c:otherwise> --%>
+				</c:choose>
+				
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
@@ -240,7 +255,7 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 														<h6 class="text-body text-uppercase mb-2">
 															Pet Information
 														</h6>
-														<h1 class="display-6 mb-0">펫 안내</h1>
+														<h1 class="display-6 mb-0 treat-title">펫 안내</h1>
 													</div>
 												</div>
 											</div>
@@ -249,18 +264,40 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 													data-wow-delay="0.1s">
 													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<a href="./petinfo.do?cate=1">
-														<div class="service-text position-relative text-center h-100 p-4">
-															<h5 class="mb-3 mm-1">강아지</h5>
-														</div>
+														
+														<c:choose>
+															<c:when test="${param.cate == 1 }">
+																<div class="position-relative text-center h-100 p-4 pet-dog">
+																	<h5 class="mb-3 mm-1">강아지</h5>
+																</div>	
+															</c:when>
+															<c:otherwise>
+																<div class="service-text position-relative text-center h-100 p-4">
+																	<h5 class="mb-3 mm-1">강아지</h5>
+																</div>
+															</c:otherwise>
+														</c:choose>
+														
 														</a>
 													</div>
 												</div>	
 												<div class="col-lg-4 col-md-6 wow fadeInUp wow-1" data-wow-delay="0.3s">
 													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<a href="./petinfo.do?cate=2">
-														<div class="service-text position-relative text-center h-100 p-4">
-															 <h5 class="mb-3 mm-1">고양이</h5>
-														</div>
+														
+														<c:choose>
+															<c:when test="${param.cate == 2 }">
+																<div class="position-relative text-center h-100 p-4 pet-dog">
+																	<h5 class="mb-3 mm-1">고양이</h5>
+																</div>	
+															</c:when>
+															<c:otherwise>
+																<div class="service-text position-relative text-center h-100 p-4">
+																	<h5 class="mb-3 mm-1">고양이</h5>
+																</div>
+															</c:otherwise>
+														</c:choose>
+														
 														</a>
 													</div>
 												</div>
@@ -268,9 +305,20 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 													data-wow-delay="0.5s">
 													<div class="service-item bg-light overflow-hidden h-100 h-101 treat-box">
 														<a href="./petinfo.do?cate=3">
-														<div class="service-text position-relative text-center h-100 p-4">
-															 <h5 class="mb-3 mm-1">특수동물</h5>
-														</div>
+														
+															<c:choose>
+															<c:when test="${param.cate == 3 }">
+																<div class="position-relative text-center h-100 p-4 pet-dog">
+																	<h5 class="mb-3 mm-1">특수동물</h5>
+																</div>	
+															</c:when>
+															<c:otherwise>
+																<div class="service-text position-relative text-center h-100 p-4">
+																	<h5 class="mb-3 mm-1">특수동물</h5>
+																</div>
+															</c:otherwise>
+															</c:choose>
+														
 														</a>
 													</div>
 												</div>

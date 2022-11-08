@@ -12,7 +12,7 @@
 <style type="text/css">
 
 .text-body {
-	color: #ffffff !important;
+	color: #8FC1D4 !important;
 }
 .wow-1{
 	width: 150px !important;	
@@ -24,6 +24,10 @@ p{
 }
 .bg-primary {
     background-color: #8FC1D4 !important;
+}
+.treat-title {
+	color: #ffffff;
+	text-shadow: 0px 0px 10px black;
 }
 #text{
 	font-size: 17px;
@@ -315,7 +319,7 @@ h3 > span {
 													<div class="border-start border-5 border-primary ps-4">
 														<h6 class="text-body text-uppercase mb-2">Treatment
 															Subject</h6>
-														<h1 class="display-6 mb-0">진료과목 안내</h1>
+														<h1 class="display-6 mb-0 treat-title">진료과목 안내</h1>
 													</div>
 												</div>
 												<!-- <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">

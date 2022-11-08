@@ -25,6 +25,8 @@ myModal.addEventListener('shown.bs.modal', function () {
 
 .appo-body{
 	margin-top: 150px;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 .appo-title{
 	text-align: center;
