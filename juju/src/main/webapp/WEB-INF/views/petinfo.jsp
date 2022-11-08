@@ -180,7 +180,7 @@ $(function(){
 		}).done(function(data){
 			var detail = data.detail;
 			//alert(data.detail.board_content);
-			$("#viewModalLabel").text(detail.board_title); //제목
+			$("#viewPetLabel").text(detail.board_title); //제목
 			$("#p_mname").text(detail.a_name); //글쓴이
 			$("#p_date").text(detail.board_date); //날짜
 			$("#p_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
@@ -320,7 +320,7 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 	  <div class="modal-dialog modal-lg modal-dialog-centered">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="viewModalLabel">데이터가 없습니다.</h5>
+	        <h5 class="modal-title" id="viewPetLabel">데이터가 없습니다.</h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
