@@ -126,12 +126,15 @@ h3 > span {
 	position:relative;
 	left: 90%;
 	margin-top: 10px;
+	width:70px;
 }
 .btn-primary {
 	width: 80px;
 	height: 40px;
 	border: none;
 	background-color: #EB2524;	
+	
+	
 }
 .btn-primary:hover {
 	background-color: #1F1D1E;
