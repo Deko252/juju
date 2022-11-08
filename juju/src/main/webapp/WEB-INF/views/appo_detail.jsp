@@ -361,12 +361,12 @@ function numberMaxLength(e){
 
 }
 
-window.onkeydown = function() {
+/* window.onkeydown = function() {
    var kcode = event.keyCode;
    if(kcode == 116) {
    history.replaceState({}, null, location.pathname);
    }
-   }
+   } */
 
 var appo_result = 3;
 <c:if test="${param.result eq 0}">appo_result = 0;</c:if>

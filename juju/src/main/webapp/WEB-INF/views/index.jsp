@@ -286,8 +286,15 @@ li .login-out {
           <c:if test="${sessionScope.id eq null }">
 	          <li><a class="nav-item nav-link loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">로그인</a></li>
           </c:if>
-		  <c:if test="${sessionScope.id ne null }">
-		  	<a href="./logout.do" class="nav-item nav-link login-out">로그아웃</a>
+		   <c:if test="${sessionScope.id ne null }">
+		  <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+           	관리자</a>
+		  <div class="dropdown-menu bg-light m-0" data-bs-popper="none">
+		  	<a href="./admin/admin_appo.do" class="nav-item nav-link">관리자 페이지</a>
+		  	<a href="./logout.do" class="nav-item nav-link">로그아웃</a>
+		  	</div>
+		  	</div>
 		  </c:if>
           
           <!-- <a href="contact.html" class="nav-item nav-link">Contact Us</a> -->

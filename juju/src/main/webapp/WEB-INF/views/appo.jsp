@@ -469,12 +469,6 @@ function numberMaxLength(e){
 
 }
 
-window.onkeydown = function() {
-   var kcode = event.keyCode;
-   if(kcode == 116) {
-   history.replaceState({}, null, location.pathname);
-   }
-   }
 
 var appo_result = 3;
 <c:if test="${param.result eq 0}">appo_result = 0;</c:if>
@@ -483,6 +477,12 @@ if(appo_result == 0){
 	$("#appo_btn").trigger("click");
    alert("예약이 불가능합니다. 다른날을 선택해 주세요.");
 }
+window.onkeydown = function() {
+   var kcode = event.keyCode;
+   if(kcode == 116) {
+   history.replaceState({}, null, location.pathname);
+   }
+   }
 
 
 </script>
