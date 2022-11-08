@@ -35,7 +35,7 @@ p{
     padding-right: 0px;
 }
 .w-101{
-	height: 400px;
+	/* height: 400px; */
 }
 .title-03 {
 	padding-left: 0rem !important;
@@ -50,8 +50,14 @@ p{
 h3 > span {
 	color: #8D9297 !important;
 }
+.carousel-item {
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+}
 #detail-img02 {
-	padding-top: 3rem !important;
+	padding-top: 2rem !important;
+	padding-left: 2rem !important;	
 }
 .title1{
 	margin-top: 0;
@@ -294,7 +300,7 @@ h3 > span {
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img class="w-100 w-101" src="./resources/img/treat-back.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/treat-back03.jpg" alt="Image" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">

@@ -13,7 +13,18 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	font-family: 'Noto Sans KR', sans-serif !important;
 }
-
+.navbar .navbar-nav .nav-link {
+	font-family: 'Noto Sans KR', sans-serif !important;
+	font-weight: 100 !important;
+	font-size: 18px !important;
+}
+.dropdown-item {
+	font-size: 18px;
+	font-family: 'Noto Sans KR', sans-serif !important;
+	font-weight: 100 !important;
+	color: #8D9297 !important;
+	transition: all 0.2s ease-in-out;
+}
 .logo-img {
 	width: 65px;
 	margin-right: 10px;

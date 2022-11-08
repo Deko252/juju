@@ -57,14 +57,15 @@ h3 > span {
 	color: #8D9297 !important;
 }
 #detail-img02 {
-	padding-top: 3rem !important;
+	padding-top: 2rem !important;
+	padding-left: 2rem !important;	
 }
 .title1{
 	margin-top: 0;
 }
 .mm-1{
-	    margin-top: 33px;
-	    font-size: 24px !important;
+    margin-top: 33px;
+    font-size: 24px !important;
 }
 #notice_box_1{
 	margin: 0 auto;
@@ -442,7 +443,7 @@ h3 > span {
                 style="object-fit: cover"
               />
               <div
-                class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
+                class="position-absolute top-0 start-0 bg-white pe-3 pb-3 treat-small"
                 style="width: 200px; height: 200px"
               >
                 <div
