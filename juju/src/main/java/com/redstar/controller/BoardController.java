@@ -129,7 +129,7 @@ public class BoardController {
 	
 	@GetMapping("/update.do")
 	public ModelAndView update(HttpSession session, CommandMap map) {
-		ModelAndView mv = new ModelAndView("redirect:/error.do?error=error");
+		ModelAndView mv = new ModelAndView("update");
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {

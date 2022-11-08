@@ -211,12 +211,10 @@ a {
 											detail.board_title); //제목
 									$("#n_mname").text(detail.a_name); //글쓴이
 									$("#n_date").text(detail.board_date); //날짜
-									$("#n_file").attr(
-											'src',
-											"./resources/upload/"
-													+ detail.board_file); //날짜
+									$("#n_file").attr('src', "./resources/upload/"+ detail.board_file); //날짜
 									$("#n_content").text(detail.board_content); //본문내용
-
+									$("#delBtn").attr("var", detail.board_no);
+									$("#updateBtn").attr("var",  detail.board_no);
 									$("#detailModal").modal("show"); //모달 보이게 하기
 								}).fail(function(errorThrown) {
 							alert("문제가 발생했습니다." + errorThrown);
@@ -229,7 +227,8 @@ a {
 								//alert("삭제버튼을 눌렀습니다");
 								if (confirm("게시글을 삭제하시겠습니까?")) {
 									alert("삭제합니다");
-									location.href = "./postDel.do?bno=${notice_detail.board_no }";
+									var no = $( '#delBtn' ).attr( 'var' );
+									location.href = "./postDel.do?bno=" +no;
 								}
 							});
 			$("#updateBtn")
@@ -237,7 +236,8 @@ a {
 							function() {
 								if (confirm("게시글을 수정하시겠습니까?")) {
 									alert("수정합니다");
-									location.href = "./update.do?bno=${notice_detail.board_no}";
+									var no = $( '#updateBtn' ).attr( 'var' );
+									location.href = "./update.do?bno="+no;
 								}
 							});
 

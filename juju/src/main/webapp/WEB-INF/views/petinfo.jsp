@@ -205,7 +205,8 @@ $(function(){
 			$("#p_date").text(detail.board_date); //날짜
 			$("#p_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
 			$("#p_content").text(detail.board_content); //본문내용
-			
+			$("#delBtn").attr("var", detail.board_no);
+			$("#updateBtn").attr("var",  detail.board_no);
 			$("#detailModal").modal("show"); //모달 보이게 하기
 		}).fail(function(errorThrown){
 			alert("문제가 발생했습니다." + errorThrown);
@@ -217,14 +218,16 @@ $(function(){
 		//alert("삭제버튼을 눌렀습니다");
 		if (confirm("게시글을 삭제하시겠습니까?")) {
 			alert("삭제합니다");
-			location.href = "./petpostDel.do?bno=${petdetail.board_no }&cate=${param.cate}";
+			var no = $( '#delBtn' ).attr( 'var' );
+			location.href = "./postDel.do?bno=" +no;
 			//파라미터는 링크 창의 값을 그대로 긁어오는 것을 말한다. 
 		}
 	});
 	$("#updateBtn").click(function() {
 		if (confirm("게시글을 수정하시겠습니까?")) {
 			alert("수정합니다");
-			location.href = "./petupdate.do?bno=${petdetail.board_no}";
+			var no = $( '#updateBtn' ).attr( 'var' );
+			location.href = "./petupdate.do?bno="+no;
 		}
 	});
 	

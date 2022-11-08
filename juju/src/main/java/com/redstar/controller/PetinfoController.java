@@ -114,7 +114,7 @@ public class PetinfoController {
 		/* 펫인포 글수정 */
 	@GetMapping("/petupdate.do")
 	public ModelAndView pet_update(HttpSession session, CommandMap map) {
-		ModelAndView mv = new ModelAndView("redirect:/error.do?error=error");
+		ModelAndView mv = new ModelAndView("petupdate");
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {

@@ -89,6 +89,9 @@
 	color: #ffffff;
 	text-align: center;
 }
+#hide{
+	display: none;
+}
 
 
 </style>
@@ -157,7 +160,7 @@ $(function(){
 		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
               	  </div> --%>
               	  <div id="content_con" class="board">
-              							<div class="board_no">${s.board_no }</div>
+              							<div id="hide" class="board_no">${s.board_no }</div>
               	  <a href="" data-bs-toggle="modal" data-bs-target="#detailModal" class="detail">
               	  <div class="info-detail">
 		              <div class="info-font">${s.board_title }</div>
