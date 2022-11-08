@@ -18,4 +18,5 @@ public class IndexServiceImpl implements IndexService {
 	public List<Map<String, Object>> boardList(Map<String, Object> map) {
 		return indexDAO.boardList(map);
 	}
+	
 }

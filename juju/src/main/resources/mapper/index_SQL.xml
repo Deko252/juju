@@ -11,4 +11,5 @@
 		ORDER BY board_no DESC
 		LIMIT 0, 3
 	</select>
+	
 </mapper>

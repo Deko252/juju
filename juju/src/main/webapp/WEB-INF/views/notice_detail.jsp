@@ -1,115 +1,260 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ include file="head.jsp"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
+<%@ taglib prefix="ui" uri="http://egovframework.gov/ctl/ui"%> 
+
 <!DOCTYPE html>
-
 <html lang="ko">
-<head>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script type="text/javascript">
-	$(function() {//축약형
-		//alert("!");
-		$("#delBtn").click(function() {
-			//alert("삭제버튼을 눌렀습니다");
-			if (confirm("게시글을 삭제하시겠습니까?")) {
-				alert("삭제합니다");
-				location.href = "./postDel.do?bno=${notice_detail.board_no }";
-			}
-		});
-		$("#updateBtn").click(function() {
-			if (confirm("게시글을 수정하시겠습니까?")) {
-				alert("수정합니다");
-				location.href = "./update.do?bno=${notice_detail.board_no}";
-			}
-		});
-	});
-</script>
-<title>공지사항</title>
-</head>
-<style>
-body {
-	height: 800px;
-}
+<head> 
+<style type="text/css">
 
-h2 {
-	margin-top: 50px;
+body{
+	height: 100%;
+}
+.notice-header {
+	background: 
+		linear-gradient(rgba(0, 0, 0, .2), 
+		rgba(0, 0, 0, .5)), 
+		url(./resources/img/notice_header.jpg) center center no-repeat;
+    background-size: cover;
+}
+#img_wrap{
+	width: 100%;
+	height: 450px;
+	position: relative;
+	margin-bottom: 50px;
+}
+#img_wrap img{
+	width: 100%;
+	height: 450px;
+}
+#img_wrap h1{
+	color:#fff;
 	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
 }
-
-#tit_detail {
-	display: flex;
-	justify-content: space-around;
-	width: 150px;
-	margin: 20;
-}
-
-#dc_container {
-	border: 1px solid;
-	margin: 50 200 0 200;
-	height: 500px;
-}
-
-#dc_main {
-	width: 1000px;
-	height: 400px;
-	margin: 20 auto;
-	display: block;
-}
-
-#dc_img {
-	width: 900px;
-	height: 300px;
+#notice_box{
 	margin: 0 auto;
-	text-align: center;
-	overflow: hidden;
+	width: 1000px;
+	height: auto;
 }
-
-#dc_text {
-	width: 500px;
-	margin: 15 auto;
-	text-align: center;
+#top_border{
+	border-top:1px #f0f0f0 solid;
+	border-bottom:1px #f0f0f0 solid;
 }
-
-#dc_btn {
-	width: 300px;
-	margin: 20 auto;
+#top_wrap{
+	width: 1000px;
+	height:200px;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	text-align: left;
+	margin-bottom: 15px;
+	margin-top : 15px;
 }
+#top_text{
+	width: 80%;
+	margin-left:20px;
+	padding: 10px 25px 5px;
+	position:relative;
+}
+#content_tit{
+	color: #865439;
+	font-weight: 500;
+	font-size: 28px;
+	margin-bottom: 5px;
+}
+#content_con > a{
+	transition: 0.2s ease-in-out 0.2s;	
+}
+
+#content_con > a:hover {
+	color: #8FC1D4;
+}
+#text_wrap{
+	width: 100%;
+	height: 80%;
+}
+#top_writer{
+	color: #aaa;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+}
+#thumnail{
+	width: 20%;
+}
+#thumnail img{
+	width: 200px;
+	height: 200px;
+	object-fit:cover;
+}
+#writeBtn {
+	position:relative;
+	left: 90%;
+	margin-top: 10px;
+}
+.btn-primary {
+	width: 80px;
+	height: 40px;
+	border: none;
+	background-color: #EB2524;	
+}
+.btn-primary:hover {
+	background-color: #1F1D1E;
+}
+
+#paging {
+	margin:0 auto;
+	margin-top: 20px;
+	font-size: 18px;
+	letter-spacing: 4px;
+	text-decoration: none;
+	width: 600px;
+	height: 30px; 
+	text-align: center;
+    text-decoration: none;  
+}
+a{
+	color: black;
+}
+
+/* 모달 */
+.noti-mdWrap{
+}
+.noti-mdBody {
+	height: 700px;
+	min-width: 1000px;
+}
+/* 모달 끝 */
+@media (max-width: 349px) {
+footer{
+ 	display: none;
+ 	}
+}
+.btn-primary {
+	background-color: #C68B59;
+	border-color: #C68B59;
+	border-radius: 5px !important;
+	width: 50px;
+	height: 50px;
+}
+.back-to-top {
+	border-radius: 5px !important;
+	background-color: #C68B59 !important;
+	border-color: #C68B59 !important;
+}
+.back-to-top:hover {
+	background-color: #865439 !important;
+	border-color: #865439 !important;
+}
+
 </style>
+</head>
+<body>	
+<script type="text/javascript">
+$(function(){
+	$(".detail").click(function(){
+		var no = $(this).parent(".board").children(".board_no").text();
+		$.ajax({
+			url: "./detailAjax.do",
+			data: {"no" : no },
+			type: "get",
+			dataType: "json"
+		}).done(function(data){
+			var detail = data.detail;
+			//alert(data.detail.board_content);
+			$("#viewModalLabel").text(detail.board_title); //제목
+			$("#n_mname").text(detail.b_no); //글쓴이
+			$("#n_date").text(detail.board_date); //날짜
+			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
+			$("#n_content").text(detail.board_content); //본문내용
+			
+			$("#detailModal").modal("show"); //모달 보이게 하기
+		}).fail(function(errorThrown){
+			alert("문제가 발생했습니다." + errorThrown);
+		});
+		
+	});
+	$("#delBtn").click(function() {
+		//alert("삭제버튼을 눌렀습니다");
+		if (confirm("게시글을 삭제하시겠습니까?")) {
+			alert("삭제합니다");
+			location.href = "./postDel.do?bno=${notice_detail.board_no }";
+		}
+	});
+	$("#updateBtn").click(function() {
+		if (confirm("게시글을 수정하시겠습니까?")) {
+			alert("수정합니다");
+			location.href = "./update.do?bno=${notice_detail.board_no}";
+		}
+	});
+	
+});
 
-<body>
 
-	<h2>${notice_detail.board_title }</h2>
+</script>
+                 					
+	<!-- detail Modal -->
+	<div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      
+	   
+	        <h5 class="modal-title" id="viewModalLabel"></h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row" style="height: 30px; padding-bottom:40px; border-bottom: 1px #dee2e6 solid;">
+	           <div class="col">
+	              <div id="n_mname">데이터가 없습니다.</div>
+	           </div>
+	           <div class="col">
+	              <div id="dc_btn">
+					<c:if test="${sessionScope.id ne null}">
+						<button class="btn btn-primary" id="updateBtn">수정</button> 
+						<button class="btn btn-danger" id="delBtn">삭제</button>
+					</c:if>
+			 </div>
+	           </div>
+	           <div class="col">
+	              <div id="n_date">데이터가 없습니다.</div>
+	           </div>
+	        </div>
+	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
+	        <div><img id="n_file" alt="이미지" src=""> </div>
+	           <div class="col" id="n_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
+	           
+	           
+	           
+	        </div>
+	      </div>
+	      
+	      <div class="modal-footer">        
+	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>              			
+             
+	<!-- JavaScript Libraries -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./resources/lib/wow/wow.min.js"></script>
+	<script src="./resources/lib/easing/easing.min.js"></script>
+	<script src="./resources/lib/waypoints/waypoints.min.js"></script>
+	<script src="./resources/lib/owlcarousel/owl.carousel.min.js"></script>
 
-	<div id="dc_container">
-		<div id="tit_detail">
-			<div>${notice_detail.a_name }</div>
-			<div>${notice_detail.board_date }</div>
-		</div>
-		<div id="dc_main">
-
-			<div id="dc_img">
-				<c:if test="${notice_detail.board_file ne null}">
-					<img alt="img"
-						src="./resources/upload/${notice_detail.board_file }">
-				</c:if>
-			</div>
-
-			<div id="dc_text">${notice_detail.board_content }</div>
-		</div>
-	</div>
-	<div id="dc_btn">
-		<c:if test="${sessionScope.id ne null}">
-			<button class="btn btn-primary" id="updateBtn">수정</button>
-			<button class="btn btn-danger" id="delBtn">삭제</button>
-		</c:if>
-		<button class="btn btn-success" onclick="location.href='./notice.do'">이전</button>
-	</div>
-
-</body>
+	<!-- Template Javascript -->
+	<script src="./resources/js/main.js"></script>
+	
+	
+             
+             
+		</body> 
 </html>
+	

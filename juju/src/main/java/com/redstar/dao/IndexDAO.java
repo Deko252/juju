@@ -14,4 +14,5 @@ public class IndexDAO extends AbstractDAO {
 	public List<Map<String, Object>> boardList(Map<String, Object> map) {
 		return selectList("index.boardList", map);
 	}
+
 }

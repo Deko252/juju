@@ -107,24 +107,26 @@
 	              <h4 class="text-white mb-3 info-title">공지사항</h4>
               </div>
               <div class="info-content">
-              <c:forEach items="${in_no }" var="n">
+              <c:forEach items="${in_no }" var="s">
               
               	  <%-- <div class="info-detail">
 		              <a class="info-font" href="./notice_detail.do?bno=${n.board_no }">${n.board_title }</a><br>
               	  </div> --%>
               	  
-              	  <a href="./notice_detail.do?bno=${n.board_no }">
+              	  <a href="./notice_detail.do" data-bs-toggle="modal" data-bs-target="#detailModal" class="detail">
               	  <div class="info-detail">
-		              <div class="info-font">${n.board_title }</div>
+		              <div class="info-font">${s.board_title }</div>
               	  </div>
               	  </a>
               	  
 			  </c:forEach>
+              	  <%@ include file="notice_detail.jsp" %>
               </div>
               <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
           </div>
         </div>
+
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
           <div class="position-relative">
             <img class="img-fluid w-100" src="./resources/img/info01.jpg" alt="" />
