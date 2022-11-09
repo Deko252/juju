@@ -388,10 +388,10 @@ $(function(){
 	  <div class="modal-dialog modal-lg modal-dialog-centered">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	       <h5 class="modal-title" id="viewModalLabel"></h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
+	       <h5 class="modal-title" id="viewModalLabel"></h5>
 	        <div class="row" style="height: 30px; padding-bottom:40px; border-bottom: 1px #dee2e6 solid;">
 	           <div class="col">
 	              <div id="n_mname">데이터가 없습니다.</div>
@@ -418,7 +418,7 @@ $(function(){
 	      </div>
 	      
 	      <div class="modal-footer">        
-	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	        <!-- <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button> -->
 	      </div>
 	    </div>
 	  </div>

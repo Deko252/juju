@@ -122,12 +122,57 @@ a{
 }
 
 /* 모달 */
+.noti-modal-body {
+	padding-top: 10px !important;
+}
+.noti-modal-body > .modal-title {
+	margin-bottom: 10px !important;
+}
+
 .noti-mdWrap{
 }
 .noti-mdBody {
 	height: 700px;
 	min-width: 1000px;
 }
+.modal-title {
+}
+.noti-modal-body > .row {
+	height: 37px !important;
+	padding-top: 5px;
+}
+.noti-name {
+	text-align: right;
+	padding-right: 20px;
+}
+#n_mname, #n_date {
+	width: 80px !important;
+	display: inline-block;
+}
+.modal-btn-sub {
+	margin-right: 5px;
+}
+.modal-btn-sub {
+	font-size: 18px;
+	height: 50px !important;
+	width: 130px !important;
+	border-radius: 5px !important;
+	background-color: #C68B59;
+	border-color: #C68B59;
+}
+.modal-btn-can {
+	font-size: 18px;
+	height: 50px !important;
+	width: 130px !important;
+	border-radius: 5px !important;
+	background-color: gray;
+	border-color: gray;
+}
+.modal-btn-sub:hover, .modal-btn-can:hover {
+	background-color: #8FC1D4 !important;
+	border-color: #8FC1D4 !important;
+}
+
 /* 모달 끝 */
 @media (max-width: 349px) {
 footer{
@@ -204,16 +249,13 @@ footer{
 	      <div class="modal-header">
 	      
 	   
-	        <h5 class="modal-title" id="viewModalLabel"></h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
-	      <div class="modal-body">
-	        <div class="row" style="height: 30px; padding-bottom:40px; border-bottom: 1px #dee2e6 solid;">
-	           <div class="col">
+	      <div class="modal-body noti-modal-body">
+	        <h3 class="modal-title" id="viewModalLabel"></h3>
+	        <div class="row" style="border-bottom: 1px #dee2e6 solid; border-top: 1px #dee2e6 solid;">
+	           <div class="col noti-name">
 	              <div id="n_mname">데이터가 없습니다.</div>
-	           </div>
-	           
-	           <div class="col">
 	              <div id="n_date">데이터가 없습니다.</div>
 	           </div>
 	        </div>
@@ -230,12 +272,12 @@ footer{
 	      <div class="col">
 	              <div id="dc_btn">
 					<c:if test="${sessionScope.id ne null}">
-						<button class="btn btn-primary" id="updateBtn">수정</button> 
-						<button class="btn btn-danger" id="delBtn">삭제</button>
+						<button class="btn btn-primary modal-btn-sub" id="updateBtn">수정</button> 
+						<button class="btn btn-danger modal-btn-can" id="delBtn">삭제</button>
 					</c:if>
 			 </div>
 	           </div>
-	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	        <!-- <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button> -->
 	      </div>
 	    </div>
 	  </div>

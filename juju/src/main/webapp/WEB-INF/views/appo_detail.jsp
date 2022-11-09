@@ -121,15 +121,25 @@ myModal.addEventListener('shown.bs.modal', function () {
 .modal-btn-sub {
 	margin-right: 5px;
 }
-.modal-btn-sub, .modal-btn-can {
-	width: 130px;
+.modal-btn-sub {
+	font-size: 18px;
+	height: 50px !important;
+	width: 130px !important;
 	border-radius: 5px !important;
 	background-color: #C68B59;
 	border-color: #C68B59;
 }
+.modal-btn-can {
+	font-size: 18px;
+	height: 50px !important;
+	width: 130px !important;
+	border-radius: 5px !important;
+	background-color: gray !important;
+	border-color: gray !important;
+}
 .modal-btn-sub:hover, .modal-btn-can:hover {
-	background-color: #8FC1D4;
-	border-color: #8FC1D4;
+	background-color: #8FC1D4 !important;
+	border-color: #8FC1D4 !important;
 }
 .modal-inner {
 	display: flex;
