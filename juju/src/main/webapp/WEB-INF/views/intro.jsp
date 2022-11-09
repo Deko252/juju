@@ -6,6 +6,7 @@
 <html lang="ko">
 
 <head>
+<title>병원 소개</title>
 <%@ include file="head.jsp"%>
 
 

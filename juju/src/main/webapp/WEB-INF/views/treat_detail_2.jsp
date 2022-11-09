@@ -7,6 +7,7 @@
 
 
 <head>
+<title>진료 과목</title>
 <%@ include file="head.jsp"%>
 
 <style type="text/css">

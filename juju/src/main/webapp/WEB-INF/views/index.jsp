@@ -13,7 +13,7 @@
 	});
 </script>
 <head>
-
+<title>주주 동물병원</title>
 
 <%@ include file="head.jsp"%>
 
@@ -286,7 +286,7 @@ li .login-out {
             </div>
           </div> 
           <a href="#appo-04" class="nav-item nav-link" id="appo_top">진료예약</a>
-          <a href="#info-05" class="nav-item nav-link">펫정보</a>
+          <a href="#info-05" class="nav-item nav-link">반려동물정보</a>
           <a href="#info-05" class="nav-item nav-link">공지사항</a>
           <c:if test="${sessionScope.id eq null }">
 	          <li><a class="nav-item nav-link loginModal" data-bs-toggle="modal" data-bs-target="#loginModal">로그인</a></li>

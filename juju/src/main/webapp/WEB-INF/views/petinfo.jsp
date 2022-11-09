@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head> 
+<title>반려동물 정보</title>
 <%@ include file="head.jsp" %> 
 
 <style type="text/css">
@@ -326,7 +327,7 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
 														<h6 class="text-body text-uppercase mb-2">
 															Pet Information
 														</h6>
-														<h1 class="display-6 mb-0 treat-title">펫 안내</h1>
+														<h1 class="display-6 mb-0 treat-title">반려동물 정보</h1>
 													</div>
 												</div>
 											</div>

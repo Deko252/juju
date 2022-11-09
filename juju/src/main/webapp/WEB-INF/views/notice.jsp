@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<title>공지사항</title>
 <%@ include file="head.jsp"%>
 
 

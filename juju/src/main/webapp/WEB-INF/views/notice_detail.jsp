@@ -270,12 +270,12 @@ footer{
 	      
 	      <div class="modal-footer">        
 	      <div class="col">
-	              <div id="dc_btn">
+	              <%-- <div id="dc_btn">
 					<c:if test="${sessionScope.id ne null}">
 						<button class="btn btn-primary modal-btn-sub" id="updateBtn">수정</button> 
 						<button class="btn btn-danger modal-btn-can" id="delBtn">삭제</button>
 					</c:if>
-			 </div>
+			 </div> --%>
 	           </div>
 	        <!-- <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button> -->
 	      </div>
