@@ -360,7 +360,8 @@ li .login-out {
                         조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해<br>최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
-                    <a href="" class="btn btn-primary main-button-2">자세히보기</a>
+                    <a href="./petinfo.do" class="btn btn-primary main-button-2">자세히보기</a>
+                    
                   </div>
                 </div>
               </div>
