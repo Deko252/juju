@@ -293,10 +293,9 @@ $(function(){
 		              <div class="info-font">${s.board_title }</div>
               	  </div>    	
               	  </a>
-              	  </div>              	  
-              	  
+              	  </div>              	    	  
 			  </c:forEach>
-              	  <%@ include file="notice_detail.jsp" %>
+              	  
               </div>
               <a class="text-white small info-button" href="./notice.do">+</a>
             </div>
@@ -398,10 +397,6 @@ $(function(){
 	           </div>
 	           <div class="col">
 	              <div id="dc_btn">
-					<c:if test="${sessionScope.id ne null}">
-						<button class="btn btn-primary" id="updateBtn">수정</button> 
-						<button class="btn btn-danger" id="delBtn">삭제</button>
-					</c:if>
 			 </div>
 	           </div>
 	           <div class="col">

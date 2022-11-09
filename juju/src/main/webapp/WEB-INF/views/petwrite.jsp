@@ -97,7 +97,7 @@ a.btn-secondary{
 							<input id="findFile" type="file" name="file" accept=".png, .jpg, .gif, .jpeg, .bmp">
 							<div id="writeBtn">
 							<button type="submit" class="btn btn-secondary mb-3">글쓰기</button>
-							<a href="./petinfo.do?cate=${param.cate}" role="button" class="btn btn-secondary">취소</a>
+							<a href="./petinfo.do?cate=${param.cate }" role="button" class="btn btn-secondary">취소</a>
 							</div>
 						</form>
                     </div>
