@@ -110,9 +110,7 @@ public class BoardController {
 		@GetMapping(value="/petdetailAjax.do",  produces="application/json;charset=UTF-8")
 		public String petdetailAjax(CommandMap map) {
 			JSONObject json = new JSONObject();
-			System.out.println("petdetailAjax : " + map.getMap());
-			Map<String, Object> detail = boardService.petdetailAjax(map.getMap());
-			System.out.println("map : " + detail);
+			Map<String, Object> detail = boardService.petdetailAjax(map.getMap());		
 			
 			json.put("detail", detail);
 			return json.toString();
@@ -151,7 +149,7 @@ public class BoardController {
 
 				int result = boardService.update(map.getMap());
 
-				return "redirect:/notice_detail.do?bno=" + map.get("board_no") + "&result=" + result;
+				return "redirect:/notice.do?result=" + result;
 			} else {
 				return "redirect:/error.do";
 			}

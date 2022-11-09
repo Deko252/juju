@@ -101,7 +101,6 @@ public class PetinfoController {
 				}
 				
 				int result = petinfoService.pet_write(map.getMap());
-				System.out.println(map.getMap());
 				
 				return "redirect:/petinfo.do?cate="+ map.get("cate") +"&result=" + result;
 			} else {
@@ -119,7 +118,8 @@ public class PetinfoController {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {
 				Map<String, Object> pet_updetail = petinfoService.pet_updetail(map.getMap());
-				System.out.println(pet_updetail);
+				System.out.println("넌 뭔데 " + pet_updetail);
+				
 				if (pet_updetail != null) {
 					mv.addObject("pet_updetail", pet_updetail);
 					mv.setViewName("petupdate");	
@@ -131,13 +131,14 @@ public class PetinfoController {
 
 	@PostMapping("/petupdate.do")
 	public String petupdate(CommandMap map, HttpSession session) {
+		System.out.println(map.getMap());
 		if (session.getAttribute("id") != null) {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
-
+			
 				int result = petinfoService.pet_update(map.getMap());
 
-				return "redirect:/petinfo_detail.do?bno=" + map.get("board_no") + "&result=" + result;
+				return "redirect:/petinfo.do?cate=" + map.get("cate") + "&result=" + result;
 			} else {
 				return "redirect:/error.do";
 			}
