@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>    
 <!DOCTYPE html>
-<html lang="ko"> 
+<html lang="ko">
 
 <script type="text/javascript">
 	$(function(){
@@ -14,6 +14,8 @@
 </script>
 <head>
 <title>주주 동물병원</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="./resources/img/favicon.png">
 
 <%@ include file="head.jsp"%>
 
