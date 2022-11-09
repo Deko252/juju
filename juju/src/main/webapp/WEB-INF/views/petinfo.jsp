@@ -394,14 +394,7 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 	           <div class="col">
 	              <div id="p_mname">데이터가 없습니다.</div>
 	           </div>
-	           <div class="col">
-	              <div id="dc_btn">
-					<c:if test="${sessionScope.id ne null}">
-						<button class="btn btn-primary" id="updateBtn">수정</button> 
-						<button class="btn btn-danger" id="delBtn">삭제</button>
-					</c:if>
-			 </div>
-	           </div>
+	           
 	           <div class="col">
 	              <div id="p_date">데이터가 없습니다.</div>
 	           </div>
@@ -411,7 +404,15 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 	           <div class="col" id="p_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
 	        </div>
 	      </div>
-	      <div class="modal-footer">        
+	      <div class="modal-footer">
+	      <div class="col">
+	              <div id="dc_btn">
+					<c:if test="${sessionScope.id ne null}">
+						<button class="btn btn-primary" id="updateBtn">수정</button> 
+						<button class="btn btn-danger" id="delBtn">삭제</button>
+					</c:if>
+			 </div>
+	           </div>        
 	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
 	      </div>
 	    </div>

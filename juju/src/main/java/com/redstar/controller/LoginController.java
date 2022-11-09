@@ -75,7 +75,7 @@ public class LoginController {
 		
 		Map<String, Object> appo_count = loginService.appo_count(map.getMap());
 		System.out.println(appo_count);
-		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) > 3) {
+		if(Integer.parseInt(String.valueOf(appo_count.get("count"))) > 2) {
 			int result = 0;			
 			return "redirect:/index.do?result=" + result;				
 		}else {		

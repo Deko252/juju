@@ -112,25 +112,57 @@ body > div {
 a {
 	text-decoration: none;
 }
-.ho{
-padding:100px;
-padding-top:30px;
-font-size: 30px;
-text-decoration: none;
-font-style: italic;
+#adminMenu {
+   margin: 0;
+   height: 50px;
+   width: 100%;
+   background-color: gray;
+   line-height: 50px;
+   position: fixed;
+   top: 0px;
+   font-weight: bold;
 }
-.ii{
-background-color: #bbb;
 
+#adminMenu ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+#li {
+   float: left;
+   display: block;
+   margin: 0 20px;
+   padding: 0 20px;
+}
+
+#li:hover {
+   background-color: black;
+   color: white;
+}
+
+#blank {
+   display: block;
+   height: 60px;
+}
+#admin_body {
+   margin: 0;
+   padding: 0;
 }
 
 </style>
 </head>
 <body>
-	<div class=" ho">
-	 <span class="ii"><a href="../index.do" >HOME</a></span>
-	 <span class="ii"><a href="../logout.do">LogOut</a></span>
-	</div>
+<div id="admin_body">
+	<div id="adminMenu">
+   <ul>
+        <li id="li" onclick="location.href='../index.do'">웹사이트로 돌아가기</li>
+		<li id="li" onclick="location.href='../logout.do'">로그아웃</li>
+   </ul>`
+</div>
+<div id="blank">&emsp;</div>
+</div>
+
 
 	<div id="list">
 	<!-- 로그 찍어줄겁니다. jstl -->
