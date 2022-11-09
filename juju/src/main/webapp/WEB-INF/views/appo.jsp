@@ -200,7 +200,7 @@ myModal.addEventListener('shown.bs.modal', function () {
           </div>
           
           <!-- detail Modal -->
-		<!-- <div class="modal fade" id="appoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="appoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-xl modal-dialog-centered">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -302,7 +302,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 		      </div>
 		    </div>
 		  </div>
-		</div> -->
+		</div>
           
           <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">

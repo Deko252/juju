@@ -4,6 +4,21 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>   
 
 <head>
+<script type="text/javascript">
+$(function(){
+	$("#hotel01").click(function(){	
+		window.open("https://www.facebook.com/petgroundhbc", "child","width=900, height=600");			
+	});
+	$("#hotel02").click(function(){	
+		window.open("https://www.barkleycleveland.com/", "child","width=900, height=600");			
+	});
+	$("#hotel03").click(function(){	
+		window.open("https://thepethotel.fr/", "child","width=900, height=600");			
+	});
+});
+
+</script>
+
 
 <style>
 
@@ -219,17 +234,17 @@ $(function(){
 	              <h4 class="text-white mb-3">펫호텔</h4>
 	          </div>    
               <div class="info-content">
-              	  <a href="https://www.facebook.com/petgroundhbc">    
+              	  <a id="hotel01">    
                    <div class="info-detail">
                     <div class="info-font">펫그라운드_해방촌</div><br>
                    </div>
                    </a>
-              	  <a href="https://www.barkleycleveland.com/">    
+              	  <a id="hotel02">    
                    <div class="info-detail">
                     <div class="info-font" ">멍클리 펫 호텔</div><br>
                    </div>
                   </a>
-              	  <a href="https://thepethotel.fr/">    
+              	  <a id="hotel03">    
                    <div class="info-detail">
                     <div class="info-font" ">더 펫 호텔</div><br>
                    </div>
