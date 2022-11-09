@@ -107,7 +107,15 @@ $(function(){
 #hide{
 	display: none;
 }
-
+#hotel01{
+	cursor: pointer;
+}
+#hotel02{
+	cursor: pointer;
+}
+#hotel03{
+	cursor: pointer;
+}
 
 @media (max-width: 1800px) {
 	.contact-phone {
