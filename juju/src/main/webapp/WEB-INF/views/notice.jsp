@@ -122,6 +122,7 @@
 	position: relative;
 	left: 90%;
 	margin-top: 10px;
+	width:70px;
 }
 
 .btn-primary {
