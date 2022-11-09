@@ -236,7 +236,7 @@ color: #8FC1D4 !important;
 
 	
 							<div class="intro">
-	<img class="ntr" alt="quuu" src="./resources/img/ani01.jpg">
+	<img class="ntr" alt="quuu" src="./resources/img/ani01.jpg" style="background: center center no-repeat;">
 					<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-12 col-lg-10">

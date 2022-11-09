@@ -47,13 +47,56 @@ $(function(){
     margin-top: 0px;
 }
 
+@media (max-width: 1400px) {
+	iframe {
+		width: 500px !important;
+	}
+	.tube-icon {
+		width: 450px !important;
+	}
+	.d-flex {
+		padding:0 !important;
+		width: 90px;
+		margin-right: 2rem;
+	}
+	.btn-primary3 {
+		width: 100%;
+	}
+}
+@media (max-width: 990px) {
+	.tube-container{
+		max-width: 540px !important;
+	}
+	.col-lg-6 {
+		text-align: center !important;
+	}
+	.tubesize:after {
+		margin: 10px auto !important;
+	}
+	.tube-location {
+		margin: 0 auto;
+	}
+	.tube-icon {
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.icon_1 {
+		margin-right: 0 !important;
+	}
+}
+@media (max-width: 768px) {
+	.tube-container{
+		
+	}
+}
+
 </style>
 
 
 <div class="container-xxl py-5 tube-body">
-      <div class="container">
+      <div class="container tube-container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6 wow fadeInUp tube-wid" data-wow-delay="0.1s">
                 <div id="mv_wrap"><iframe title="YouTube video player" src="https://www.youtube.com/embed/a9yWOm2uOio" width="600" height="360" allowfullscreen allow="autoplay; fullscreen"></iframe></div>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -71,7 +114,7 @@ $(function(){
              	구독 좋아요 필수
               </p>
               <div class="border-top mt-4 pt-4">
-                <div class="row g-4">
+                <div class="row g-4 tube-icon">
                   <div class="col-sm-4 d-flex wow fadeIn icon_1" data-wow-delay="0.1s">
                     <i
                       href="https://youtu.be/OY1jmWMruzs"
