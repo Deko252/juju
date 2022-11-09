@@ -183,6 +183,9 @@ footer{
  	display: none;
  	}
 }
+#p_hide{
+	display: none;
+}
 
 </style>
 </head>
@@ -358,7 +361,7 @@ function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 		          				<div id="text_wrap">
               						<div id="content_tit">${p.board_title }</div>
               						<div  id="content_con" class="board">
-              							<div class="board_no">${p.board_no }</div>
+              							<div id="p_hide" class="board_no">${p.board_no }</div>
               							<a class="detail" >${p.board_content }</a>
               						</div>
               						<div id="top_writer">

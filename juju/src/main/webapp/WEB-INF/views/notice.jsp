@@ -184,6 +184,9 @@ a {
 	background-color: #865439 !important;
 	border-color: #865439 !important;
 }
+#n_hide{
+	display: none;
+}
 </style>
 </head>
 <body>
@@ -292,7 +295,7 @@ a {
 							<div id="text_wrap">
 								<div id="content_tit">${s.board_title }</div>
 								<div id="content_con" class="board">
-									<div class="board_no">${s.board_no }</div>
+									<div id="n_hide" class="board_no">${s.board_no }</div>
 									<a class="detail">${s.board_content }</a>
 								</div>
 							</div>
