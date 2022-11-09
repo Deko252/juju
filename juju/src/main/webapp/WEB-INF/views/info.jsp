@@ -97,7 +97,7 @@ $(function(){
 .contact-phone {
 	text-align: center;
 	color: #8FC1D4;
-	font-size: 55px;
+	font-size: 60px;
 	font-weight: bold;	
 }
 .contact-add {
@@ -107,11 +107,7 @@ $(function(){
 #hide{
 	display: none;
 }
-@media (min-width: 992px){
-	.contact-phone {
-		font-size: 45px;
-	}
-}
+
 
 </style>
 
@@ -129,8 +125,8 @@ $(function(){
 		}).done(function(data){
 			var detail = data.detail;
 			//alert(data.detail.board_content);
-			$("#viewModalLabel").text(detail.board_title); //제목
-			$("#n_mname").text(detail.b_no); //글쓴이
+			$(".modal-title").text(detail.board_title); //제목
+			$("#n_mname").text(detail.a_name); //글쓴이
 			$("#n_date").text(detail.board_date); //날짜
 			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
 			$("#n_content").text(detail.board_content); //본문내용
@@ -266,10 +262,10 @@ $(function(){
 	              <img class="info-icon" src="./resources/img/info-contact.png" alt="" />
 	              <h4 class="text-white mb-3">CONTACT US</h4>
 	          </div>    
-              <div class="text-white contact-us">
-                  <h3 class="contact-phone">054.123.4567</h3>
+              <p class="text-white contact-us">
+                <div class="contact-phone">054.123.4567</div>
 	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>경북 울릉군 울릉읍 독도리 30</div>
-              </div>
+              </p>
             </div>
           </div>
         </div>
@@ -280,9 +276,7 @@ $(function(){
 	  <div class="modal-dialog modal-lg modal-dialog-centered">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	      
-	   
-	        <h5 class="modal-title" id="viewModalLabel"></h5>
+	       <h5 class="modal-title" id="viewModalLabel"></h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">

@@ -11,6 +11,14 @@
 
 <script type="text/javascript">
 
+	var check = 0;
+	<c:if test="${sessionScope.id ne null }">check = 1;</c:if>
+	if(check == 0){
+		alert("잘못된 접근입니다.");
+		location.href="../index.do";
+	}
+
+
 function del(no){
 	if(confirm(no + "번을 삭제합니다")){
 		location.href="./postDel.do?ano="+no;
@@ -21,7 +29,6 @@ function re(no){
 		location.href="./postRemove.do?ano="+no;
 	}	
 }
-
 function linkPage(pageNo){location.href="./admin_appo.do?pageNo="+pageNo;}
 </script>
 
