@@ -37,7 +37,16 @@
 	</select>
 		
 	<select id="detailAjax" parameterType="HashMap" resultType="HashMap">
-		SELECT * FROM notice_boardview
+		SELECT n.*, a.a_id, a.a_name 
+		FROM notice_boardview n JOIN admin a
+		ON a.a_no=n.b_no 
+		WHERE board_no=#{no } 
+	</select>
+	
+	<select id="petdetailAjax" parameterType="HashMap" resultType="HashMap">
+		SELECT p.* , a.a_id, a.a_name  
+		FROM pet_boardview p JOIN admin a
+		ON a.a_no=p.b_no 
 		WHERE board_no=#{no } 
 	</select>
 	

@@ -97,7 +97,7 @@ $(function(){
 .contact-phone {
 	text-align: center;
 	color: #8FC1D4;
-	font-size: 60px;
+	font-size: 55px;
 	font-weight: bold;	
 }
 .contact-add {
@@ -107,7 +107,11 @@ $(function(){
 #hide{
 	display: none;
 }
-
+@media (min-width: 992px){
+	.contact-phone {
+		font-size: 45px;
+	}
+}
 
 </style>
 
@@ -262,10 +266,10 @@ $(function(){
 	              <img class="info-icon" src="./resources/img/info-contact.png" alt="" />
 	              <h4 class="text-white mb-3">CONTACT US</h4>
 	          </div>    
-              <p class="text-white contact-us">
-                <div class="contact-phone">054.123.4567</div>
+              <div class="text-white contact-us">
+                  <h3 class="contact-phone">054.123.4567</h3>
 	              <div class="contact-add">주주동물병원 365일 24시간 연중무휴<br>경북 울릉군 울릉읍 독도리 30</div>
-              </p>
+              </div>
             </div>
           </div>
         </div>

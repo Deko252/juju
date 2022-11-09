@@ -12,9 +12,7 @@
 
 
 <style type="text/css">
-body {
-	height: 100%;
-}
+
 .first-title {
 	color: #8FC1D4 !important;
 	text-shadow: 0px 0px 10px black;

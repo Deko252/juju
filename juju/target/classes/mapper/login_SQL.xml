@@ -8,5 +8,14 @@
 		SELECT count(*) as count, a_name FROM admin 
 		WHERE a_id=#{id } AND a_pw=#{pw }
 	</select>
-
+	
+	<insert id="appo_detail" parameterType="Hashmap">
+		INSERT INTO appo (name, p_name, num, p_type, date, comment)
+		VALUES(#{name }, #{p_name }, #{phoneNumber }, #{p_type }, #{period_1 }, #{comment })
+	</insert>
+	
+	<select id="appo_count" parameterType="HashMap" resultType="HashMap">
+		SELECT count(*) as count FROM appo WHERE date=#{period_1 }
+	</select>
+	
 </mapper>
