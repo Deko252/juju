@@ -29,6 +29,9 @@ myModal.addEventListener('shown.bs.modal', function () {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
+.appo-g-5 {
+	--bs-gutter-y: 0;
+}
 .appo-title{
 	text-align: center;
 }
@@ -118,17 +121,21 @@ myModal.addEventListener('shown.bs.modal', function () {
 .form-control::placeholder {
 	font-size: 14px;
 }
+.appo-modal-body {
+	padding-bottom: 30px;
+}
 .modal-btn-sub {
 	margin-right: 5px;
 }
 .modal-btn-sub, .modal-btn-can {
+	width: 130px !important;
 	border-radius: 5px !important;
 	background-color: #C68B59;
 	border-color: #C68B59;
 }
 .modal-btn-sub:hover, .modal-btn-can:hover {
-	background-color: #8FC1D4;
-	border-color: #8FC1D4;
+	background-color: #8FC1D4 !important;
+	border-color: #8FC1D4 !important;
 }
 .modal-inner {
 	display: flex;
@@ -161,7 +168,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 
 <div class="container-xxl py-5 appo-body">
       <div class="container">
-        <div class="row g-5">
+        <div class="row g-5 appo-g-5">
           <div class="col-lg-6 wow fadeInUp appo-box" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4 mb-5 appo-title">
               <h6 class="text-body text-uppercase mb-2">Treat Appointment</h6>
@@ -212,7 +219,8 @@ myModal.addEventListener('shown.bs.modal', function () {
 		        <h2 class="mb-3">진료예약하기</h2>
 		        
 		        <div class="modal-inner">
-		        달력
+		        
+		        <!-- 달력 -->
 				<div class="calendar">
 				   <div class="header">
 				      <button class="calendar_btn" onclick="prevCal();">&lt;</button>
@@ -230,8 +238,9 @@ myModal.addEventListener('shown.bs.modal', function () {
 				   </div>
 				   <div class="dates"></div>
 				</div>
+				<!--  -->
 				
-				예약 폼
+				<!-- 예약 폼 -->
 				<div class="container">
 				    <div class="input-form-backgroud row">
 				      <div class="input-form col-md-12 mx-auto">
@@ -294,12 +303,14 @@ myModal.addEventListener('shown.bs.modal', function () {
 				      </div>
 				    </div>
 				  </div>
+				  <!--  -->
+				  
 		        </div>
         
 		      </div>
-		      <div class="modal-footer">        
+		      <!-- <div class="modal-footer">        
 		        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
-		      </div>
+		      </div> -->
 		    </div>
 		  </div>
 		</div>
