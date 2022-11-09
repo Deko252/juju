@@ -235,20 +235,23 @@ $(function(){
 
 function linkPage(pageNo){location.href="./petinfo.do?pageNo="+pageNo;}
 </script>
-<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+<div class="container-fluid p-0 mb-5 wow fadeIn " data-wow-delay="0.1s">
 		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 				
 				<c:choose>
 				<c:when test="${param.cate == 1 }">
-					<img class="w-100 w-101" src="./resources/img/cate_1.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate_1.jpg" alt="Image"
+						style="background: center center no-repeat;" />
 				</c:when>
 				<c:when test="${param.cate == 2 }">
-					<img class="w-100 w-101" src="./resources/img/cate_2.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate_2.jpg" alt="Image"
+						style="background: center center no-repeat;" />
 				</c:when>
 				<c:when test="${param.cate == 3 }">
-					<img class="w-100 w-101" src="./resources/img/cate_3.jpg" alt="Image" />
+					<img class="w-100 w-101" src="./resources/img/cate_3.jpg" alt="Image"
+						style="background: center center no-repeat;" />
 				</c:when>
 				<%-- <c:otherwise>
 					<img class="w-100 w-101" src="./resources/img/cate_3.jpg" alt="Image" />

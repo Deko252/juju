@@ -252,7 +252,7 @@ a {
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img class="w-100 w-101" src="./resources/img/notice-back.jpg"
-						alt="Image" />
+						alt="Image" style="background: center center no-repeat;" />
 					<div class="carousel-caption">
 						<div class="container">
 							<div class="row justify-content-center">
