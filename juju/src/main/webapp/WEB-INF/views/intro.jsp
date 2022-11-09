@@ -7,6 +7,7 @@
 
 <head>
 <title>병원 소개</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./resources/img/favicon.png">
 <%@ include file="head.jsp"%>
 
 

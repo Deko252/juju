@@ -131,6 +131,7 @@ li .login-out {
 }
 
 .main-button-1 {
+	height: 50px;
 	padding-top: .6rem !important;
 	width: 130px !important;
 	font-size: 18px !important;
@@ -166,6 +167,7 @@ li .login-out {
 	width: 100% !important;
 }
 .main-button-2 {
+	height: 50px !important;
     background-color: #C68B59 !important;
     border-radius: 5px !important;
     border: 1px solid #C68B59 !important;
@@ -362,7 +364,7 @@ li .login-out {
                         조그만 소리에도 귀기울이며 항상 좋은 친구처럼, 늘 편안한 이웃처럼 여러분 곁에서 반려동물의 건강과 행복을 위해<br>최고를 지향하며 노력하겠습니다.
                       </li>
                     </ol>
-                    <a href="./petinfo.do?cate=1" class="btn btn-primary main-button-2">펫 도감</a>
+                    <a href="./petinfo.do?cate=1" class="btn btn-primary main-button-2">반려동물정보</a>
                     
                   </div>
                 </div>

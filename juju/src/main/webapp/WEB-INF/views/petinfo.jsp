@@ -8,6 +8,7 @@
 <html lang="ko">
 <head> 
 <title>반려동물 정보</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./resources/img/favicon.png">
 <%@ include file="head.jsp" %> 
 
 <style type="text/css">

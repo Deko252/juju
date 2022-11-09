@@ -8,6 +8,7 @@
 <html lang="ko">
 <head>
 <title>공지사항</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./resources/img/favicon.png">
 <%@ include file="head.jsp"%>
 
 
