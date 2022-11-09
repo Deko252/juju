@@ -16,11 +16,12 @@
 .first-title {
 	color: #8FC1D4 !important;
 	text-shadow: 0px 0px 10px black;
+	margin-top: 23px;
 }
 .treat-title {
 	color: #ffffff;
 	text-shadow: 0px 0px 10px black;
-}
+	}
 .container2{
 	height: 200px;
     width: 700px;
