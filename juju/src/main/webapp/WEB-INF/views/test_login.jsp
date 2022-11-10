@@ -11,9 +11,10 @@
 	text-align: center;
 }
 .login-modal-body {
-	padding: 1rem 2rem 1.5rem !important;
+	padding: 1rem 2rem 2rem !important;
 }
 .index-loginBtn {
+	width: 150px !important;
 	background-color: #C68B59 !important;
 	border-color: #C68B59 !important;
 	border-radius: 5px !important;
@@ -27,6 +28,28 @@
 .index-loginBtn:hover {
 	background-color: #8FC1D4 !important;
 	border-color: #8FC1D4 !important;
+}
+.input-form > h2 {
+	font-size: 40px;
+	margin-bottom: 1rem !important;
+}
+.inputWrap {
+	display: inline-block;
+}
+.mb-3 > input:first-child {
+	margin-bottom: 20px;
+}
+.inputWrap > .mb-3 {
+	width: 100%;
+	height: auto;
+}
+.form-control {
+	width: 350px;
+	height: 45px;
+	font-size: 18px;
+}
+.form-control::placeholder {
+	font-size: 16px;
 }
 </style>
 
@@ -45,17 +68,16 @@
 	        <div class="input-form col-md-12 mx-auto">
 	        <h2 class="mb-3">로그인</h2>
 	        <form action="./admin_login.do" method="post" class="validation-form">
-	          <div class="row">
+	          <div class="row inputWrap">
 	            <div class="col-md-6 mb-3">
-	              <label for="name">아이디</label>
-	              <input type="text" class="form-control" id="name" name="id"  required="required">
+	              <label for="name"></label>
+	              <input type="text" class="form-control" id="name" name="id" placeholder="아이디를 입력해주세요." required="required">
 	              <div class="invalid-feedback">
 	                아이디를 입력해주세요.
 	              </div>
-	            </div>
-	            <div class="col-md-6 mb-3">
-	              <label for="nickname">비밀번호</label>
-	              <input type="password" class="form-control" id="nickname" name="pw" required="required" >
+	            
+	              <label for="nickname"></label>
+	              <input type="password" class="form-control" id="nickname" name="pw" placeholder="비밀번호를 입력해주세요." required="required" >
 	              <div class="invalid-feedback">
 	                비밀번호를 입력해주세요.
 	              </div>
