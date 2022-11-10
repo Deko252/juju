@@ -318,13 +318,13 @@ color: #8FC1D4 !important;
       <!-- 컨텐츠내용 4단 그래프 -->
       <div class="sr_graph4">
          <ul>
-            <li><span class="on">진료 건강검진</span></li>
-            <li class="onnn"><span class="on1">→</span></li>
-            <li><span class="on">미용</span></li>
-            <li class="onnn"><span class="on1">→</span></li>
-            <li><span class="on">놀이방 호텔</span></li>
-            <li class="onnn"><span class="on1">→</span></li>
-            <li><span class="on">VIP상담</span></li>
+            <li><span class="wow rollIn on" data-wow-delay="0.1s">진료 건강검진</span></li>
+            <li class="wow bounceInLeft onnn" data-wow-delay="0.4s"><span class="on1">→</span></li>
+            <li><span class="wow rollIn on" data-wow-delay="0.3s">미용</span></li>
+            <li class="wow bounceInLeft onnn" data-wow-delay="0.6s"><span class="on1">→</span></li>
+            <li><span class="wow rollIn on" data-wow-delay="0.5s">놀이방 호텔</span></li>
+            <li class="wow bounceInLeft onnn" data-wow-delay="0.8s"><span class="on1">→</span></li>
+            <li><span class="wow rollIn on" data-wow-delay="0.7s">VIP상담</span></li>
          </ul>
 
       </div>
