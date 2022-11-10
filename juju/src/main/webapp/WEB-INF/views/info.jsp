@@ -301,8 +301,7 @@ $(function(){
 			$("#n_mname").text(detail.a_name); //글쓴이
 			$("#n_date").text(detail.board_date); //날짜
 			$("#n_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
-			$("#n_content").text(detail.board_content); //본문내용
-			
+			$("#n_content").html(detail.board_content); //본문내용
 			$("#detailModal").modal("show"); //모달 보이게 하기
 		}).fail(function(errorThrown){
 			alert("문제가 발생했습니다." + errorThrown);
