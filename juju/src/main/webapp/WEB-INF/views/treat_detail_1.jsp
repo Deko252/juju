@@ -405,7 +405,7 @@ h3 > span {
 	<div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
               <h6 class="text-body text-uppercase mb-2 small-title">internal medicine</h6>
               <h1 class="display-6 mb-0">
@@ -417,7 +417,7 @@ h3 > span {
               최근 반려동물의 나이가 증가하면서 각종 내과질환이 빈발하고 있습니다. 내과질환에는 코와 비강을 포함한 호흡기계, 순환기계, 소화기계, 비뇨기계, 내분비계질환으로 나눌 수 있으며, 최근에는 종양성 질환 등이 점차 증가하는 추세입니다.
             </p>
             <div class="row gy-5 gx-4">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">소화기내과</h4>
                 </div>
@@ -425,7 +425,7 @@ h3 > span {
                   >소화기는 섭취된 음식물이 소화 및 흡수 이루어지는 곳으로 식도, 위장, 소장, 대장 및 간, 담도, 췌장 등 광 범위한 장기들로 이루어지고, 소화기내 장기 중 간 담도계와 췌장을 세분화 하여 구분하기도 합니다. 소화기의 주된 증상은 연하곤란, 급.만성 구토, 토혈, 급.만성 설사, 혈변, 흑변, 배변 장애들이 나타나고 그 외에도 식욕부진, 침울, 허약, 체중감소, 복부 확장, 복부통증이 있을 수 있습니다.</span
                 >
               </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">비뇨기내과</h4>
                 </div>
@@ -437,7 +437,7 @@ h3 > span {
             </div>
                                  
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-6 ">
             <div
             	id="detail-img02" 
               class="position-relative overflow-hidden ps-5 pt-5 h-100"
@@ -467,7 +467,7 @@ h3 > span {
       </div>
       <br>
       <br>
-      <div><h3>내과<span>(Internal Medicine)</span>는-</h3>
+      <div><h3 >내과<span>(Internal Medicine)</span>는-</h3>
       <div id="text">
       밖으로 드러나는 질환이 아니고 신체내부의 질환이기 때문에 각종 증상에 따른 방사선 검사, 임상병리 검사, 초음파 검사, 뇨검사 등이 필수적입니다.
       	</div>

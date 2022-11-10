@@ -395,7 +395,7 @@ h3 > span {
 	<div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
               <h6 class="text-body text-uppercase mb-2 small-title">surgery</h6>
               <h1 class="display-6 mb-0">
@@ -404,7 +404,7 @@ h3 > span {
             </div>
             
             <div class="row gy-5 gx-4">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">일반외과</h4>
                 </div>
@@ -412,7 +412,7 @@ h3 > span {
                   >일반 외과에서는 소화기계(위 장관 수술, 간엽 절제술, 담낭 절제술, 위 염전 교정술, 췌장 부분 절제술, 비장 부분/전 절제술, 항문성형술 등)와 비뇨기계 질환(신장 절제술, 요관 절개술, 음경 부분/전 절제술 등)에 대한 수술적인 치료를 담당하고 있으며, 이외에도 만성적인 이염의 치료를 위한 외이도 적출 술과 이도 전적 출술 등의 다양한 수술을 실시합니다.
 또한, 광범위한 피부 결손이 발생한 경우, 심한 외부 창상에 의한 허니아 수술 등을 실시하고 있습니다.</span>
               </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">흉부외과</h4>
                 </div>
@@ -424,7 +424,7 @@ h3 > span {
             </div>
                                  
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-6">
             <div 
             	id="detail-img02" 
               class="position-relative overflow-hidden ps-5 pt-5 h-100"
