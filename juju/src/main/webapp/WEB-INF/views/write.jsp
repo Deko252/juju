@@ -15,13 +15,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <style type="text/css">
-#sidebar-wrapper{
-	position: fixed;
-	top:0;
-}
-body {
-	min-height: 100vh;
-	overflow: hidden;
+
+body {	
+	background-color: #C68B59;
 }
 .blind {
 	position: absolute;
@@ -34,9 +30,9 @@ body {
 	clip: rect(0, 0, 0, 0);
 }
 .container {
+	padding-top: 130px;
 }
 .input-form {
-	margin-top: 50px;
 	width: 1200px;
 	padding: 15px 32px 20px;
 	background: #fff;
@@ -47,28 +43,47 @@ body {
 	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 }
-a.btn-secondary{
-	margin-top:0px;
-	margin-left: 5px;
-	font-weight: 400;
-	background-color: #fd7e14;
-	border: 1px solid #fd7e14;
+.upd-title {
+	width: 100% !important;
 }
-#writeBtn > .mb-3{
+.upd-content {
+	width: 100% !important;
+	height: 500px !important;
+}
+#right-btnn > .mb-3{
 	margin-bottom: 0 !important;
-}
-#writeBtn {
-	float: right;
-	margin-top: 10px;
 }
 #findFile {
 	margin-top: 10px;
 }
 .mt-4{
-	margin-top: 0;
+	margin-top: 1rem !important;
 }
-#sidebar-wrapper{
-	font-size: 16px;
+#right-btnn {
+	margin-top: 20px;
+	text-align: right;
+}
+#right-btnn > .btn-secondary {
+	font-size: 18px;
+	height: 50px;
+	width: 130px;
+	color: #fff;
+	border-radius: 5px;
+	padding-top: 1.3rem;
+	font-weight: bold;
+}s
+#right-btnn > .btn-secondary:hover {
+	background-color: #8FC1D4;
+	border-color: #8FC1D4;
+}
+.up-btn-fir {
+	background-color: #C68B59;
+	border-color: #C68B59;
+	padding-bottom: 10px;
+	margin-right: 5px;
+}
+.up-btn-sec {
+	padding-top: 9px;
 }
 .note-font .note-btn-bold,
 .note-fontname,
@@ -78,7 +93,6 @@ a.btn-secondary{
 .note-insert button:first-child + button + button{
 	display: none;
 }
-
 </style>
     </head>
       
@@ -91,19 +105,18 @@ a.btn-secondary{
                     	<form action="./write.do" method="post" enctype="multipart/form-data">
 							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required>
 							<div class="form-group">
-								<textarea class="form-control" placeholder="내용을 입력해주세요." rows="20" name="content" required></textarea>
+								<textarea class="form-control upd-content" placeholder="내용을 입력해주세요." rows="20" name="content" required></textarea>
 							</div>
 							<input id="findFile" type="file" name="file" accept=".png, .jpg, .gif, .jpeg, .bmp">
-							<div id="writeBtn">
-							<button type="submit" class="btn btn-secondary mb-3">글쓰기</button>
-							<a href="notice.do" role="button" class="btn btn-secondary">취소</a>
+							<div id="right-btnn">
+							<button type="submit" class="btn btn-secondary mb-3 up-btn-fir">글쓰기</button>
+							<a href="notice.do" role="button" class="btn btn-secondary mb-3 up-btn-sec">취소</a>
 							</div>
 						</form>
                     </div>
                 </div>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=afab85b277584170c156a224f1486e30&libraries=services"></script>
-        <!-- Footer -->
-	<%@ include file="footer.jsp"%>
+
 	<!-- Scroll to Top Button-->
 	<a class="scroll-to-top rounded" href="#page-top"><i
 		class="fas fa-angle-up"></i></a>
