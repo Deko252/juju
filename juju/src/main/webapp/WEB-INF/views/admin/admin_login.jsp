@@ -8,7 +8,7 @@
 
 <title>로그인</title>
 
-<%@ include file = "../head.jsp" %>
+<%@ include file = "../head.jsp" %> 
 
  <script type="text/javascript">
 $(function(){
