@@ -391,7 +391,7 @@ h3 > span {
 	<div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
             <div class="border-start border-5 border-primary ps-4 mb-5 bar1">
               <h6 class="text-body text-uppercase mb-2 small-title">dermatology</h6>
               <h1 class="display-6 mb-0">
@@ -404,7 +404,7 @@ h3 > span {
 				피부과에서 중점적으로 제공하는 의료 서비스는 다음과 같습니다.
             </p>
             <div class="row gy-5 gx-4">
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">감염성 피부질환 진단</h4>
                 </div>
@@ -412,7 +412,7 @@ h3 > span {
                   >피부 감염 세균 및 피부사상균 감염의 신속 진단을 위한 PCR 검사를 실시하고 있으며 피부 세균 감염 시세 균동정 및 항생제 감수성 검사를 바탕으로 한 항생제 요법을 실시하고 있습니다.</span
                 >
               </div>
-              <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+              <div class="col-sm-6">
                 <div class="d-flex align-items-center mb-3 title-03">
                   <h4 class="mb-0">외이염 및 중이염 관리</h4>
                 </div>
@@ -424,7 +424,7 @@ h3 > span {
             </div>
                                  
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="col-lg-6">
             <div
             	id="detail-img02" 
               class="position-relative overflow-hidden ps-5 pt-5 h-100"
