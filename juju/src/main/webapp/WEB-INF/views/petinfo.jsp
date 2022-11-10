@@ -265,7 +265,7 @@ $(function(){
 			$("#p_mname").text(detail.a_name); //글쓴이
 			$("#p_date").text(detail.board_date); //날짜
 			$("#p_file").attr('src', "./resources/upload/" + detail.board_file); //날짜
-			$("#p_content").text(detail.board_content); //본문내용
+			$("#p_content").html(detail.board_content); //본문내용
 			$("#delBtn").attr("var", detail.board_no);
 			$("#updateBtn").attr("var",  detail.board_no);
 			$("#detailModal").modal("show"); //모달 보이게 하기

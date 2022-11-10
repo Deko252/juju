@@ -74,6 +74,12 @@ public class BoardController {
 	public String write(CommandMap map, HttpSession session, MultipartFile file) throws IOException {
 			
 			if (map.get("title") != null && map.get("content") != null) {
+				String  content = (String) (map.get("content"));
+				content = content.replaceAll("<", "&lt");
+				content = content.replaceAll("\n", "<br>");
+				//content = content.replaceAll("\r", "<br>");
+				
+				map.put("content", content);
 				map.put("id", session.getAttribute("id"));
 				
 				if(!file.isEmpty()) {
@@ -146,6 +152,11 @@ public class BoardController {
 		if (session.getAttribute("id") != null) {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
+				String  content = (String) (map.get("content"));
+				content = content.replaceAll("<", "&lt");
+
+				
+				map.put("content", content);
 
 				int result = boardService.update(map.getMap());
 

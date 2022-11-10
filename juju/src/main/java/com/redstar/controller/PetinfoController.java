@@ -93,6 +93,14 @@ public class PetinfoController {
 			
 			if (map.get("title") != null && map.get("content") != null && map.get("cate") != null) {
 				map.put("id", session.getAttribute("id"));
+				String  content = (String) (map.get("content"));
+				content = content.replaceAll("<", "&lt");
+				content = content.replaceAll("\n", "<br>");
+				//content = content.replaceAll("\r", "<br>");
+				
+				map.put("content", content);
+				map.put("id", session.getAttribute("id"));
+				
 				
 				if(!file.isEmpty()) {
 					String realPath = servletContext.getRealPath("resources/upload");
@@ -118,7 +126,6 @@ public class PetinfoController {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {
 				Map<String, Object> pet_updetail = petinfoService.pet_updetail(map.getMap());
-				System.out.println("넌 뭔데 " + pet_updetail);
 				
 				if (pet_updetail != null) {
 					mv.addObject("pet_updetail", pet_updetail);
@@ -135,7 +142,7 @@ public class PetinfoController {
 		if (session.getAttribute("id") != null) {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
-			
+
 				int result = petinfoService.pet_update(map.getMap());
 
 				return "redirect:/petinfo.do?cate=" + map.get("cate") + "&result=" + result;
@@ -150,7 +157,9 @@ public class PetinfoController {
 	
 	/* 펫인포 삭제 */
 	@GetMapping("/petpostDel.do")
-	public String postDel(CommandMap map, HttpSession session) {
+	public String petpostDel(CommandMap map, HttpSession session) {
+		System.out.println("포스트델" + map.getMap());
+		
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
 			petinfoService.pet_postDel(map.getMap());
