@@ -43,12 +43,12 @@
 	width: 100%;
 	height: auto;
 }
-.form-control {
+.login-wid {
 	width: 350px;
 	height: 45px;
 	font-size: 18px;
 }
-.form-control::placeholder {
+.login-wid::placeholder {
 	font-size: 16px;
 }
 </style>
@@ -71,13 +71,13 @@
 	          <div class="row inputWrap">
 	            <div class="col-md-6 mb-3">
 	              <label for="name"></label>
-	              <input type="text" class="form-control" id="name" name="id" placeholder="아이디를 입력해주세요." required="required">
+	              <input type="text" class="form-control login-wid" id="name" name="id" placeholder="아이디를 입력해주세요." required="required">
 	              <div class="invalid-feedback">
 	                아이디를 입력해주세요.
 	              </div>
 	            
 	              <label for="nickname"></label>
-	              <input type="password" class="form-control" id="nickname" name="pw" placeholder="비밀번호를 입력해주세요." required="required" >
+	              <input type="password" class="form-control login-wid" id="nickname" name="pw" placeholder="비밀번호를 입력해주세요." required="required" >
 	              <div class="invalid-feedback">
 	                비밀번호를 입력해주세요.
 	              </div>
