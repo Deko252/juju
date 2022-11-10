@@ -234,6 +234,9 @@ a {
 #n_hide{
 	display: none;
 }
+#n_file{
+	max-width: 650px;
+}
 </style>
 </head>
 <body>

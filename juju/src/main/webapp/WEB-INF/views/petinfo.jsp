@@ -241,6 +241,9 @@ footer{
 #p_hide{
 	display: none;
 }
+#p_file{
+	max-width: 650px;
+}
 
 </style>
 </head>
