@@ -120,15 +120,14 @@ body {
         <form action="./admin_login.do" method="post" class="validation-form" novalidate >
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label for="name">아이디</label>
-              <input type="text" class="form-control" id="name" name="id" placeholder="" value="" required>
+              <!-- <label for="name">아이디</label> -->
+              <input type="text" class="form-control" id="name" name="id" placeholder="아이디를 입력해주세요." required>
               <div class="invalid-feedback">
                 아이디를 입력해주세요.
               </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="nickname">비밀번호</label>
-              <input type="password" class="form-control" id="nickname" name="pw" placeholder="" value="" required >
+              <br>
+              <!-- <label for="nickname">비밀번호</label> -->
+              <input type="password" class="form-control" id="nickname" name="pw" placeholder="비밀번호를 입력해주세요." required >
               <div class="invalid-feedback">
                 비밀번호를 입력해주세요.
               </div>
