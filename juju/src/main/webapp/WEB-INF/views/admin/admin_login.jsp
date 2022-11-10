@@ -8,6 +8,29 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+<title>로그인</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+ <script type="text/javascript">
+$(function(){
+		var check = 0;
+		<c:if test="${sessionScope.id ne null}">check = 1;</c:if>
+		if(check == 1){
+			alert("정상적인 경로를 이용해 주세요.");
+			location.href="./index.do";
+		}
+		<c:if test="${param.error ne null }">
+			alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+      	</c:if>
+      	window.onkeydown = function() {
+      	   var kcode = event.keyCode;
+      	   if(kcode == 116) {
+      	   history.replaceState({}, null, location.pathname);
+      	   }
+      	   }
+      	
+});
+</script>  
 
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="./resources/assets/css/board.css" rel="stylesheet" />
@@ -61,16 +84,6 @@ body {
 }
 
 </style>
- <script type="text/javascript">
-$(function(){
-		var check = 0;
-		<c:if test="${sessionScope.id ne null}">check = 1;</c:if>
-		if(check == 1){
-			alert("정상적인 경로를 이용해 주세요.");
-			location.href="./index.do";
-		} 
-});
-</script>  
 
 
 </head>
@@ -99,6 +112,9 @@ $(function(){
           </div>
           <div class="mb-4"></div>       
           <button id="login" class="btn btn-primary btn-lg btn-block" type="submit">로그인</button>
+          <%-- <c:if test="${param.error ne null }">
+          	<h2 style="color: red; font-size: 22px; margin-top: 10px;">아이디와 비밀번호가 일치하지 않습니다.</h2>
+          </c:if>  --%>
         </form>
       </div>
     </div>

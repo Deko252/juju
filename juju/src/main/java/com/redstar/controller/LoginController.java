@@ -35,7 +35,7 @@ public class LoginController {
 		if(String.valueOf(login.get("count")).equals("0")) {
 			System.out.println("일치하지 않습니다.");
 			
-			return "redirect:/login.do?error=2580";
+			return "redirect:/admin_login.do?error=2580";
 			
 		} else {			
 				//세션도 만들어주세요.
