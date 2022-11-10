@@ -20,7 +20,7 @@
 
 <style type="text/css">
 
-body {
+body {	
 	background-color: #C68B59;
 }
 .blind {
@@ -34,7 +34,7 @@ body {
 	clip: rect(0, 0, 0, 0);
 }
 .container {
-	padding-top: 80px;
+	padding-top: 130px;
 }
 .input-form {
 	width: 1200px;
@@ -46,6 +46,13 @@ body {
 	-webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
 	box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.upd-title {
+	width: 100% !important;
+}
+.upd-content {
+	width: 100% !important;
+	height: 500px !important;
 }
 #right-btnn > .mb-3{
 	margin-bottom: 0 !important;
@@ -99,12 +106,7 @@ body {
 
     </head>
     <body id="page-top">
-    
-    <!-- 헤더 -->
-	<%@ include file="header.jsp"%>
-	<!-- -->
-    
-    
+
                 <!-- Page content-->
                 <div class="container">
 				<!-- SideBar -->
@@ -113,9 +115,9 @@ body {
                     <div class="input-form col-md-12 mx-auto">
                    
                     	<form action="./update.do" method="post">
-							<input type="text" name="title" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required value="${detail.board_title }">
+							<input type="text" name="title" class="form-control mt-4 mb-2 upd-title" placeholder="제목을 입력해주세요." required value="${detail.board_title }">
 							<div class="form-group">
-								<textarea class="form-control" rows="20" name="content" required>${detail.board_content }</textarea>
+								<textarea class="form-control upd-content" rows="20" name="content" required>${detail.board_content }</textarea>
 							</div>
 							<input type="hidden" name="board_no" value="${detail.board_no }">
 							<div id="right-btnn">

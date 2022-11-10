@@ -191,13 +191,13 @@ li .login-out {
 /* 미디어 */
 @media (min-width: 1200px) {
 
-.main-first {
+	.main-first {
 	    width: 800px !important;	
 	}
 	.display-2 {
 	    font-size: 5rem !important;
 	}
-	}
+}
 @media (min-width: 992px) {
 	.col-lg-10 {
 		width: 100% !important;
