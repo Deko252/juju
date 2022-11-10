@@ -136,8 +136,15 @@ public class BoardController {
 		ModelAndView mv = new ModelAndView("update");
 		if (session.getAttribute("id") != null) {
 			map.put("id", session.getAttribute("id"));
+			
 			if (map.containsKey("bno")) {
 				Map<String, Object> detail = boardService.detail(map.getMap());
+				//System.out.println("/update.do : " + detail.get("board_content"));
+				String content = (String) (detail.get("board_content"));
+				//System.out.println(content);
+				content = content.replaceAll("<br>", "\n");
+				detail.put("board_content", content);
+				
 				if (detail != null) {
 					mv.addObject("detail", detail);
 					mv.setViewName("update");
@@ -152,12 +159,14 @@ public class BoardController {
 		if (session.getAttribute("id") != null) {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
+				
 				String  content = (String) (map.get("content"));
 				content = content.replaceAll("<", "&lt");
-
+				content = content.replaceAll("\n", "<br>");
+				//content = content.replaceAll("\r", "<br>");
 				
 				map.put("content", content);
-
+				
 				int result = boardService.update(map.getMap());
 
 				return "redirect:/notice.do?result=" + result;

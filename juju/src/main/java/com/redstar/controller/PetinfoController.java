@@ -126,6 +126,10 @@ public class PetinfoController {
 			map.put("id", session.getAttribute("id"));
 			if (map.containsKey("bno")) {
 				Map<String, Object> pet_updetail = petinfoService.pet_updetail(map.getMap());
+				String content = (String) (pet_updetail.get("board_content"));
+				//System.out.println(content);
+				content = content.replaceAll("<br>", "\n");
+				pet_updetail.put("board_content", content);
 				
 				if (pet_updetail != null) {
 					mv.addObject("pet_updetail", pet_updetail);
@@ -143,6 +147,13 @@ public class PetinfoController {
 			if (map.containsKey("title") && map.containsKey("content") && map.containsKey("board_no")) {
 				map.put("id", session.getAttribute("id"));
 
+				String  content = (String) (map.get("content"));
+				content = content.replaceAll("<", "&lt");
+				content = content.replaceAll("\n", "<br>");
+				//content = content.replaceAll("\r", "<br>");
+				
+				map.put("content", content);
+				
 				int result = petinfoService.pet_update(map.getMap());
 
 				return "redirect:/petinfo.do?cate=" + map.get("cate") + "&result=" + result;
