@@ -89,6 +89,11 @@ $(function(){
 		
 	}
 }
+@media (max-width: 576px) {
+	iframe {
+		width: 450px !important;
+	}
+}
 
 </style>
 

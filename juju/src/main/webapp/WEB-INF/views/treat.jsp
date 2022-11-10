@@ -51,11 +51,12 @@
     margin: 20px auto;
 }
 @media (min-width: 992px) {
-.treat_title {
-    flex: 0 0 auto;
-    width: 100%;
+	.treat_title {
+	    flex: 0 0 auto;
+	    width: 100%;
+	}
 }
-}
+
 </style>
 </head>
 

@@ -151,6 +151,36 @@ myModal.addEventListener('shown.bs.modal', function () {
 	justify-content: space-between;
 }
 
+/* 미디어 */
+@media (max-width: 1200px) {
+	.appo-body {
+		margin-top: 50px !important;
+	}
+	.appo-box {
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 20px;
+	}
+	.appo-title {
+		padding: 0 !important;
+	}
+	.appo-check {
+		width: 250px !important;
+		padding-right: 3rem;
+	}
+	.mb-5 {
+		margin-bottom: 1rem !important;
+	}
+	.appo-intro > .d-flex {
+		width: 100%;
+		padding: 1rem !important;
+	}
+}
+@media (max-width: 992px) {
+	.mb-5 {
+		margin-bottom: 3rem !important;
+	}
+}
 @media (min-width: 992px) {
 	.appo-title {
 	    flex: 0 0 auto;
@@ -163,10 +193,36 @@ myModal.addEventListener('shown.bs.modal', function () {
 		flex: 0 0 auto;
 		width: 100%;
 	}
+	
 	#carouselControls {
 		flex: 0 0 auto !important;
 		width: 50% !important;
 	}
+}
+@media (max-width: 767px) {
+	.appo-body {
+		margin-top: 50px !important;
+	}
+	.appo-box {
+		margin-bottom: 20px;
+	}
+	.appo-check {
+		width: 250px !important;
+		padding-right: 3rem;
+	}
+	.appo-intro {
+	}
+	.appo-intro > .d-flex {
+		width: 100%;
+		padding: 1rem !important;
+	}
+	
+}
+@media (max-width: 576px) {
+	.appo-check {
+		width: 100% !important;
+	}
+	
 }
 
 </style>
