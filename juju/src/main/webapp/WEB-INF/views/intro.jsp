@@ -25,6 +25,7 @@
 
 #clin {
    font-size: 30px;
+   color: #2355c4;
 }
 
 div.pic {
@@ -71,7 +72,14 @@ img.famliy2 {
 
 .sr_tit2 {
    margin: 0 auto;
-   padding: 100px;
+   padding: 15px 100px;
+   margin-left: 200px;
+   margin-right: 200px;
+}
+
+.sr_tit3 {
+   margin: 0 auto;
+   padding: 70px 100px;
    margin-left: 200px;
    margin-right: 200px;
 }
@@ -87,7 +95,7 @@ img.famliy2 {
 .sr_graph4 {
    position: relative;
    width: 100%;
-   background: #f8f8f8;
+   background: #f0f0f0;
    padding: 55px 100px;
 }
 
@@ -131,6 +139,7 @@ ul {
    border: solid 5px #2355c4;
    height: 150px;
    top: 5rem;
+   border-radius: 30px;
 }
 
 .sr_graph4 ul li {
@@ -223,7 +232,19 @@ color: #8FC1D4 !important;
 .intro_title02{
    margin-top: 100px !important;
 }
+.int_sub_tit{
+	font-size: 38px;
+	color: #333;
+	font-weight: 700;
+}
 
+.sub_tit_num {
+    font-size: 80px;
+    color: #c0c0c0;
+    letter-spacing: -4px;
+    font-weight: bold;
+    line-height: 0.8;
+}
 
 
 </style>
@@ -273,7 +294,7 @@ color: #8FC1D4 !important;
    <br>
 
    <div class="hop">
-      <p>
+      <p class="int_sub_tit">
          클리닉 절차<span id="clin"> <br>Clinic Procedure
          </span>
       </p>
@@ -283,7 +304,7 @@ color: #8FC1D4 !important;
       <!-- 컨텐츠타이틀 및 내용 2단 -->
       <div class="sr_tit2">
          <h1>
-            <span class="bnum pt">01</span>
+            <span class="bnum pt sub_tit_num">01</span>
             <p>One Stop Total Clinic</p>
          </h1>
          <p class="desc">
@@ -311,9 +332,9 @@ color: #8FC1D4 !important;
    </section>
    <section class="pdb70">
       <!-- 컨텐츠타이틀 및 내용 2단 -->
-      <div class="sr_tit2">
+      <div class="sr_tit3">
          <h1>
-            <span class="bnum pt">02</span>
+            <span class="bnum pt sub_tit_num">02</span>
             <p>JUJU 동물병원은 필요로 하는 모든 프리미엄 서비스를 한곳에서 편하게 누리실 수 있는 맞춤형 공간입니다.</p>
          </h1>
          <p class="desc">
