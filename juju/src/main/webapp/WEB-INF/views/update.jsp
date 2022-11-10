@@ -122,7 +122,7 @@ body {
 							<input type="hidden" name="board_no" value="${detail.board_no }">
 							<div id="right-btnn">
 								<button type="submit" class="btn btn-secondary mb-3 up-btn-fir">수정하기</button>
-								<a href="notice_detail.do?bno=${detail.board_no }" role="button" class="btn btn-secondary mb-3 up-btn-sec">취소</a>
+								<a href="notice.do" role="button" class="btn btn-secondary mb-3 up-btn-sec">취소</a>
 							</div>
 						</form>
                     </div>               
