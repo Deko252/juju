@@ -294,6 +294,8 @@ a {
 		function linkPage(pageNo) {
 			location.href = "./notice.do?pageNo=" + pageNo;
 		}
+		
+	
 	</script>
 	<!-- Page Header Start -->
 	<div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">

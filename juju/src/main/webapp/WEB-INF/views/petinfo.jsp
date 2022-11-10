@@ -277,7 +277,7 @@ $(function(){
 		if (confirm("게시글을 삭제하시겠습니까?")) {
 			alert("삭제합니다");
 			var no = $( '#delBtn' ).attr( 'var' );
-			location.href = "./postDel.do?bno=" +no;
+			location.href = "./petpostDel.do?cate=" + ${param.cate } + "&bno="+no;
 			//파라미터는 링크 창의 값을 그대로 긁어오는 것을 말한다. 
 		}
 	});
@@ -285,7 +285,7 @@ $(function(){
 		if (confirm("게시글을 수정하시겠습니까?")) {
 			alert("수정합니다");
 			var no = $( '#updateBtn' ).attr( 'var' );
-			location.href = "./petupdate.do?bno="+no;
+			location.href = "./petupdate.do?cate=" + ${param.cate }  + "&bno="+no;
 		}
 	});
 	
