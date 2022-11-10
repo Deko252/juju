@@ -191,10 +191,7 @@ a {
 			<td class="td6">${p.appodate }</td>
 			<td class="td7">${p.comment }</td>
 			<td class="td8">
-			<c:choose>
-				<c:when test="${p.dismiss eq '0'}"><button onclick="del(${p.a_no })">삭제</button></c:when>
-				<c:otherwise><button onclick="re(${p.a_no })">복원</button></c:otherwise>
-			</c:choose>
+				<c:if test="${p.dismiss eq '0'}"><button onclick="del(${p.a_no })">삭제</button></c:if>
 			</td>
 		</tr>
 		</c:forEach>

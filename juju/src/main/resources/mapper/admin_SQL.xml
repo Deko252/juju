@@ -11,10 +11,10 @@
 		LIMIT #{startPage }, #{lastPage }
 	</select>
 	
-	<update id="postChange" parameterType="HashMap">
-		UPDATE appo SET dismiss=<choose><when test="del == 1">1</when><otherwise>0</otherwise></choose> 
+	<delete id="postChange" parameterType="HashMap">
+		DELETE FROM appo  
 		WHERE a_no=#{ano }
-	</update>
+	</delete>
 	
 	<update id="postReAJAX" parameterType="HashMap">
 		UPDATE appo SET dismiss=<choose><when test="command eq 'del'">1</when><otherwise>0</otherwise></choose> 
