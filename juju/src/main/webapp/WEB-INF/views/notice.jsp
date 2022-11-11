@@ -30,9 +30,9 @@
     padding-left: 0px;
     padding-right: 0px;
 }
-.carousel-item {
+.back-wrap {
 	overflow: hidden;
-	height: 400px;
+	max-height: 400px;
 	width: 100%;
 }
 #img_wrap {
@@ -303,7 +303,7 @@ a {
 		<div id="header-carousel" class="carousel slide"
 			data-bs-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<div class="carousel-item active back-wrap">
 					<img class="w-100 w-101" src="./resources/img/notice-back.jpg"
 						alt="Image" style="background: center center no-repeat;" />
 					<div class="carousel-caption">

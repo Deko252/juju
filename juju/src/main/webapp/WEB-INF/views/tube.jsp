@@ -94,6 +94,15 @@ $(function(){
 		width: 450px !important;
 	}
 }
+@media (max-width: 412px) {
+	iframe {
+		width: 350px !important;
+	}
+	.tube-icon {
+		width: 350px !important;
+	}
+}
+
 
 </style>
 

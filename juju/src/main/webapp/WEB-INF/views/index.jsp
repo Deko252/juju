@@ -214,6 +214,11 @@ li .login-out {
 		right: none !important;
 	}		
 }
+@media (max-width: 412px) {
+	.carousel-caption {
+		text-align: center !important;		
+	}
+}
 
 </style>
 

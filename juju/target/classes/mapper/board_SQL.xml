@@ -5,7 +5,9 @@
 <mapper namespace="board">
 
 	<select id="boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT n.*, a.a_name   
+		SELECT n.board_no, n.board_title,
+		CONCAT(SUBSTRING(n.board_content,1,15), '...') AS board_content,
+		n.board_file, n.board_date, a.a_name   
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 
 		ORDER BY board_no DESC
@@ -37,7 +39,7 @@
 	</select>
 		
 	<select id="detailAjax" parameterType="HashMap" resultType="HashMap">
-		SELECT n.*, a.a_id, a.a_name 
+		SELECT n.*, a.a_id, a.a_name
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 
 		WHERE board_no=#{no } 
