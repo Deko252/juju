@@ -45,13 +45,18 @@ p{
     padding-right: 0px;
     border: 1px rgba(0, 0, 0, 0) solid;
 }
+.back-wrap {
+	overflow: hidden;
+	max-height: 400px;
+	width: 100%;
+}
 .carousel-inner {
 } 
-.carousel-item {
+/* .carousel-item {
 	overflow: hidden;
 	height: 400px;
 	width: 100%;
-}
+} */
 .w-100{
 }
 .treat-title {
@@ -307,7 +312,7 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
 <div class="container-fluid p-0 mb-5 wow fadeIn " data-wow-delay="0.1s">
 		<div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<div class="carousel-item active back-wrap">
 				
 				<c:choose>
 				<c:when test="${param.cate == 1 }">

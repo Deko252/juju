@@ -82,7 +82,6 @@
 	padding: 10px 25px 5px;
 	position: relative;
 }
-
 #content_tit {
 	color: #865439;
 	font-weight: 500;
