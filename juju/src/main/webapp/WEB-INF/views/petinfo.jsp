@@ -103,25 +103,30 @@ h3 > span {
 	height:200px;
 	display: flex;
 	text-align: left;
-	margin-bottom:10px;
-	margin-top :10px;
+	margin-bottom:15px;
+	margin-top :15px;
 }
 #top_text{
 	width: 80%;
-	margin-left:20px;
-	position:relative;
+	margin-left: 20px;
+	padding: 10px 25px 5px;
+	position: relative;
 }
 #content_tit{
-	font-size: 25px;
-	margin-bottom: 5px;
+	color: #865439;
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 #text_wrap{
-	max-width: 500px;
+	width: 100%;
 	height: 80%;
 }
 #top_writer{
-	position:absolute;
-	bottom:0;
+	color: #aaa;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
 }
 #thumnail{
 	width: 20%;
@@ -422,10 +427,10 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
               							<div id="p_hide" class="board_no">${p.board_no }</div>
               							<a class="detail" >${p.board_content }</a>
               						</div>
-              						<div id="top_writer">
-              							${p.a_name }
-              						</div>
               					</div>
+           						<div id="top_writer">
+           							${p.a_name }
+           						</div>
               				</div>
             		</div>
             	</div>	
