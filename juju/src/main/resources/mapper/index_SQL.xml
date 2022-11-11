@@ -6,7 +6,7 @@
 <mapper namespace="index">
 
 	<select id="boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT *   
+		SELECT board_no, SUBSTRING(board_title,1,15) AS board_title
 		FROM notice_boardview 
 		ORDER BY board_no DESC
 		LIMIT 0, 3
