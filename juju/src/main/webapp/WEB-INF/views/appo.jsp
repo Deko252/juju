@@ -152,6 +152,18 @@ myModal.addEventListener('shown.bs.modal', function () {
 }
 
 /* 미디어 */
+
+@media (max-width: 1400px) {
+	.appo-check {
+		width: 300px !important;
+		padding-right: 3rem;
+	}
+	.appo-intro > .d-flex {
+		width: 100% !important;
+		margin-right: 0 !important;
+		padding: 1rem !important;
+	}
+}
 @media (max-width: 1200px) {
 	.appo-body {
 		margin-top: 50px !important;

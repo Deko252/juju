@@ -215,6 +215,12 @@ li .login-out {
 		right: none !important;
 	}		
 }
+@media (max-width: 576px) {
+	.carousel-caption {
+		padding-left: 3rem !important;
+		padding-right: 3rem !important;
+	} 
+}
 @media (max-width: 412px) {
 	.carousel-caption {
 		text-align: center !important;		
