@@ -158,7 +158,7 @@ a {
    <ul>
         <li id="li" onclick="location.href='../index.do'">웹사이트로 돌아가기</li>
 		<li id="li" onclick="location.href='../logout.do'">로그아웃</li>
-   </ul>`
+   </ul>
 </div>
 <div id="blank">&emsp;</div>
 </div>
