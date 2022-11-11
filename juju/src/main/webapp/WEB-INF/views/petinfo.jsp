@@ -236,6 +236,9 @@ a{
 	background-color: #8FC1D4 !important;
 	border-color: #8FC1D4 !important;
 }
+.detail {
+}
+
 /* 모달끝 */
 
 @media (max-width: 349px) {
@@ -420,14 +423,15 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
           		<div id="top_border">
             		<div id="top_wrap">
 		          		<div id="thumnail"><img alt="img" src="./resources/upload/${p.board_file }"></div>
-		          			<div id="top_text">
-		          				<div id="text_wrap">
-              						<div id="content_tit">${p.board_title }</div>
-              						<div  id="content_con" class="board">
+		          			<div id="top_text">				
+		          				<div id="text_wrap" >
+              						<div id="content_con" class="board">
               							<div id="p_hide" class="board_no">${p.board_no }</div>
-              							<a class="detail" >${p.board_content }</a>
+              						<a class="detail"><div id="content_tit">${p.board_title }</div></a>
+              							<a class="detail">${p.board_content }</a>
               						</div>
               					</div>
+		          				
            						<div id="top_writer">
            							${p.a_name }
            						</div>
