@@ -236,6 +236,30 @@ myModal.addEventListener('shown.bs.modal', function () {
 	}
 	
 }
+@media (max-width: 420px) {
+	.carousel-control-next {
+		margin-right: 0.5rem !important;
+	}
+	.display-2 {
+		width: 100%;
+	}
+}
+@media (max-width: 375px) {
+	.carousel-control-next {
+		margin-right: 0.5rem !important;
+	}
+	.display-2 {
+		width: 100%;
+	}
+}
+@media (max-width: 360px) {
+	.carousel-control-next {
+		margin-right: 0.5rem !important;
+	}
+	.display-2 {
+		width: 100%;
+	}
+}
 
 </style>
 

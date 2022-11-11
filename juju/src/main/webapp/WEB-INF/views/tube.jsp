@@ -94,12 +94,28 @@ $(function(){
 		width: 450px !important;
 	}
 }
-@media (max-width: 412px) {
+@media (max-width: 420px) {
 	iframe {
 		width: 350px !important;
 	}
 	.tube-icon {
 		width: 350px !important;
+	}
+}
+@media (max-width: 375px) {
+	iframe {
+		width: 330px !important;
+	}
+	.tube-icon {
+		width: 330px !important;
+	}
+}
+@media (max-width: 360px) {
+	iframe {
+		width: 320px !important;
+	}
+	.tube-icon {
+		width: 320px !important;
 	}
 }
 

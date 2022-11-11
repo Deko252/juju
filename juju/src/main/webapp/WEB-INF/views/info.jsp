@@ -276,6 +276,21 @@ $(function(){
 		margin-bottom: 50px;
 	}
 }
+@media (max-width: 420px) {
+	.contact-phone {
+		font-size: 40px;
+	}
+}
+@media (max-width: 375px) {
+	.contact-phone {
+		font-size: 40px;
+	}
+}
+@media (max-width: 360px) {
+	.contact-phone {
+		font-size: 40px;
+	}
+}
 @media (min-width: 1200px) {
 }
 @media (min-width: 992px) {

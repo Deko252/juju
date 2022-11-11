@@ -214,7 +214,7 @@ li .login-out {
 	.navbar .nav-item .dropdown-menu {
 		right: none !important;
 	}		
-}
+} 
 @media (max-width: 576px) {
 	.carousel-caption {
 		padding-left: 3rem !important;
