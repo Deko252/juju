@@ -6,8 +6,7 @@
 <mapper namespace="petinfo">
 
 	<select id="pet_boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT p.board_no, p.board_title,
-		CONCAT(SUBSTRING(p.board_content,1,15), '...') AS board_content,
+		SELECT p.board_no, p.board_title, board_content,
 		p.board_file, p.board_date, a.a_name, a.a_id   
 		FROM pet_boardview p JOIN admin a
 		ON a.a_no=p.b_no 

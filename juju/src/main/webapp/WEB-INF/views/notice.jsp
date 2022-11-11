@@ -100,6 +100,7 @@
 #text_wrap {
 	width: 100%;
 	height: 80%;
+	overflow: hidden;
 }
 
 #top_writer {

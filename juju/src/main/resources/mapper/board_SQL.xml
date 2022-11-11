@@ -5,8 +5,7 @@
 <mapper namespace="board">
 
 	<select id="boardList" parameterType="HashMap" resultType="HashMap">
-		SELECT n.board_no, n.board_title,
-		CONCAT(SUBSTRING(n.board_content,1,15), '...') AS board_content,
+		SELECT n.board_no, n.board_title, board_content,
 		n.board_file, n.board_date, a.a_name   
 		FROM notice_boardview n JOIN admin a
 		ON a.a_no=n.b_no 

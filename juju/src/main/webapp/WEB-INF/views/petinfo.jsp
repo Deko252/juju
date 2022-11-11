@@ -126,6 +126,7 @@ h3 > span {
 #text_wrap{
 	width: 100%;
 	height: 80%;
+	overflow: hidden;
 }
 #top_writer{
 	color: #aaa;
@@ -240,8 +241,6 @@ a{
 .modal-btn-sub:hover, .modal-btn-can:hover {
 	background-color: #8FC1D4 !important;
 	border-color: #8FC1D4 !important;
-}
-.detail {
 }
 
 /* 모달끝 */
@@ -423,17 +422,18 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
 		</div>
 	</div>
 		<div id="notice_box">
-        	<table>
+        	
           		<c:forEach items="${p_no  }" var="p">
           		<div id="top_border">
             		<div id="top_wrap">
-		          		<div id="thumnail"><img alt="img" src="./resources/upload/${p.board_file }"></div>
-		          			<div id="top_text">				
+		          		<div id="thumnail" style=""><img alt="img" src="./resources/upload/${p.board_file }"></div>
+		          			<div id="top_text">		
+		          					
 		          				<div id="text_wrap" >
               						<div id="content_con" class="board">
               							<div id="p_hide" class="board_no">${p.board_no }</div>
-              						<a class="detail"><div id="content_tit">${p.board_title }</div></a>
-              							<a class="detail">${p.board_content }</a>
+              							<div id="content_tit">${p.board_title }</div>
+              							<a class="detail"> ${p.board_content }</a>
               						</div>
               					</div>
 		          				
@@ -444,8 +444,7 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
             		</div>
             	</div>	
           		</c:forEach>	
-        	</table>
-		    </div>
+		</div>
          	<div id="paging">
            		<ui:pagination paginationInfo="${paginationInfo }" type="text" jsFunction="linkPage"/>
            	</div> 
