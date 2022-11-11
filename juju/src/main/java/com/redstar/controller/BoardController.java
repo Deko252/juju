@@ -89,8 +89,9 @@ public class BoardController {
 				}
 				
 				int result = boardService.write(map.getMap());
-				System.out.println(map.getMap());
-				System.out.println(result);
+				/*
+				 * System.out.println(map.getMap()); System.out.println(result);
+				 */
 
 				return "redirect:/notice.do?result=" + result;
 			} else {
@@ -103,9 +104,9 @@ public class BoardController {
 	@GetMapping(value="/detailAjax.do",  produces="application/json;charset=UTF-8")
 	public String detailAjax(CommandMap map) {
 		JSONObject json = new JSONObject();
-		System.out.println("detailAjax : " + map.getMap());
+		/* System.out.println("detailAjax : " + map.getMap()); */
 		Map<String, Object> detail = boardService.detailAjax(map.getMap());
-		System.out.println("map : " + detail);
+		/* System.out.println("map : " + detail); */
 		
 		json.put("detail", detail);
 		return json.toString();

@@ -201,16 +201,16 @@
 			<h2 class="text-light mb-4 footer-title02">054-123-4567</h2>
 			
 			<div class="d-flex pt-2">
-              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="https://twitter.com/?lang=ko">
               	<i class="fab fa-twitter"></i>
               </a>
-              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="https://ko-kr.facebook.com/">
               	<i class="fab fa-facebook-f"></i>
               </a>
-              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="">
+              <a class="btn btn-square btn-outline-primary me-1 footer-social" href="https://www.youtube.com/">
               	<i class="fab fa-youtube"></i>
               </a>
-              <a class="btn btn-square btn-outline-primary me-0 footer-social" href="">
+              <a class="btn btn-square btn-outline-primary me-0 footer-social" href="https://kr.linkedin.com/">
               	<i class="fab fa-linkedin-in"></i>
               </a>
             </div>

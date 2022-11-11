@@ -225,6 +225,7 @@ li .login-out {
 </head>
 
   <body>
+  <a name="home-01"></a>
     <!-- Spinner Start -->
     <div
       id="spinner"
