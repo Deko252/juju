@@ -123,7 +123,10 @@ $(function(){
 .noti-modal-body > .modal-title {
 	margin-bottom: 10px !important;
 }
-
+/* .modal-dialog-centered {
+	display: block !important;
+	align-items: center !important;
+} */
 .noti-mdWrap{
 }
 .noti-mdBody {
@@ -449,26 +452,23 @@ $(function(){
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body noti-modal-body">
-	       <h3 class="modal-title" id="viewModalLabel"></h3>
+	       	<h3 class="modal-title" id="viewModalLabel"></h3>
 	        <div class="row" style="border-bottom: 1px #dee2e6 solid; border-top: 1px #dee2e6 solid;">
 	           <div class="col noti-name">
 	              <div id="n_mname">데이터가 없습니다.</div>
 	              <div id="n_date">데이터가 없습니다.</div>
 	           </div>
-	           </div>
 	        </div>
-	        <div class="row" style="padding-top:10px; min-height: 500px; overflow-y: auto;">
-	        <div><img id="n_file" alt="이미지" src=""> </div>
-	           <div class="col" id="n_content"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
-	           
-	           
-	           
+	      </div>
+	        <div class="row" style="padding-left: 10px; padding-right: 10px;">
+	        	<div><img id="n_file" style="padding-top:10px; max-width:100%;" alt="이미지" src=""></div>
+	            <div class="col" id="n_content" style="margin-bottom: 30px; margin-top: 30px; padding-left: 30px; padding-right: 30px;"><h1>문제가 발생했습니다. 다시 시도하세요.</h1></div>
 	        </div>
 	      </div>
 	      
-	      <div class="modal-footer">        
-	        <!-- <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button> -->
-	      </div>
+	      <!-- <div class="modal-footer">        
+	        <button type="button" class="btn btn-secondary updateClose" data-bs-dismiss="modal">닫기</button>
+	      </div> -->
 	    </div>
 	  </div>
 	</div>              			
