@@ -343,9 +343,10 @@ a {
 						</div>
 						<div id="top_text">
 							<div id="text_wrap">
-								<div id="content_tit">${s.board_title }</div>
 								<div id="content_con" class="board">
 									<div id="n_hide" class="board_no">${s.board_no }</div>
+									<div id="content_tit" class="detail">
+										<a>${s.board_title }</a></div>
 									<a class="detail">${s.board_content }</a>
 								</div>
 							</div>

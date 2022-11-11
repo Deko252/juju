@@ -432,7 +432,8 @@ function linkPage(pageNo){location.href="./petinfo.do?cate=${param.cate }" + "&p
 		          				<div id="text_wrap" >
               						<div id="content_con" class="board">
               							<div id="p_hide" class="board_no">${p.board_no }</div>
-              							<div id="content_tit">${p.board_title }</div>
+              							<div id="content_tit" class="detail">
+              								<a>${p.board_title }</a></div>
               							<a class="detail"> ${p.board_content }</a>
               						</div>
               					</div>
