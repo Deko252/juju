@@ -313,7 +313,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h5 class="modal-title" id="viewModalLabel"></h5>
-		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" type="reset" ></button>
 		      </div>
 		      <div class="modal-body appo-modal-body">
 		        
@@ -573,6 +573,13 @@ buildcalendar();
 const target = document.getElementById('btnS');
 target.disabled = true;
 
+
+$("#btnF").click(function(){
+	const target = document.getElementById('btnS');
+	target.disabled = true;
+	CDate.setMonth(CDate.getMonth());
+	buildcalendar(); 
+});
 
 function numberMaxLength(e){
 

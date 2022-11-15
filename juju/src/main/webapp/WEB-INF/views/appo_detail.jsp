@@ -264,7 +264,7 @@ myModal.addEventListener('shown.bs.modal', function () {
 				          </div>
 				          <div class="mb-4"></div>
 				          <button class="btn btn-primary btn-lg btn-block modal-btn-sub" type="submit" id="btnS">예약하기</button>
-				          <button class="btn btn-primary btn-lg btn-block modal-btn-can" type="reset" id="btnF">취소</button>
+				          <button class="btn btn-primary btn-lg btn-block modal-btn-can" type="reset" id="btnF">초기화</button>
 				        </form>
 				      </div>
 				    </div>
@@ -365,6 +365,13 @@ buildcalendar();
 
 const target = document.getElementById('btnS');
 target.disabled = true;
+
+$("#btnF").click(function(){
+	const target = document.getElementById('btnS');
+	target.disabled = true;
+	CDate.setMonth(CDate.getMonth());
+	buildcalendar(); 
+});
 
 
 function numberMaxLength(e){
