@@ -44,11 +44,11 @@ juju Webapp Project
 
 ## 모습
 ### * 메인화면
-<img src="https://github.com/Deko252/jumjin/assets/114369279/a828d660-9e73-4ac0-ac2b-8e00491e5f5f?raw=true"></br>
-<img src="https://github.com/Deko252/jumjin/assets/114369279/fcac5bcf-1c6d-4768-b789-c34c38508e0f?raw=true"></br>
+<img src="https://github.com/Deko252/jumjin/assets/114369279/8ba45a2d-8858-4c00-b9c3-c23db9f21465?raw=true"></br>
+<img src="https://github.com/Deko252/jumjin/assets/114369279/18ec0d92-3bff-41cc-beca-bbe8a1f88990?raw=true"></br>
 
 ### * 예약화면
-<img src="https://github.com/Deko252/jumjin/assets/114369279/ea19d3af-39bc-4276-aa00-5ec7c67a06c7?raw=true"></br>
+<img src="https://github.com/Deko252/jumjin/assets/114369279/215eae86-365f-4fe0-a572-24ca3936d72c?raw=true"></br>
 
 ### * 로그인화면
-<img src="https://github.com/Deko252/jumjin/assets/114369279/af3b3ead-0d16-4f5a-8e01-5d3388524351?raw=true"></br>
+<img src="https://github.com/Deko252/jumjin/assets/114369279/23b1cedf-8fe2-4a0c-80b5-6d76253e5607?raw=true"></br>
